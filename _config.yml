@@ -1,0 +1,17 @@
+source: ./content
+destination: ./whitepapers
+
+baseurl: "/whitepapers/"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      permalink: "/:basename/"
+
+
+assets:
+  sources:
+    - _assets/img
