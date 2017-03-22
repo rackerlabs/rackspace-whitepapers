@@ -1,13 +1,14 @@
 ---
 permalink: building-secure-scalable-and-highly-available-magento-stores-powered-by-rackspace-solutions/
-audit_date:title: 'Building Secure, Scalable and Highly Available Magento Stores, Powered by Rackspace Solutions'
+audit_date:
+title: 'Building Secure, Scalable and Highly Available Magento Stores, Powered by Rackspace Solutions'
 type: whitepaper
 created_date: '2013-05-17'
 created_by: Rackspace Support
 last_modified_date: '2017-03-16'
 last_modified_by: Cat Lookabaugh
-product: White Paper
-product_url: white-paper
+product: Ecommerce
+product_url: ecommerce
 ---
 
 By:
@@ -200,7 +201,7 @@ is recommended to store customer credit card information outside the
 Rackspace network using third-party payment gateways when deploying to
 the public cloud.
 
-<img src="{% asset_path Ecommerce/building-secure-scalable-and-highly-available-magento-stores-powered-by-rackspace-solutions/magento-4.png %}" width="499" height="401" />
+<img src="{% asset_path ecommerce/building-secure-scalable-and-highly-available-magento-stores-powered-by-rackspace-solutions/magento-4.png %}" width="499" height="401" />
 
 **Configuration Details:**
 
@@ -246,7 +247,7 @@ database servers. Single web and database server are segmented behind
 physical firewall. In this topology, customer credit card information is
 stored using the third-party payment gateway.
 
-<img src="{% asset_path Ecommerce/building-secure-scalable-and-highly-available-magento-stores-powered-by-rackspace-solutions/magento-6.png %}" width="499" height="379" />
+<img src="{% asset_path ecommerce/building-secure-scalable-and-highly-available-magento-stores-powered-by-rackspace-solutions/magento-6.png %}" width="499" height="379" />
 
 **Configuration Details:**
 
@@ -298,7 +299,7 @@ Peak Demand Licenses. Dual web and database servers are segmented behind
 physical firewall. Customer credit card information is stored in the
 third-party payment gateway.
 
-<img src="{% asset_path Ecommerce/building-secure-scalable-and-highly-available-magento-stores-powered-by-rackspace-solutions/magento-8.png %}" width="498" height="376" />
+<img src="{% asset_path ecommerce/building-secure-scalable-and-highly-available-magento-stores-powered-by-rackspace-solutions/magento-8.png %}" width="498" height="376" />
 
 **Configuration Details:**
 
@@ -369,7 +370,7 @@ within the Rackspace network on dedicated servers. It achieves PCI
 compliance with help from the third party products of Symantec and Alert
 Logic.
 
-<img src="{% asset_path Ecommerce/building-secure-scalable-and-highly-available-magento-stores-powered-by-rackspace-solutions/magento-9ent2.png %}" width="500" height="408" />
+<img src="{% asset_path ecommerce/building-secure-scalable-and-highly-available-magento-stores-powered-by-rackspace-solutions/magento-9ent2.png %}" width="500" height="408" />
 
 **Configuration Details:**
 
@@ -440,7 +441,7 @@ architecture is right for your business needs. Alternatively, the
 Rackspace support team can help you in deciding the right topology for
 your needs.
 
-<img src="{% asset_path Ecommerce/building-secure-scalable-and-highly-available-magento-stores-powered-by-rackspace-solutions/magento-10flowchrt.png %}" width="497" height="400" />
+<img src="{% asset_path ecommerce/building-secure-scalable-and-highly-available-magento-stores-powered-by-rackspace-solutions/magento-10flowchrt.png %}" width="497" height="400" />
 
 Please note: the recommendation provided above for choosing the right
 reference architecture based on the number of concurrent users stems
@@ -505,7 +506,7 @@ of your choice – no licenses to keep track of or soft- ware to download.
 [SharePoint hosting services](http://www.rackspace.com/enterprise_hosting/sharepoint/)
 for collaborating within your organization.
 
-<img src="{% asset_path Ecommerce/building-secure-scalable-and-highly-available-magento-stores-powered-by-rackspace-solutions/magento-chapt8.png %}" width="501" height="350" />
+<img src="{% asset_path ecommerce/building-secure-scalable-and-highly-available-magento-stores-powered-by-rackspace-solutions/magento-chapt8.png %}" width="501" height="350" />
 
 ### 8. Summary
 

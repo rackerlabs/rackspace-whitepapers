@@ -7,12 +7,12 @@ created_date: '2014-01-06'
 created_by: Rackspace Support
 last_modified_date: '2017-03-10'
 last_modified_by: Cat Lookabaugh
-product: White Paper
-product_url: white-paper
+product: Ecommerce
+product_url: ecommerce
 ---
 
 
-<img src="{% asset_path ProfessionalServices/ecommerce-re-platforming-basics/Ecommreplatforming-2_0.png %}" width="194" height="195" />
+<img src="{% asset_path ecommerce/ecommerce-re-platforming-basics/Ecommreplatforming-2_0.png %}" width="194" height="195" />
 
 ### Introduction
 

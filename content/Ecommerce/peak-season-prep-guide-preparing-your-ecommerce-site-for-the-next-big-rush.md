@@ -7,8 +7,8 @@ created_date: '2013-07-09'
 created_by: Rackspace Support
 last_modified_date: '2017-03-14'
 last_modified_by: Cat Lookabaugh
-product: White Paper
-product_url: white-paper
+product: Ecommerce
+product_url: ecommerce
 ---
 
 ### Introduction
@@ -250,7 +250,7 @@ develop, test, and scale your site to manage and optimize a spike
 instead of losing customers.
 
 
-<img src="{% asset_path Ecommerce/peak-season=prep-guide-preparing-your-ecommerce-site-for-the-next-big-rush/peakseaon-1.png %}" width="589" height="396" />
+<img src="{% asset_path ecommerce/peak-season=prep-guide-preparing-your-ecommerce-site-for-the-next-big-rush/peakseaon-1.png %}" width="589" height="396" />
 
 References:
 

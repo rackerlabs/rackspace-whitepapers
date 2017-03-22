@@ -7,8 +7,8 @@ created_date: '2013-06-19'
 created_by: Liz Staplefoote
 last_modified_date: '2017-03-10'
 last_modified_by: Cat Lookabaugh
-product: White Paper
-product_url: white-paper
+product: Ecommerce
+product_url: ecommerce
 ---
 
 Ecommerce refers to the sum of all interactions a customer has with your
@@ -311,7 +311,7 @@ user experience. It can also uncover areas for improvement and those
 areas no one thinks about until something goes wrong, like security or
 shopping cart functionality. An ecommerce site's inventory may include:
 
-<img src="{% asset_path ProfessionalServices/building-your-ecommerce-strategy/RackspaceEcommerce-BuildingSoundEcommerceStrategy-2.png %}" width="273" height="236" />
+<img src="{% asset_path ecommerce/building-your-ecommerce-strategy/RackspaceEcommerce-BuildingSoundEcommerceStrategy-2.png %}" width="273" height="236" />
 
 These items span across departments. All stakeholders should point out
 aspects of their particular focus that are not represented. For example,

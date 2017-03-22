@@ -7,8 +7,8 @@ created_date: '2013-05-01'
 created_by: Rackspace Support
 last_modified_date: '2017-03-16'
 last_modified_by: Cat Lookabaugh
-product: White Paper
-product_url: white-paper
+product: Ecommerce
+product_url: ecommerce
 ---
 
 ### Introduction
