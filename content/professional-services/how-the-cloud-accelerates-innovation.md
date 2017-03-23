@@ -110,7 +110,7 @@ just “keeping the lights on.”
 The cloud lowers barriers to experimentation and can speed deployment
 and testing of new projects that otherwise might have died on the vine.
 
-<img src="{% asset_path professional-services/how-the-cloud-accelerate-innovation/cloudaccelerates.png %}" width="548" height="620" />
+<img src="{% asset_path professional-services/how-the-cloud-accelerates-innovation/cloudaccelerates.png %}" width="548" height="620" />
 
 **Software as a Service (SaaS)** affords the benefits of running an
 application from a central location on a one-to-many model—everyone who
@@ -295,7 +295,7 @@ all of these components into one system. These and other initiatives are
 driving a new paradigm of innovation around the cloud, creating new
 products, services, companies, and jobs.
 
-<img src="{% asset_path professional-services/how-the-cloud-accelerate-innovation/cloudaccelerates1.png %}" width="511" height="201" />
+<img src="{% asset_path professional-services/how-the-cloud-accelerates-innovation/cloudaccelerates1.png %}" width="511" height="201" />
 
 #### Leveraging an Ecosystem
 

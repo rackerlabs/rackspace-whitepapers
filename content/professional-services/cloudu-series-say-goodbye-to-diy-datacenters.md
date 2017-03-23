@@ -51,7 +51,7 @@ the major Cloud Computing providers.
 The following diagram details the multiple features that go into building a
 modern data center.
 
-<img src="{% asset_path professional-services/cloudu-series-say-goodbye-to-diy-datacenters/cloudu_diyDC_image1 %}" />
+<img src="{% asset_path professional-services/cloudu-series-say-goodbye-to-diy-datacenters/cloudu_diyDC_image1.png %}" />
 
 A detailed list of some of the important features of a modern data
 center are available in the appendix to this paper. The main point is
@@ -88,7 +88,7 @@ The purple line, closely following actual demand, shows the benefits of
 Cloud Computing infrastructure to scale up and down readily along with
 actual demand.
 
-<img src="{% asset_path professional-services/cloudu-series-say-goodbye-to-diy-datacenters/cloudu_diydc_image2 %}" />
+<img src="{% asset_path professional-services/cloudu-series-say-goodbye-to-diy-datacenters/cloudu_diydc_image2.png %}" />
 
 The second economic problem created by utilizing internal infrastructure
 is that it required large-scale capital expenditure. This tends to

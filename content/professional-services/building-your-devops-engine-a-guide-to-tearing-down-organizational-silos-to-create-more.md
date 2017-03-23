@@ -1,7 +1,7 @@
 ---
 permalink: building-your-devops-engine-a-guide-to-tearing-down-organizational-silos-to-create-more/
 audit_date:
-title: 'Building your DevOps Engine - A Guide to Tearing Down Silos"
+title: 'Building your DevOps Engine - A Guide to Tearing Down Silos'
 type: whitepaper
 created_date: '2013-10-24'
 created_by: Rackspace Support
@@ -375,4 +375,3 @@ Find more DevOps-related resources from Rackspace:
 -   Webinar and presentation on building your DevOps engine: [Preparing for Dev/Ops Success](http://www.rackspace.com/blog/enterprise-cloud-forum-recap-prepare-for-devops-success/)
 -   Connect with other technophiles to get advice, share your genius, or solve problems: [Rackspace Open Cloud Community](https://community.rackspace.com/)
 -   Whitepapers, videos, and webinars around managing enterprise cloud management: [Enterprise Cloud Services resources](http://www.rackspace.com/enterprise-cloud-solutions/resources/)
-

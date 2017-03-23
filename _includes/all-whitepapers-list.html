@@ -1,0 +1,12 @@
+<div class="whitepaper-list">
+  {% assign doclist = site.pages | sort: 'title'  %}
+  {% for whitepaper in doclist %}
+    {% if whitepaper.product == page.product and whitepaper.title != page.title %}
+      <div class="whitepaper-entry">
+        <h4>
+          <a href="{{ site.baseurl }}{{ whitepaper.permalink }}">{{ whitepaper.title }}</a>
+        </h4>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

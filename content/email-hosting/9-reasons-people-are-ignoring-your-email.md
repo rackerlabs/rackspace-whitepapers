@@ -1,5 +1,5 @@
 ---
-permalink: getting-started-with-the-cloud-a-step-by-step-enterprise-implementation-guide/
+permalink: 9-reasons-people-are-ignoring-your-email/
 audit_date:
 title: 9 Reasons People are Ignoring Your Email
 type: whitepaper
@@ -276,4 +276,3 @@ beneficial, feel free to share it with others.
 
 [Rackspace email hosting](http://www.rackspace.com/email-hosting)
 <img src="{% asset_path email-hosting/9-reasons-people-are-ignoring-your-email/RS-HS-6.png %}" width="451" height="111" />
-

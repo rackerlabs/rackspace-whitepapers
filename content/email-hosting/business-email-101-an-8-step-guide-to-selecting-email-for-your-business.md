@@ -136,7 +136,7 @@ Microsoft Exchange deployment to a hosted solution? Consider the factors
 that go into a three-year total cost of ownership (TCO) calculation for
 a typical small business with 100 users.
 
-<img src="{% asset_path email-hosting/business-email-101-an-8-step-guide-to-selecting-email-for-your-business/BusinessEmail101Guide-1 %}" />
+<img src="{% asset_path email-hosting/business-email-101-an-8-step-guide-to-selecting-email-for-your-business/BusinessEmail101Guide-1.png %}" />
 
 These TCO calculations vary somewhat based on the number of users within
 an organization. While a [hosted Exchange
@@ -427,7 +427,7 @@ email provider. To help you make a final decision, we have created a
 comparison worksheet that covers the most important points of
 comparison.
 
-<img src="{% asset_path email-hosting/business-email-101-an-8-step-guide-to-selecting-email-for-your-business/BusinessEmail101Guide-2 %}" />
+<img src="{% asset_path email-hosting/business-email-101-an-8-step-guide-to-selecting-email-for-your-business/BusinessEmail101Guide-2.png %}" />
 
 [Click here to download the Email Provider Comparison
 Worksheet](http://www.rackspace.com/apps/documents/Provider_Selection_Worksheet.pdf)
