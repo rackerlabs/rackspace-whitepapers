@@ -139,7 +139,7 @@ applications and have limited requirements from their PCs
 home and even coffee shops; these “anywhere workers” expect access to all of the
 same applications and data wherever they are
 
-<img src="{% asset_path professional-services/versed-in-virtual-desktop-racksapces-knowledge-of-hosted-virtual-desktop/poweruser_hvd_whitepaper.png.png %}" />
+<img src="{% asset_path professional-services/versed-in-virtual-desktop-racksapces-knowledge-of-hosted-virtual-desktop/poweruser_hvd_whitepaper.png %}" />
 
 **Power User** – PC users who run resource-intensive applications
 
@@ -370,5 +370,3 @@ solutions for some of the world’s largest companies. Because of their
 level of sophistication, Virtual desktop environments require advanced
 expertise in deployment and management. Rackspace can help organizations
 achieve this while expediting production readiness.
-
-

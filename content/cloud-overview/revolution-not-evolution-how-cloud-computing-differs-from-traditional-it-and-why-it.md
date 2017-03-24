@@ -82,7 +82,7 @@ executive, Werner Vogels of Amazon Web Services, commented that that “if
 you have buy more hardware just to get started it is not a
 cloud...”.<sup>3</sup>
 
-<img src="{% asset_path cloud-overview/revolution-not-evolution-how-cloud-computing-differs-from-traditional-it-and-why-it-matters/revnotev1.png.png %}" />
+<img src="{% asset_path cloud-overview/revolution-not-evolution-how-cloud-computing-differs-from-traditional-it-and-why-it-matters/revnotev1.png %}" />
 
 
 So just what “is” Cloud Computing, and why it is so different from what
@@ -272,7 +272,7 @@ The diagram below <sup>13</sup> indicates the traditional “boom and bust” of
 infrastructure provisioning. For any organization where workload is
 erratic, there will always be one of two situations:
 
-<img src="{% asset_path cloud-overview/revolution-not-evolution-how-cloud-computing-differs-from-traditional-it-and-why-it-matters/revnotev2.png.png %}" />
+<img src="{% asset_path cloud-overview/revolution-not-evolution-how-cloud-computing-differs-from-traditional-it-and-why-it-matters/revnotev2.png %}" />
 
 1.  An over provision of servers creating unused capacity and hence
     significantly higher cost per process than is desirable
@@ -293,7 +293,7 @@ company websites can experience huge traffic spikes after being profiled
 on a television show like Oprah or evening the local evening
 news.<sup>14</sup>
 
-<img src="{% asset_path cloud-overview/revolution-not-evolution-how-cloud-computing-differs-from-traditional-it-and-why-it-matters/revnotev3.png.png %}" />
+<img src="{% asset_path cloud-overview/revolution-not-evolution-how-cloud-computing-differs-from-traditional-it-and-why-it-matters/revnotev3.png %}" />
 
 Cloud Computing enables organizations to maintain infrastructure at required
 levels at all times, as such it enables cost savings to be gained by

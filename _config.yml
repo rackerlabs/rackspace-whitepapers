@@ -1,8 +1,55 @@
+# Site settings
+title: White Papers | Rackspace Support Network
+description: >
+  Technical whitepapers from Rackspace's Support Network. Helping you manage
+  your cloud.
+
+# Where things live
 source: ./content
+# Where things appear on the site
 destination: ./whitepapers
 
+# The subpath of the site
 baseurl: "/whitepapers/"
 
+# Things like RSS feeds need absolute URLs, not root-relative ones.
+# absolute_base_url: https://support.rackspace.com/whitepapers
+# Build settings
+# markdown: redcarpet
+
+# Encoding type
+encoding: UTF-8
+
+# Markdown settings
+# redcarpet:
+#   extensions: ["with_toc_data"]
+
+# exclude:
+#   - script
+#   - Gemfile
+#   - Gemfile.lock
+#   - package.json
+
+# gems:
+#   - jekyll-paginate
+
+# deconst_categories:
+#   - support.rackspace.com/whitepapers
+
+# paginate: 10
+# paginate_path: /:num
+# excerpt_separator: "<!-- more -->"
+# permalink: /:title/
+
+# Collections information. See http://jekyllrb.com/docs/collections/
+# collections:
+#   <collection1>:
+#     output: true/false
+#     permalink: /:title/
+#     label: <label>
+
+# Default settings for anything that comes into the site's repo.
+# Can be overwritten by the different frontmatter.
 defaults:
   -
     scope:
@@ -10,8 +57,9 @@ defaults:
       type: "pages"
     values:
       permalink: "/:basename/"
+      layout: "whitepaper"
 
-
+# Where do static files live
 assets:
   sources:
     - _assets/img

@@ -1,7 +1,7 @@
 ---
 permalink: australias-dinosaur-deals-finds-cost-effective-superior-hosting-solution/
 audit_date:
-title: 'Australia's Dinosaur Deals Finds Cost-Effective, Superior Hosting Solution'
+title: "Australia's Dinosaur Deals Finds Cost-Effective, Superior Hosting Solution"
 type: whitepaper
 created_date: '2013-04-16'
 created_by: Rackspace Support

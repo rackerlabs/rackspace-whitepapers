@@ -1,9 +1,9 @@
 ---
-title: Managed Security Servers and Compliance – All Whitepapers
-category: Managed Security Servers and Compliance
-permalink: managed-security-servers-and-compliance-all-whitepapers/
-product: Managed Security Servers and Compliance
-product_url: managed-security-servers-and-compliance
+title: Managed Security Services and Compliance – All Whitepapers
+category: Managed Security Services and Compliance
+permalink: managed-security-services-and-compliance-all-whitepapers/
+product: Managed Security Services and Compliance
+product_url: managed-security-services-and-compliance
 ---
 
 {% include all-whitepapers-list.html %}

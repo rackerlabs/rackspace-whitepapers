@@ -233,7 +233,7 @@ patented, model-based root cause analysis, which contains more than
 10,000 predefined issue models. Both of these vendors are Gartner Magic
 Quadrant leaders.
 
-<img src="{% asset_path professional-services/managing-complex-application-environmentst/complexappenvirons-1.png %}" width="592" height="99" />
+<img src="{% asset_path professional-services/managing-complex-application-environments/complexappenvirons-1.png %}" width="592" height="99" />
 
 ### Let Internal IT Focus on Top-Line Business Initiatives
 
@@ -272,7 +272,7 @@ notify the customer up to several weeks in advance of potential issues.
 The teams can often collaborate with customers to develop a solution
 before a problem emerges.
 
-<img src="{% asset_path professional-services/managing-complex-application-environmentst/complexappenvirons-2.png %}" width="592" height="99" />
+<img src="{% asset_path professional-services/managing-complex-application-environments/complexappenvirons-2.png %}" width="592" height="99" />
 
 ### Improve the TCO of Supporting High-Performance Apps
 
