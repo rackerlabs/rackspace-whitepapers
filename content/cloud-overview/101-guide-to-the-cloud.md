@@ -9,8 +9,8 @@ last_modified_date: '2017-02-22'
 last_modified_by: Cat Lookabaugh
 product: Cloud Overview
 product_url: cloud-overview
-description: >
-  This is a description of 101. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis tincidunt mi, at fringilla nulla vulputate quis. Sed eleifend purus eu mattis placerat. 30.
+description: > Could you describe what "the cloud" actually is if someone asked?  Do you 
+know how to implement one? To find out more, read on!
 ---
 
 ### What is the cloud?

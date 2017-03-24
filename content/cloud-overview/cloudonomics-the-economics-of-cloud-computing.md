@@ -58,7 +58,7 @@ themselves. The diagram below illustrates the extent that routine and
 non-core tasks, like patching operating systems and performing backups,
 impact upon the time of IT departments.
 
-![](http://c0179631.cdn.cloudfiles.rackspacecloud.com/cloudonomics.png)
+<img src="{% asset_path cloud-overview/cloudonomics-the-economics-of-cloud-computing/cloudonomics.png %}" />
 
 Cloud Computing is a force that helps flip this ratio and gives IT
 departments the ability to spend 80% of their time on core business
@@ -76,12 +76,11 @@ Opportunity cost, a concept first developed by British philosopher John
 Stuart Mill, is a basic economic premise that is concerned with the
 costs related to the choices NOT made by someone. Opportunity cost is:
 
-    ... the cost related to the next-best choice available to someone who has
-    picked among several mutually exclusive choices. It is a key concept
-    in economics…. opportunity costs are not restricted to monetary or
-    financial costs: the real cost of output forgone, lost time, pleasure
-    or any other benefit that provides utility should also be considered
-    opportunity costs <sup>4</sup>
+> ... the cost related to the next-best choice available to someone who has picked among 
+several mutually exclusive choices. It is a key concept in economics…. opportunity costs 
+are not restricted to monetary or financial costs: the real cost of output forgone, lost 
+time, pleasure or any other benefit that provides utility should also be considered 
+opportunity costs <sup>4</sup>
 
 Opportunity cost is an important concept when discussing the economics
 of Cloud Computing because it allows one to assess the true cost of any
@@ -140,7 +139,7 @@ flexibility to be able to suspend service, as we will see elsewhere in
 the report, the total cost of ownership of owned assets is much higher
 as demonstrated in the chart below <sup>6</sup>
 
-![](http://c179631.r31.cf0.rackcdn.com/economicchart.png)
+<img src="{% asset_path cloud-overview/cloudonomics-the-economics-of-cloud-computing/economicchart.png %}" />
 
 **Allows Business Units to Decide**
 
@@ -266,18 +265,16 @@ Cloud Computing infrastructure. It is worth reviewing their rationale,
 in particular a deciding factor that directly relates to focusing on
 core activities. As Netflix says:
 
-    The problems the Cloud hosting company is trying to solve are
-    incredibly difficult ones, but they aren’t specific to our business.
-    Every successful internet company has to figure out great storage
-    solutions, hardware failover, networking infrastructure, etc.
+> The problems the Cloud hosting company is trying to solve are incredibly difficult ones, 
+but they aren’t specific to our business. Every successful internet company has to figure 
+out great storage solutions, hardware failover, networking infrastructure, etc.
 
-    We want our engineers to focus as much of their time as possible on
-    product innovation for the Netflix customer experience; that is what
-    differentiates us from our competitors ...
+> We want our engineers to focus as much of their time as possible on product innovation 
+for the Netflix customer experience; that is what differentiates us from our competitors ...
 
-    We chose to be pioneers in this transition to the Cloud so we
-    could leverage our investment as we grow, rather than to double down
-    on a model we expect will decline in the industry.
+> We chose to be pioneers in this transition to the Cloud so we could leverage our 
+investment as we grow, rather than to double down on a model we expect will decline in the 
+industry.
 
 While it can be difficult to assign a direct economic benefit to the
 ability to focus on core business processes and abstract responsibility
@@ -286,12 +283,11 @@ specialization of labor. In the 18th Century, Economist Adam Smith
 described in The Wealth of Nations <sup>19</sup>, the production of a pin in
 the following way <sup>20</sup>:
 
-    One man draws out the wire, another straightens it, a third cuts it, a
-    fourth points it, a fifth grinds it at the top for receiving the head:
-    to make the head requires two or three distinct operations: to put it
-    on is a particular business, to whiten the pins is another ... and the
-    important business of making a pin is, in this manner, divided into
-    about eighteen distinct operations
+> One man draws out the wire, another straightens it, a third cuts it, a fourth points it, 
+a fifth grinds it at the top for receiving the head: to make the head requires two or 
+three distinct operations: to put it on is a particular business, to whiten the pins is 
+another ... and the important business of making a pin is, in this manner, divided into 
+about eighteen distinct operations
 
 Smith goes on to estimate somewhere between a 240 and 4800 fold increase
 in productivity by a specialization of labor of this sort. It is our
@@ -389,31 +385,54 @@ Business strategy and user-centric design. Find more information on Ben at
 
 **Sources:**
 
-<sup>1</sup> http://en.wikipedia.org/wiki/Pareto_principle
-<sup>2</sup> http://broadcast.rackspace.com/hosting_knowledge/whitepapers/Revolution_Not_Evolution-Whitepaper.pdf
-<sup>3</sup> Gartner Report http://www.gartner.com/it/page.jsp?id=497088
-<sup>4</sup> http://en.wikipedia.org/wiki/Opportunity_cost
-<sup>5</sup> http://broadcast.rackspace.com/hosting_knowledge/whitepapers/Revolution_Not_Evolution-Whitepaper.pdf
-<sup>6</sup> http://broadcast.oreilly.com/2008/10/the-economics-of-cloud-c.html
-<sup>7</sup> http://broadcast.oreilly.com/2008/10/the-economics-of-cloud-c.html
+<sup>1</sup> <http://en.wikipedia.org/wiki/Pareto_principle>
+
+<sup>2</sup> <http://broadcast.rackspace.com/hosting_knowledge/whitepapers/Revolution_Not_Evolution-Whitepaper.pdf>
+
+<sup>3</sup> Gartner Report <http://www.gartner.com/it/page.jsp?id=497088>
+
+<sup>4</sup> <http://en.wikipedia.org/wiki/Opportunity_cost>
+
+<sup>5</sup> <http://broadcast.rackspace.com/hosting_knowledge/whitepapers/Revolution_Not_Evolution-Whitepaper.pdf>
+
+<sup>6</sup> <http://broadcast.oreilly.com/2008/10/the-economics-of-cloud-c.html>
+
+<sup>7</sup> <http://broadcast.oreilly.com/2008/10/the-economics-of-cloud-c.html>
 For more information about the economics of Cloud Computing see also
-http://gigaom.com/2010/06/06/lazy-hazy-crazy-the-10-laws-of-behavioral-cloudonomics/
-<sup>8</sup> http://broadcast.rackspace.com/hosting_knowledge/whitepapers/Revolution_Not_Evolution-Whitepaper.pdf
-<sup>9</sup> http://www.itsmportal.com/columns/empowered-users-rogue-shadow-it-stealth-clouds-and-future-corporate-it
-<sup>10</sup> http://www.cio.com/article/484429/Capex_vs._Opex_Most_People_Miss_the_Point_About_Cloud_Economics
-<sup>11</sup> http://www.slideshare.net/datacenters/a-simple-model-for-determining-true-total-cost-of-ownership
-<sup>12</sup> http://www.itbusinessedge.com/cm/docs/DOC-1212
-<sup>13</sup> http://www.vendhq.com
-<sup>14</sup> http://www.gregory.net.nz/ and http://www.ricochet.co.nz/
-<sup>15</sup> http://www.google.com/apps/intl/en/business/index.html
-<sup>16</sup> http://www.dropbox.com/
-<sup>17</sup> http://www.xero.com/
-<sup>18</sup> http://techblog.netflix.com/2010/12/four-reasons-we-choose-amazons-Cloud-as.html
-<sup>19</sup> http://www.econlib.org/library/Smith/smWN.html
-<sup>20</sup> http://en.wikipedia.org/wiki/Business_process
-<sup>21</sup> http://broadcast.rackspace.com/hosting_knowledge/whitepapers/Revolution_Not_Evolution-Whitepaper.pdf
-<sup>22</sup> http://gigaom.com/2008/09/07/the-10-laws-of-cloudonomics/
-<sup>23</sup> http://gigaom.com/2010/06/06/lazy-hazy-crazy-the-10-laws-of-behavioral-cloudonomics/
-<sup>24</sup> http://www.joeweinman.com/papers.htm
+<http://gigaom.com/2010/06/06/lazy-hazy-crazy-the-10-laws-of-behavioral-cloudonomics/>
+
+<sup>8</sup> <http://broadcast.rackspace.com/hosting_knowledge/whitepapers/Revolution_Not_Evolution-Whitepaper.pdf>
+
+<sup>9</sup> <http://www.itsmportal.com/columns/empowered-users-rogue-shadow-it-stealth-clouds-and-future-corporate-it>
+
+<sup>10</sup> <http://www.cio.com/article/484429/Capex_vs._Opex_Most_People_Miss_the_Point_About_Cloud_Economics>
+
+<sup>11</sup> <http://www.slideshare.net/datacenters/a-simple-model-for-determining-true-total-cost-of-ownership>
+
+<sup>12</sup> <http://www.itbusinessedge.com/cm/docs/DOC-1212>
+
+<sup>13</sup> <http://www.vendhq.com>
+
+<sup>14</sup> <http://www.gregory.net.nz/ and http://www.ricochet.co.nz/>
+
+<sup>15</sup> <http://www.google.com/apps/intl/en/business/index.html>
+
+<sup>16</sup> <http://www.dropbox.com/>
+
+<sup>17</sup> <http://www.xero.com/>
+
+<sup>18</sup> <http://techblog.netflix.com/2010/12/four-reasons-we-choose-amazons-Cloud-as.html>
+
+<sup>19</sup> <http://www.econlib.org/library/Smith/smWN.html>
+
+<sup>20</sup> <http://en.wikipedia.org/wiki/Business_process>
+
+<sup>21</sup> <http://broadcast.rackspace.com/hosting_knowledge/whitepapers/Revolution_Not_Evolution-Whitepaper.pdf>
+
+<sup>22</sup> <http://gigaom.com/2008/09/07/the-10-laws-of-cloudonomics/>
+
+<sup>23</sup> <http://gigaom.com/2010/06/06/lazy-hazy-crazy-the-10-laws-of-behavioral-cloudonomics/>
+
+<sup>24</sup> <http://www.joeweinman.com/papers.htm>
 
 

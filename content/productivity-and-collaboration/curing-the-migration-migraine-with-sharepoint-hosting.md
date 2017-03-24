@@ -318,6 +318,9 @@ IT activities, without sacrificing the benefits associated with a
 traditional, on-premises SharePoint implementation.
 
 <sup>1</sup> <http://blogs.forrester.com/john_r_rymer/11-10-03-a_sharepoint_custom_development_strategy_is_more_crucial_now_than_ever>
+
 <sup>2</sup> <http://www.rackspace.com/blog/some-important-points-about-sharepoint-infographic/>
+
 <sup>3</sup> <http://download.microsoft.com/download/1/9/2/192e73a4-7abb-4bad-b469-34632d54a8a6/IDC%20Whitepaper%20Demonstrating%20Business%20Value.pdf](http://download.microsoft.com/%20download/1/9/2/192e73a4-7abb-4bad-b469-34632d54a8a6/IDC%20Whitepaper%20Demonstrating%20%20Business%20Value.pdf)
+
 <sup>4</sup> <http://www.aisn.net/index.php/tag/sharepoint-ecosystem/>

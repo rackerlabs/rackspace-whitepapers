@@ -319,18 +319,32 @@ about their infrastructure.
 
 ### Endnotes
 
-<sup>1</sup> “Application Performance Management: Getting IT on the C-Level’s Agenda,” March 31, 2009, Aberdeen Group, http://www.aberdeen.com/Aberdeen-Library/5807/RA-application-performance-management.aspx
-<sup>2</sup> “Just One Second Delay In Page-Load Can Cause 7% Loss In Customer Conversions,” Tag Management Blog, March 14, 2012, http://blog.tagman.com/2012/03/just-one-second-delay-in-page-load-can-cause-7-loss-in-customer-conversions/.
-<sup>3</sup> “NRF, Shop.org Expect Solid Growth This Holiday Season,” National Retail Federation, October 2, 2012, http://www.nrf.com/modules.php?name=News&op=viewlive&sp\_id=1433\#online.
-<sup>4</sup> “Gartner Says Worldwide Software-as-a-Service Revenue to Reach $14.5 Billion in 2012,” Gartner Newsroom, March 27, 2012, http://www.gartner.com/it/page.jsp?id=1963815.
-<sup>5</sup> “The Rise of the Social Customer,” Econsultancy.com, February 2, 2012, http://econsultancy.com/us/blog/8867-the-rise-of-the-social-customer.
-<sup>6</sup> “Gartner Says Worldwide Spending on Enterprise Application Software to Increase 4.5 Percent in 2012,” Gartner Newsroom, June 20, 2012, http://www.gartner.com/newsroom/id/2055215.
-<sup>7</sup> Alan Arnold, “Assessing the Financial Impact of Downtime,” Business Computing World, April 20, 2010, http://www.businesscomputingworld.co.uk/assessing-the-financial-impact-of-downtime/.
-<sup>8</sup> “How Much Will You Spend on Application Downtime This Year,” NetworkWorld, August 2, 2009, http://www.networkworld.com/newsletters/nsm/2009/080309nsm1.html
-<sup>9</sup> Denise Dubie, “How Much Will You Spend on Application Downtime This Year,” Network World, August 2, 2009, http://www.networkworld.com/newsletters/nsm/2009/080309nsm1.html.
-<sup>10</sup> “IT downtime costs UK £2bn a year, study finds,” ComputerWeekly.com, September 13, 2010, http://www.computerweekly.com/news/1280093770/IT-downtime-costs-UK-2bn-a-year-study-finds.
-<sup>11</sup> Teresa Ooi, “Navitaire booking glitch earns Virgin \$20m in compo,” The Australian Business Journal, April 5, 2011, http://www.theaustralian.com.au/business/navitaire-booking-glitch-earns-virgin-20m-in-compo/story-e6frg-8zx-1226033624246.
-<sup>12</sup> Chandler Harris, “IT Downtime Costs $26.5 Billion In Lost Revenue,” InformationWeek, May 24, 2011, http://www.informationweek.com/storage/disaster-recovery/it-downtime-costs-265-billion-in-lost-re/229625441.
-<sup>13</sup> “Average Web Page Size Triples Since 2008,” WebSiteOptimization.com, http://www.websiteoptimization.com/speed/tweak/average-web-page/.
-<sup>14</sup> Ronni J. Colville and George Spafford, “Configuration Management for Virtual and Cloud Infrastructures,” Gartner, http://www.rbiassets.com/getfile.ashx/42112626510.
-<sup>15</sup> “Gartner Says Eight of Ten Dollars Enterprises Spend on IT is ‘Dead Money’,” Gartner Newsroom, October 9, 2006, http://www.gartner.com/newsroom/id/497088.
+<sup>1</sup> “Application Performance Management: Getting IT on the C-Level’s Agenda,” March 31, 2009, Aberdeen Group, <http://www.aberdeen.com/Aberdeen-Library/5807/RA-application-performance-management.aspx>.
+
+<sup>2</sup> “Just One Second Delay In Page-Load Can Cause 7% Loss In Customer Conversions,” Tag Management Blog, March 14, 2012, <http://blog.tagman.com/2012/03/just-one-second-delay-in-page-load-can-cause-7-loss-in-customer-conversions/>.
+
+<sup>3</sup> “NRF, Shop.org Expect Solid Growth This Holiday Season,” National Retail Federation, October 2, 2012, <http://www.nrf.com/modules.php?name=News&op=viewlive&sp\_id=1433\#online>.
+
+<sup>4</sup> “Gartner Says Worldwide Software-as-a-Service Revenue to Reach $14.5 Billion in 2012,” Gartner Newsroom, March 27, 2012, <http://www.gartner.com/it/page.jsp?id=1963815>.
+
+<sup>5</sup> “The Rise of the Social Customer,” Econsultancy.com, February 2, 2012, <http://econsultancy.com/us/blog/8867-the-rise-of-the-social-customer>.
+
+<sup>6</sup> “Gartner Says Worldwide Spending on Enterprise Application Software to Increase 4.5 Percent in 2012,” Gartner Newsroom, June 20, 2012, <http://www.gartner.com/newsroom/id/2055215>.
+
+<sup>7</sup> Alan Arnold, “Assessing the Financial Impact of Downtime,” Business Computing World, April 20, 2010, <http://www.businesscomputingworld.co.uk/assessing-the-financial-impact-of-downtime/>.
+
+<sup>8</sup> “How Much Will You Spend on Application Downtime This Year,” NetworkWorld, August 2, 2009, <http://www.networkworld.com/newsletters/nsm/2009/080309nsm1.html>.
+
+<sup>9</sup> Denise Dubie, “How Much Will You Spend on Application Downtime This Year,” Network World, August 2, 2009, <http://www.networkworld.com/newsletters/nsm/2009/080309nsm1.html>.
+
+<sup>10</sup> “IT downtime costs UK £2bn a year, study finds,” ComputerWeekly.com, September 13, 2010, <http://www.computerweekly.com/news/1280093770/IT-downtime-costs-UK-2bn-a-year-study-finds>.
+
+<sup>11</sup> Teresa Ooi, “Navitaire booking glitch earns Virgin \$20m in compo,” The Australian Business Journal, April 5, 2011, <http://www.theaustralian.com.au/business/navitaire-booking-glitch-earns-virgin-20m-in-compo/story-e6frg-8zx-1226033624246>.
+
+<sup>12</sup> Chandler Harris, “IT Downtime Costs $26.5 Billion In Lost Revenue,” InformationWeek, May 24, 2011, <http://www.informationweek.com/storage/disaster-recovery/it-downtime-costs-265-billion-in-lost-re/229625441>.
+
+<sup>13</sup> “Average Web Page Size Triples Since 2008,” WebSiteOptimization.com, <http://www.websiteoptimization.com/speed/tweak/average-web-page/>.
+
+<sup>14</sup> Ronni J. Colville and George Spafford, “Configuration Management for Virtual and Cloud Infrastructures,” Gartner, <http://www.rbiassets.com/getfile.ashx/42112626510>.
+
+<sup>15</sup> “Gartner Says Eight of Ten Dollars Enterprises Spend on IT is ‘Dead Money’,” Gartner Newsroom, October 9, 2006, <http://www.gartner.com/newsroom/id/497088>.

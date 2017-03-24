@@ -11,16 +11,18 @@ product: Cloud Overview
 product_url: cloud-overview
 ---
 
+### Executive Summary
+
 **If you’re like most CIOs, you’re being asked to do more with less.
 Support more applications, more websites and more devices for more
-people... with less budget than last year.** **BUT HOW?** This white
+people... with less budget than last year. BUT HOW?** This white
 paper can help, by:
 
 -   Explaining why CIOs must think more like CFOs
 -   Showing the difference between capital expenses and operating expenses
 -   Suggesting an area where you can clearly do more with less.
 
-### THINK LIKE A CFO
+### Think like a CFO
 
 “The CFO is increasingly becoming the top technology investment
 decision-maker in many organizations,” according to a recent study by
@@ -31,7 +33,7 @@ spending. Unfortunately, not all CIOs and CFOs work well together: By
 not accounting for one another’s viewpoints, they often fail to build a
 good working relationship.
 
-### WHAT’S A CIO TO DO?
+### What's a CIO to do?
 
 The study recommends this: “CIOs must understand the impact their CFOs
 have on technology decisions in their organizations, and ensure that
@@ -44,7 +46,7 @@ CIOs, that’s a new way of looking at things. But why not start thinking
 more like a CFO? Why not find ways to stretch your IT budget like a CFO
 does?
 
-### THE CAPEX VS. OPEX DIVIDE
+### The CapEx vs. OpEx divide
 
 One classic way to stretch your budget is to shift capital expenses to
 operating expenses. Not sure of the difference? Table 1 sums it up. As
@@ -55,7 +57,7 @@ are pay-as-you-go. You pay by the month, and you get value every month.
 
 <img src="{% asset_path cloud-overview/getting-on-the-right-side-of-the-capex-vs-opex-divide/table1_capex.png %}" />
 
-### TODAY, CAPEX IS OUT AND OPEX IS IN.
+### Today - CapEx is out and OpEx is in
 
 As a recent article in ComputerWorldUK put it, “In the pursuit of
 maintaining a lean balance sheet with optimum cash flow, boards are
@@ -70,7 +72,7 @@ outsourced to service providers. Costs are reduced and shifted from
 capital expenses to operating expenses, which save money and look better
 on financial statements.
 
-### AN EXAMPLE: BUYING A LASER PRINTER
+### An example: Buying a laser printer
 
 Suppose a group of users complain they can’t get the 11x17-inch color
 printouts they need for trade shows. Your nearest color printer that can
@@ -98,7 +100,7 @@ expense plus $4,000 in future depreciation. The point is: if it’s not
 tied up in a new laser printer, that money could be working harder for
 your organization.
 
-### AN ALTERNATIVE: OUTSOURCING THE COLOR PRINTING
+### An alternative: Outsourcing the color printing
 
 Suppose you find out your users need about 150 11x17-inch printouts a
 year, which they can get from an outside printing service for $4 a pop,
@@ -112,18 +114,18 @@ be satisfied. This is what Gartner means by modeling the economic impact
 of IT decisions on your company’s financial performance. CIOs who think
 this way are ready to form a powerful partnership with their CFOs.
 
-### OUTSOURCING YOUR SERVER MANAGEMENT
+### Outsourcing your server management
 
 To carry on this thinking, here’s an area where most IT departments can
 easily do more with less: outsourcing your server management. Before you
 reject this idea, consider about these comments from CIO magazine.
 
-> *“As one colleague who consults on financial strategy with many large
-> companies said, ‘You know what we think of IT? We think it shows up,
-> spouts unintelligible jargon, and asks for huge lumps of cash...’
-> “It’s easy to understand why any initiative that promises to reduce
-> lumpy capital investment and transform it into smoother operational
-> expenditure would be extremely attractive to bean counters.”*
+> “As one colleague who consults on financial strategy with many large
+companies said, ‘You know what we think of IT? We think it shows up,
+spouts unintelligible jargon, and asks for huge lumps of cash...’
+“It’s easy to understand why any initiative that promises to reduce
+lumpy capital investment and transform it into smoother operational
+expenditure would be extremely attractive to bean counters.”
 
 If your CFO could save money on servers, push capital expenses into
 operating expenses, and get the same level of service for your users,

@@ -147,7 +147,7 @@ scale as necessary. Using a hybrid email approach, you can also combine
 Hosted Exchange mailboxes with Rackspace Email mailboxes to gain even
 larger cost savings.
 
- ### Conclusion
+### Conclusion
 
 Rackspace has a broad suite of email solutions; choosing a multi-tenant
 or single-tenant solution is best determined by what your needs are.

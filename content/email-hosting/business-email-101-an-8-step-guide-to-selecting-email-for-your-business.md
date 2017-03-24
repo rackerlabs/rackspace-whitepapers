@@ -511,5 +511,6 @@ Email retention and storage service allows you to restore lost email,
 take advantage of search tools, and protect vital email — without extra
 software or expensive hardware.
 
-<sup>1</sup> http://www.ostermanresearch.com/ whitepapers/or_or1210c.pdf
-<sup>2</sup> http://www.ostermanresearch.com/ whitepapers/or_or0509b.pdf
+<sup>1</sup> <http://www.ostermanresearch.com/ whitepapers/or_or1210c.pdf>
+
+<sup>2</sup> <http://www.ostermanresearch.com/ whitepapers/or_or0509b.pdf>

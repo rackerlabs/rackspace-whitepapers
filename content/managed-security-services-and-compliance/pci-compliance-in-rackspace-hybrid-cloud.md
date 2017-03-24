@@ -393,5 +393,6 @@ services now](http://www.rackspace.com/ecommerce-hosting/pci/).
 **References:**
 
 <sup>1</sup> [http://www.verizonenterprise.com/resources/reports/rp_data-breach-investigations-report-2012_en_xg.pdf](http://www.verizonenterprise.com/resources/reports/rp_data-breach-investigations-report-2012_en_xg.pdf%20)
+
 <sup>2</sup> ibid.
 

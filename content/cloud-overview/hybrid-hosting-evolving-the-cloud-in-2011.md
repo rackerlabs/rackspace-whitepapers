@@ -13,8 +13,6 @@ product_url: cloud-overview
 
 *How Superior Price/Performance Can Create a Business Advantage*
 
-**A whitepaper by AMD and Rackspace**
-
 **Contributors:**
 
 Toby Owen, Senior Manager for Hyrbid Cloud Solutions, Rackspace Hosting
@@ -327,8 +325,7 @@ launches and live events, both of which dramatically increase traffic
 for a short period of time. Just as important, MLG minimized the costs
 of unused capacity between peaks.
 
-**[Click here to see full case
-study.](/how-to/rackspace-gives-major-league-gaming-mlg-the-power-of-scale)**
+**[Click here to see full case study.](/how-to/rackspace-gives-major-league-gaming-mlg-the-power-of-scale)**
 
 ### Conclusion
 
@@ -358,23 +355,32 @@ copyrights, or other intellectual property.
 
 <sup>1</sup> “Hype Cycle for Cloud Computing, 2010.” Gartner RAS Core Research Note
 G00201557, David Mitchell Smith, 27 July 2010, RA3 01102011, page 14.
+
 <sup>2</sup> Nicholas Carr. “The Big Switch: Rewiring the World, from Edison to
 Google.”
+
 <sup>3</sup> <http://www.vmware.com/pdf/TCO.pdf>, page 6
+
 <sup>4</sup> CIO Magazine. October 2008.
+
 <sup>5</sup> ITWorld. October 2010.
+
 <sup>6</sup> Cloud Security Alliance. http://www.cloudsecurityalliance.org/
+
 <sup>7</sup> Based on quad channel DDR3-1333 for AMD Opteron<sup>&trade;</sup>
 6100 Series processor vs. dual channel DDR2-800 for Six-Core AMD
 Opteron<sup>&trade;</sup> processor.
+
 <sup>8</sup> I/O comparison based on 3x HyperTransport<sup>&trade;</sup> technology
 links @ up to 4.8 GT/s (up to 14.4 GT/s total bandwidth) for Six-Core AMD
 Opteron<sup>&trade;</sup> processor vs. 4x HyperTransport technology links @ up
 to 6.4 GT/s (up to 25.6 GT/s total bandwidth) for AMD Opteron<sup>&trade;</sup>
 6100 Series processor.
+
 <sup>9</sup> As of March 15, 2010, AMD Opteron<sup>&trade;</sup> processor Models
 4162 EE /4164 EE have the lowest known power per core of any server processor,
 at 5.83W (35W/6 = 5.83W/core). Intel’s L5609 is 10W/core (40W/4 cores)
-see http://www.intel.com/p/en_US/products/server/processor/xeon5000/specifications
+see <http://www.intel.com/p/en_US/products/server/processor/xeon5000/specifications>
+
 <sup>10</sup> AMD Opteron<sup>&trade;</sup> processor Model 4122 1ku pricing.
 

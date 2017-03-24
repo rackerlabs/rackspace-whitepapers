@@ -232,7 +232,7 @@ Katie Schmidt
 
 **Sources**
 
-<sup>1</sup> U.S. Bureau of Labor Statistics, 10-year employment trends downloaded 14 March 2011 from http://www.bls.gov/iag/tgs/iag51.htm#iag51emp1.f.P (for NAICS 51) and http://www.bls.gov/iag/tgs/iag518.htm (for NAICS 518)
+<sup>1</sup> U.S. Bureau of Labor Statistics, 10-year employment trends downloaded 14 March 2011 from <http://www.bls.gov/iag/tgs/iag51.htm#iag51emp1.f.P> (for NAICS 51) and <http://www.bls.gov/iag/tgs/iag518.htm> (for NAICS 518)
 
 <sup>2</sup> “Managed hosting will create more IT jobs,” OneStopClick, 27 July 2010
 

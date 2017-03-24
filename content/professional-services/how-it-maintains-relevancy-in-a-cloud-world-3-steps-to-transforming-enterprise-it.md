@@ -238,7 +238,7 @@ Some analysts already see this shift well underway: According to
 Gartner, by 2017 CMOs will spend more on enterprise technology than
 CIOs.<sup>4</sup>
 
-### **Cloud Computing Business Model**
+### Cloud Computing Business Model
 
 What makes this trend so challenging for CIOs is the fact that it’s
 about far more than just technology. Cloud computing is first and

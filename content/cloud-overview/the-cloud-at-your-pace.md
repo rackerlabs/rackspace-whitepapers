@@ -9,8 +9,10 @@ last_modified_date: '2017-03-06'
 last_modified_by: Cat Lookabaugh
 product: Cloud Overview
 product_url: cloud-overview
-description: >
-  This is a description of Pace. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis rutrum nulla. Nunc a sodales leo, et blandit lectus. Quisque lorem justo, imperdiet sit amet libero eu, sodales suscipit eros. Suspendisse aliquet magna lorem, sed accumsan ante venenatis 45.
+description: > The cloud has taken many twists and turns on its route to maturity. Business 
+advantages include: lower costs, reduced complexity, faster rollout of new apps and 
+capacity, and streamlined processes. But there are concerns, too, and this paper addresses 
+those with Microsoft technology.
 ---
 
 ### 1. EXECUTIVE SUMMARY

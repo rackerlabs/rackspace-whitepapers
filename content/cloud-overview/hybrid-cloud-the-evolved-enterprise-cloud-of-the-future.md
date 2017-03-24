@@ -67,7 +67,7 @@ effectiveness of each component of a workload. In the hybrid paradigm,
 systems live where they make the most sense – on-premise or hosted,
 running on bare metal or virtualized, in dedicated or cloud. Enterprises
 have different sets of requirements for different types of applications,
-and hybrid cloud solutions offer the flexibility to meet these needs.\
+and hybrid cloud solutions offer the flexibility to meet these needs.
 
 For mission-critical applications, including line-of-business and
 proprietary applications, governance and security requirements may point
@@ -199,4 +199,5 @@ PROFILING WORKSHOP.
 **References:**
 
 <sup>1</sup> [https://www.rightscale.com/pdf/rightscale-state-of-the-cloud-report-2013.pdf](http://www.rightscale.com/lp/2014-state-of-the-cloud-report)
+
 <sup>2</sup> [https://blog.rackspace.com/why-hybrid-cloud-is-a-must-have-for-the-enterprise](http://blog.rackspace.com/why-hybrid-cloud-is-a-must-have-for-the-enterprise/)

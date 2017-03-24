@@ -68,18 +68,12 @@ Despite the large percentage of surveyed organizations that have already
 begun or are planning to start their DevOps journey, the IT function in
 most enterprises looks like this:
 
-+-----------------------------------------------+--------------------------------------------+-----------------------------------------------+
-|  DEVELOPMENT (Dev)                            |  QUALITY TESTING                           |  OPERATIONS (Ops)                             |
-+===============================================+============================================+===============================================+
-|  **Silo 1:** Develop                          | **Silo 2:** Test                           | **Silo 3:** Deploy                            |
-+-----------------------------------------------+--------------------------------------------+-----------------------------------------------+
-|  **Who:** Developers                          | **Who:** Testers /QA Analysts              | **Who:** Sys admins, DBAs and network admins  |
-+-----------------------------------------------+--------------------------------------------+-----------------------------------------------+
-|  **What:** Writing code for new applications, | **What:** Making sure applications are fit | **What:** Provisioning and managing servers   |
-| customizations to licensed applications       | for purpose before being released to       | to run applications, monitoring performance,  |
-| or new versions of existing applications      | production, and reporting bugs back        | fixing problems and system bottlenecks        |
-|                                               | to developers for fixing                   |                                               |
-+-----------------------------------------------+--------------------------------------------+-----------------------------------------------+
+
+DEVELOPMENT (Dev) | QUALITY TESTING | OPERATIONS (Ops)
+----------------- | --------------- | ----------------
+**Silo 1:** Develop | **Silo 2:** Test | **Silo 3:** Deploy 
+**Who:** Developers | **Who:** Testers /QA Analysts | **Who:** Sys admins, DBAs and network admins  
+**What:** Writing code for new applications, customizations to licensed applications or new versions of existing applications | **What:** Making sure applications are fit for purpose before being released to production, and reporting bugs back to developers for fixing | **What:** Provisioning and managing servers to run applications, monitoring performance, fixing problems and system bottlenecks
 
 This means four things for the application development and deployment
 process:
@@ -258,67 +252,13 @@ Every organization is different, and choosing the right tools depends on
 a wide range of factors. But to get you started, here is a basic
 introduction to some of the DevOps tools we use to help our customers.
 
-+-----------------+-----------------+-----------------+------------------+
-| Action          | Explanation     | Example tools   | User benefits    |
-+=================+=================+=================+==================+
-| **Infrastructur | Automate your   | -   Chef        | - Keep dev and   |
-| e automation**  | existing        | -   Powershell  | and production   |
-|                 | infrastructure  | DSC             | environments in  |
-|                 | using Chef and  |                 | sync, enabling   |
-|                 | Windows         |                 | faster deployment|
-|                 | PowerShell DSC. |                 | and quicker      |
-|                 | Write, test and |                 | time-to-market   |
-|                 | maintain        |                 | of new features. |
-|                 | cookbooks.      |                 |                  |
-|                 | Automate dev,   |                 | - Scale          |
-|                 | staging and     |                 | horizontally     |
-|                 | production      |                 | without manual   |
-|                 | environments.   |                 | setup.           |
-+-----------------+-----------------+-----------------+------------------+
-| **Monitoring**  | Monitor         | -   New Relic   | - Understand     |
-|                 | performance     | -   Rackspace   | how your         |
-|                 | metrics and     | Cloud           | performance      |
-|                 | provide a       | Monitoring      | improves or      |
-|                 | Graphite        |                 | worsens in       |
-|                 | dashboard of    |                 | response to code |
-|                 | counters,       |                 | changes and other|
-|                 | timers, and     |                 | events.          |
-|                 | gauges.         |                 |                  |
-|                 |                 |                 | - Track critical |
-|                 |                 |                 | business metrics |
-|                 |                 |                 | such as credit   |
-|                 |                 |                 | card processing  |
-|                 |                 |                 | times and        |
-|                 |                 |                 | signups.         |
-+-----------------+-----------------+-----------------+------------------+
-| **Log           | Aggregate logs  | -   logstash    | - Spot anomalies |
-| aggregation**   | from all of     |                 | and patterns in  |
-|                 | your devices    |                 | product usage by |
-|                 | and present     |                 | simplifying      |
-|                 | through the     |                 | the analytics of |
-|                 | Kibana web      |                 | millions of lines|
-|                 | front end.      |                 | of logs.         |
-|                 |                 |                 |                  |
-|                 |                 |                 | - Understand the |
-|                 |                 |                 | user experience  |
-|                 |                 |                 | and drill down   |
-|                 |                 |                 | to explain       |
-|                 |                 |                 | performance      |
-|                 |                 |                 | trends.          |
-+-----------------+-----------------+-----------------+------------------+
-| **Source        | Provide         | -   GitHub      | - Have full      |
-| control**       | cookbooks,      |                 | visibility into  |
-|                 | workflows, and  |                 | the code that    |
-|                 | all the code    |                 | powers your      |
-|                 | that powers     |                 | infrastructure.  |
-|                 | your            |                 | Collaborate with |
-|                 | infrastructure. |                 | Rackspace on     |
-|                 | Code is made    |                 | changes to your  |
-|                 | available in    |                 | environment.     |
-|                 | private repos.  |                 | Every change is  |
-|                 |                 |                 | tracked and      |
-|                 |                 |                 | documented.      |
-+-----------------+-----------------+-----------------+------------------+
+
+Action | Explanation | Example tools | User benefits 
+------ | ----------- | ------------- | --------------
+Infrastructure automation | Automate your existing infrastructure using Chef and Windows PowerShell DSC. Write, test and maintain cookbooks. Automate dev, staging and production environments. | Chef and Powershell DSC | (1) Keep dev and production environments in sync, enabling faster deployment and quicker time-to-market of new features. (2) Scale horizontally without manual setup.
+Monitoring | Monitor performance metrics and provide a Graphite dashboard of counters, timers, and gauges. | New Relic and Rackspace Cloud Monitoring | (1) Understand how your performance improves or worsens in response to code changes and other events. (2) Track critical business metrics such as credit card processing times and signups.
+Log aggregation | Aggregate logs from all of your devices and present through the Kibana web front end. | logstash | (1) Spot anomalies and patterns in product usage by simplifying analytics of millions of lines of logs. (2) Understand the user experience and drill down to explain performance trends.
+Source control | Provide cookbooks, workflows, and all the code that powers your infrastructure. Code is made available in private repos. | GitHub | Have full visibility into the code that powers your infrastructure. Collaborate with Rackspace on changes to your environment. Every change is tracked and documented.
 
 ### Boost capacity and expertise with Managed Services
 

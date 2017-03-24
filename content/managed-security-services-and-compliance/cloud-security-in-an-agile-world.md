@@ -305,8 +305,11 @@ Rackspace](http://www.rackspace.com/security/).
 
 <http://www.sans.org/critical-security-controls/>– SANS Twenty Critical
 Controls for Effective Cyber Defense
+
 <https://www.owasp.org/index.php/Top_10_2013-Top_10> – OWASP 2013 Top 10
 Application Security Flaws
+
 <https://cloudsecurityalliance.org/download/cloud-controls-matrix-v3/> –
 CSA Cloud Controls Matrix v3
+
 <http://www.rackspace.com/security/> – Rackspace Security Portal

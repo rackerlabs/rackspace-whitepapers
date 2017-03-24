@@ -442,11 +442,16 @@ ists.
 
 <sup>1</sup> Forrester Research. The State of Workforce Technology Adoption: US
 Benchmark 2009-2015.
+
 <sup>2</sup> The Radicati Group, Inc. Email Statistics report, 2011
+
 <sup>3</sup> 1&1 Mail & Media, Inc. Email and Communication Research. 2011
+
 <sup>4</sup> Osterman Research. Why Email Must Operate 24/7 and How to Make This
 Happen. 2009
+
 <sup>5</sup> Google. The Mobile Movement Study. April 2011
+
 <sup>6</sup> Osterman Research. Osterman Research Third Annual Survey. November
 2011
 

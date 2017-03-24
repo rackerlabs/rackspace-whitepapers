@@ -363,36 +363,50 @@ Contact us at 1-800-440-1249 or send us an email at
 ### Notes
 
 <sup>1 </sup> “Data, data everywhere,” The Economist, 25 February 2010
+
 <sup>2 </sup> Different sources estimate Big Data growth differently. The
 Economist and several analysts says digital information increases 10x
 every five years, equal to 60% annual growth. IBM says data is growing
 at 50% a year. IDC predicts the digital universe will grow at more than
 45% between 2010 and 2015, while sales of related technology will grow
 by 40% a year.
+
 <sup>3 </sup> “Report: Wal-Mart’s Big Data Moves Will Boost rackspace,” Data
 Center knowledge, 22 october 2012
+
 <sup>4 </sup> “How Ebay uses big data to make you buy more,” zDNet, 20 october
 2012.
+
 <sup>5 </sup> “How Big Data Came to pepsiCo,” Forbes, 12 December 2012.
+
 <sup>6 </sup> “Using big data to save lives,” phys.org – Computer Sciences, 22
 october 2012.
+
 <sup>7 </sup> “Measuring the Business impacts of Effective Data, chapter 1,”
 University of Texas, September 2010, p3
+
 <sup>8 </sup> James Manyika et al, “Big Data: The next frontier for innovation,
 competition, and productivity,” Mckinsey global institute, May 2011,
 p64, p39
+
 <sup>9 </sup> Brian Hopkins and Boris Evelson, “Expand Your Digital Horizon With
 Big Data”, Forrester, 30 September 2011, p2
+
 <sup>10 </sup> Thomas Davenport, paul Barth and randy Bean, “How ‘Big Data’ is
 Different,” MiT Sloan Management review, 30 July 2012
+
 <sup>11 </sup> James Manyika et al, “Big Data: The next frontier for innovation,
 competition, and productivity,” Mckinsey global institute, May 2011,
 p12
+
 <sup>12 </sup> Thomas H. Davenport and D. J. patil, “Data Scientist: The Sexiest
 Job of the 21st Century,” Harvard Business review, october 2012
+
 <sup>13 </sup> “Gartner reveals Top predictions for iT organizations and Users for
 2013 and Beyond,” press release, gartner, 24 october 2012
+
 <sup>14 </sup> Thomas Davenport, paul Barth and randy Bean, “How ‘Big Data’ is
 Different,” MiT Sloan Management review, 30 July 2012
+
 <sup>15 </sup> Holger kisker, “Big Data Meets Cloud,” For Chief information
 officers Forrester blog, 15 august 15 2012

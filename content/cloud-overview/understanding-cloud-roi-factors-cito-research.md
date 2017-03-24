@@ -49,8 +49,7 @@ resources formerly dedicated to maintaining infrastructure to
 higher-value activities such as research and development. It’s up to
 your organization to determine the value of this new freedom.
 
-#### Analysis of cloud ROI should take several broad considerations into
-account:
+#### Analysis of cloud ROI should take several broad considerations into account:
 
 **Units of Measure:** A common measure of productivity is cost per unit
 of computing power. It generally costs less per unit of computing power
@@ -151,7 +150,7 @@ discussed with your cloud provider: Who owns content synchronization and
 failover responsibility? Who determines recovery time objective (RTO)
 and recovery point objective (RPO)?
 
-#### New Factors Introduced by the Cloud**
+#### New Factors Introduced by the Cloud
 
 Cloud computing introduces new factors into the ROI equation that
 require thinking outside the box of capital acquisition, licensing of

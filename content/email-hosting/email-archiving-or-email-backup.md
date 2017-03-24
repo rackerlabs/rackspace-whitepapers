@@ -206,6 +206,7 @@ Learn how to [enable Rackspace Email Archiving](/how-to/enable-email-archiving) 
 ### References
 
 <sup>1</sup> [http://my.gartner.com/portal/server.pt?open=512&objID=202&&PageID=5553&mode=2&in_hi_userid=2&cached=true&resId=1973116&ref=AnalystProfile](http://my.gartner.com/portal/server.pt?open=512&objID=202&&PageID=5553&mode=2&in_hi_userid=2&cache%20d=true&resId=1973116&ref=AnalystProfile)
+
 <sup>2</sup> <http://www.gartner.com/id=1545823>
 
 ### About Rackspace
