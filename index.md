@@ -1,5 +1,5 @@
 ---
-title: "White Papers Home"
+title: "White Papers Home | Rackspace Support Network"
 permalink: /
 layout: whitepaper-home
 ---
