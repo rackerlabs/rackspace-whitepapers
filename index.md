@@ -1,5 +1,5 @@
 ---
-title: "STAGING White Papers"
+title: "White Papers Home | Rackspace Support Network"
 permalink: /
 layout: whitepaper-home
 ---
@@ -8,7 +8,7 @@ layout: whitepaper-home
     <div class="container">
       <div class="row content home">
         <section class="featured">
-          <h2 class="section-heading">Technical White Papers</h3>
+          <h2 class="section-heading">Technical White Papers</h2>
           <p class="tagline">See how the world's leading companies use Rackspace to solve their IT concerns.</p>
           <h3 class="featuredHead">Featured White Papers</h3>
           <div class="featured-list">
