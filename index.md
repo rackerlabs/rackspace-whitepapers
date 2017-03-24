@@ -1,5 +1,5 @@
 ---
-title: "White Papers"
+title: "White Papers Home"
 permalink: /
 layout: whitepaper-home
 ---
