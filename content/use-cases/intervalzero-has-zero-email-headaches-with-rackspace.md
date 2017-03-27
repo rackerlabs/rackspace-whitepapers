@@ -12,7 +12,7 @@ product_url: use-cases
 ---
 
 <a href="http://www.intervalzero.com/">
-   <img src="{% asset_path use-cases/how-it-maintains-relevancy/intervalzero.jpg %}" width="338" height="120" />
+   <img src="{% asset_path use-cases/intervalzero-has-zero-email-headaches-with-rackspace/intervalzero.jpg %}" width="338" height="120" />
 </a>intervalzero-has-zero-email-headaches-with-rackspace
 
 **CUSTOMER'S BUSINESS:** Design and develop embedded software products
