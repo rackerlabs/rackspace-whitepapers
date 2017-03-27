@@ -10,8 +10,8 @@ last_modified_by: Cat Lookabaugh
 product: Cloud Overview
 product_url: cloud-overview
 description: > 
-Is cost reduction the only reason to adopt a cloud hosting model? This paper explores 
-the costs and savings of implementing a cloud and looks into where the benefits really are.
+  Is cost reduction the only reason to adopt a cloud hosting model? This paper explores 
+  the costs and savings of implementing a cloud and looks into where the benefits really are.
 ---
 
 ### 1. Introduction

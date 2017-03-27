@@ -10,10 +10,10 @@ last_modified_by: Cat Lookabaugh
 product: Cloud Overview
 product_url: cloud-overview
 description: > 
-The cloud has taken many twists and turns on its route to maturity. Business 
-advantages include: lower costs, reduced complexity, faster rollout of new apps and 
-capacity, and streamlined processes. But there are concerns, too, and this paper addresses 
-those with Microsoft technology.
+  The cloud has taken many twists and turns on its route to maturity. Business 
+  advantages include: lower costs, reduced complexity, faster rollout of new apps and 
+  capacity, and streamlined processes. But there are concerns, too, and this paper 
+  addresses those with Microsoft technology.
 ---
 
 ### 1. EXECUTIVE SUMMARY
