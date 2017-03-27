@@ -334,35 +334,48 @@ Based on research study, “ITIC’s 2013-2014 Technology Trends and
 Deployment Survey,” performed with 600 enterprises in May and June 2013.
 Accessed April 11, 2014.
 <http://itic-corp.com/blog/2013/07/one-hour-of-downtime-costs-100k-for-95-of-enterprises>
+
 <sup>2</sup> “The Lowdown on Data Center Downtime; Frequency, Root Causes, and
 Costs, Study of Data Center Outages, Emerson Network Power/Ponemon
 Institute, December 2013. Accessed April 11, 2014.
 [http://www.emersonnetworkpower.com/en-US/Solutions/ByApplication/DataCenterNetworking/Data-Center-Insights/Pages/Causes_of_
 Downtime_Study.aspx](http://www.emersonnetworkpower.com/en-US/Solutions/ByApplication/DataCenterNetworking/Data-Center-Insights/Pages/Causes_of_%20Downtime_Study.aspx)\
+
 <sup>3</sup> Ibid.
+
 <sup>4</sup> Ibid.
+
 <sup>5</sup> Ibid.
+
 <sup>6</sup> “2013 Financial Services IT Availability and Business Continuity
 Benchmark Survey, Continuity Software, date unknown.
 [http://www.continuitysoftware.com/
 wp-content/uploads/2013/04/Service-Availability-Survey-financial-services-2013.pdf](http://www.continuitysoftware.com/%20wp-content/uploads/2013/04/Service-Availability-Survey-financial-services-2013.pdf).
 Accessed on April 11, 2014. Note: This survey is based on data from 55 respondents.
+
 <sup>7</sup> Ibid.
+
 <sup>8</sup> Ibid.
+
 <sup>9</sup> Ibid.
+
 <sup>10</sup> “By 2017, We’ll Each Have 5 Internet Devices (And More Predictions
 From Cisco), Business Insider, May 29, 2013.
 <http://www.businessinsider.com/cisco-predicts-mobile-2013-5?op=1>.
 Accessed April 11, 2014.
+
 <sup>11</sup> Maxwell Cooter (TechWorld), “Database Administrators Prepare to
 Move to the Cloud, CIO.” December 15, 2010. Referenced Study: Database
 Trends Survey Report. Embarcadero Technologies.
+
 <sup>12</sup> The Avoidable Cost of Downtime, Phase 2, CA Technologies White
 Paper, May 2011.
 <http://news.techworld.com/applications/3253434/database-administrators-prepare-to-move-to-the-cloud>
 Accessed January 16, 2014.
+
 <sup>13</sup> Emerson Power/Ponemon Institute, Ibid. 
+
 <sup>14</sup> “Enterprise solutions with cloud technology,” Microsoft
 presentation, date unknown.
-<sup>15</sup>  “Private Cloud Quantitative Survey Results,” Paradoxes, January
-16, 2013.
+
+<sup>15</sup>  “Private Cloud Quantitative Survey Results,” Paradoxes, January 16, 2013.

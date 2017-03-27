@@ -423,8 +423,7 @@ your specific availability and redundancy requirements.
 
 **How Do You Compare? Key Questions To Consider**
 
-1.  Is your on-premise infrastructure resilient in the event of an unplanned
-event?
+1.  Is your on-premise infrastructure resilient in the event of an unplanned event?
 2.  Do you have automatic failover in place to ensure maximum uptime?
 
 #### 7 Backups and Disaster Recovery
@@ -506,19 +505,19 @@ information on Rackspace email solutions, visit us at
 **References:**
 
 <sup>1</sup> Osterman Research, “Results of a Survey with Email Users”, April 2013
-http://www.ostermanresearch.com/freeresearch/rsch_0180.pdf
+<http://www.ostermanresearch.com/freeresearch/rsch_0180.pdf>
 
 <sup>2</sup> InformationWeek 2014 Strategic Security Survey,
-http://reports.informationweek.com/abstract/21/12509/Security/Research:-2014-Strategic-Security-Survey.html
+<http://reports.informationweek.com/abstract/21/12509/Security/Research:-2014-Strategic-Security-Survey.html>
 
 <sup>3</sup> Dimensional Research, “The State of Corporate Email”, October 2013
-http://www.dimensionalresearch.com
+<http://www.dimensionalresearch.com>
 
 <sup>4</sup> Kaspersky Labs, “Spam and Phishing Statistics Report Q1-2014”
-http://usa.kaspersky.com/internet-security-center/threats/spam-statistics-report-q1-2014#.VHYypMt0zcs
+<http://usa.kaspersky.com/internet-security-center/threats/spam-statistics-report-q1-2014#.VHYypMt0zcs>
 
 <sup>5</sup> Microsoft Product Lifecycle,
-http://support2.microsoft.com/lifecycle/search/?alpha=Exchange+Server&wa=wsignin1.0
+<http://support2.microsoft.com/lifecycle/search/?alpha=Exchange+Server&wa=wsignin1.0>
 
 <sup>6</sup> The Disaster Recovery Preparedness Council, “The State of Global
 Disaster Recovery Preparedness,” 2014 Annual Report, www.drbenchmark.org.

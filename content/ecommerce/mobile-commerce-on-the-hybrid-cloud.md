@@ -57,7 +57,7 @@ devices, smart TVs, wearable devices and beyond, mobile developers need
 better tools to optimize and test infrastructure to efficiently run code
 regardless of location or device.
 
-### BARRIERS TO GOING MOBILE
+### Barriers to going mobile
 
 Though the benefits of going mobile retail are clear, the path to
 execute is rife with pitfalls. Obstacles include:
@@ -99,7 +99,7 @@ integrating infrastructure and support partners to take the cumbersome deploymen
 and maintenance tasks off of their plate to go mobile faster and maintain a
 competitive edge.
 
-### KEYS TO MOBILE COMMERCE SUCCESS
+### Keys to mobile commerce success
 
 -   **Responsive design:** Slim down the work of mobile design using responsive
 design—a single site designed to adapt visually to the endpoint device.
@@ -138,7 +138,7 @@ maintain year round. Own the base and rent the spike.
 
 -   Run workloads where they get the highest performance for the lowest total cost.
 
-### HOW HYBRID CLOUD POWERS MOBILE COMMERCE
+### How hybrid cloud powers mobile commerce
 
 Hybrid is becoming a defacto standard for enterprises with nearly
 three-quarters of large enterprises expecting to have hybrid deployments
@@ -166,7 +166,7 @@ architecture to support massive scale for temporary spikes bleeds profits.
 Hybrid helps you get a better return on IT investments by allowing more
 flexibility with less maintenance and labor.
 
-### RACKSPACE<sup>&reg;</sup> DIGITAL BENEFITS FOR MOBILE ECOMMERCE APPLICATIONS
+### Rackspace<sup>&reg;</sup> digital benefits for mobile ecommerce applications
 
 **What is Rackspace Digital?**
 

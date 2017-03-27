@@ -545,6 +545,8 @@ look forward to helping you grow your business.
 **References:**
 
 <sup>1</sup> Magento Usage Statistics – <http://trends.builtwith.com/shop/Magento>
+
 <sup>2</sup> <http://www.magentocommerce.com/>, as of 29/03/2013
+
 <sup>3</sup> <http://www.magentocommerce.com/product/enterprise-edition>, as of
 29/03/2013

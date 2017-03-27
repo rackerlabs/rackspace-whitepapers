@@ -49,13 +49,11 @@ being stored, processed or transmitted by the application.
 
 Areas to be particularly cautious around are:
 
--   Personally Identifiable Information (PII) such as names, national
-    identification numbers, dates of birth, drivers license/passport
-    numbers, etc.
--   Personal Health Information (PHI) such as medical history, test
-    results, insurance information
--   Financial information such as credit card numbers and account
-    numbers
+-   Personally Identifiable Information (PII) such as names, national identification 
+numbers, dates of birth, drivers license/passport numbers, etc.
+-   Personal Health Information (PHI) such as medical history, test results, insurance 
+information
+-   Financial information such as credit card numbers and account numbers
 -   Corporate confidential information
 
 #### 2.3 Mitigation strategies

@@ -141,15 +141,13 @@ utility service, like water or electricity. Nicholas Carr’s book The Big
 Switch<sup>7</sup> is an excellent introductory read to this subject. In the
 book, Carr says that:
 
-    ...fragmentation \[of IT into separately installed and managed
-    systems that individual corporations own\] is wasteful. It imposes
-    large capital investments and heavy fixed costs on firms, and it leads
-    to redundant expenditures and high levels of overcapacity, both in the
-    technology itself and in the labor force operating it...Once it
-    becomes possible to provide the technology centrally, large-scale
-    utility suppliers arise to displace the private providers...in the end
-    the savings offered by utilities become too compelling to resist, even
-    for the largest enterprises. The grid wins.
+> ...fragmentation \[of IT into separately installed and managed systems that individual 
+corporations own\] is wasteful. It imposes large capital investments and heavy fixed 
+costs on firms, and it leads to redundant expenditures and high levels of overcapacity, 
+both in the technology itself and in the labor force operating it...Once it becomes 
+possible to provide the technology centrally, large-scale utility suppliers arise to 
+displace the private providers...in the end the savings offered by utilities become too 
+compelling to resist, even for the largest enterprises. The grid wins.
 
 When planning infrastructure requirements, organizations are forced to
 use peak load criteria when sizing their resource needs. What this means
@@ -457,18 +455,30 @@ Diversity Limited can be found at [http://diversity.net.nz](http://diversity.ne
 
 **Resources:**
 
-<sup>1</sup> http://blogs.computerworld.com/17008/single_largest_opportunity_in_cloud_computing
-<sup>2</sup> http://www.networkworld.com/news/2010/090710-more-private-cloud-adoption-expected.html
-<sup>3</sup> http://en.wikipedia.org/wiki/Cloud_computing
-<sup>4</sup> http://www.cloudcomputingeconomics.com/2009/01/experience-curves-for-data-center.html
-<sup>5</sup> http://broadcast.oreilly.com/2008/10/the-economics-of-cloud-c.html
-<sup>6</sup> http://broadcast.oreilly.com/2008/10/the-economics-of-cloud-c.html
+<sup>1</sup> <http://blogs.computerworld.com/17008/single_largest_opportunity_in_cloud_computing>
+
+<sup>2</sup> <http://www.networkworld.com/news/2010/090710-more-private-cloud-adoption-expected.html>
+
+<sup>3</sup> <http://en.wikipedia.org/wiki/Cloud_computing>
+
+<sup>4</sup> <http://www.cloudcomputingeconomics.com/2009/01/experience-curves-for-data-center.html>
+
+<sup>5</sup> <http://broadcast.oreilly.com/2008/10/the-economics-of-cloud-c.html>
+
+<sup>6</sup> <http://broadcast.oreilly.com/2008/10/the-economics-of-cloud-c.html>
 for more information about the economics of Cloud Computing see also
-http://gigaom.com/2010/06/06/lazy-hazy-crazy-the-10-laws-of-behavioral-cloudonomics
-<sup>7</sup> http://www.amazon.com/Big-Switch-Rewiring-Edison-Google/dp/0393062287
-<sup>8</sup> http://www.chades.net/
+<http://gigaom.com/2010/06/06/lazy-hazy-crazy-the-10-laws-of-behavioral-cloudonomics>
+
+<sup>7</sup> <http://www.amazon.com/Big-Switch-Rewiring-Edison-Google/dp/0393062287>
+
+<sup>8</sup> <http://www.chades.net/>
+
 <sup>9</sup> Alexa
-<sup>10</sup> http://www.businessweek.com/technology/content/sep2008/tc2008095_942690.htm
-<sup>11</sup> http://broadcast.rackspace.com/hosting_knowledge/whitepapers/GettingOnTheRightSideOfTheCapexVsOpexDivide.pdf
+
+<sup>10</sup> <http://www.businessweek.com/technology/content/sep2008/tc2008095_942690.htm>
+
+<sup>11</sup> <http://broadcast.rackspace.com/hosting_knowledge/whitepapers/GettingOnTheRightSideOfTheCapexVsOpexDivide.pdf>
+
 <sup>12</sup> [Gartner Report](http://www.gartner.com/it/page.jsp?id=497088)
-<sup>13</sup> Ref, Diversity Analysis whitepaper, http://diversity.net.nz/wp-content/uploads/2010/03/Questions_To_Ask_Your_Cloud_Vendor3.pdf, Diversity Limited 2010, K Subramanian, B Kepes
+
+<sup>13</sup> Ref, Diversity Analysis whitepaper, <http://diversity.net.nz/wp-content/uploads/2010/03/Questions_To_Ask_Your_Cloud_Vendor3.pdf>, Diversity Limited 2010, K Subramanian, B Kepes

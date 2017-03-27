@@ -374,10 +374,12 @@ producing applications online and running at peak performance.
 ### Endnotes
 
 <sup>1</sup>
-http://www.business2community.com/tech-gadgets/the-future-of-enterprise-it-30-executives-share-their-2013-predictions-0365559\#ogMQ2uUKTzscK0j4.99\
+<http://www.business2community.com/tech-gadgets/the-future-of-enterprise-it-30-executives-share-their-2013-predictions-0365559\#ogMQ2uUKTzscK0j4.99>
+
 <sup>2</sup> Ronni J. Colville and George Spafford, “Configuration Management for
 Virtual and Cloud Infrastructures,” Gartner,
-http://www.rbiassets.com/getfile.ashx/42112626510\
+<http://www.rbiassets.com/getfile.ashx/42112626510>
+
 <sup>3</sup> Ted Chamberlin and Lydia Leong, “Magic Quadrant for Managed
 Hosting,” Gartner, March 5, 2012,
-http://www.gartner.com/technology/reprints.do?id=1-19K9FPH&ct=120305&st=sb
+<http://www.gartner.com/technology/reprints.do?id=1-19K9FPH&ct=120305&st=sb>

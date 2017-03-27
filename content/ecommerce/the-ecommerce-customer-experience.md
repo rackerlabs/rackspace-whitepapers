@@ -240,15 +240,27 @@ capabilities to achieve your ideal customer experience.
 **References:**
 
 <sup>1</sup> <http://www.internetretailer.com/2012/02/27/e-retail-spending-increase-45-2016>
+
 <sup>2</sup> <http://blog.sumall.com/journal/2012/9/24/whats-the-value-of-a-visit.html>
+
 <sup>3</sup> Harris Interactive Customer Experience Impact (CEO) Survey, September 2011
+
 <sup>4</sup> <http://www.strangeloopnetworks.com/resources/infographics/web-performance-and-user-expectations/poster-visualizing-web-performance/>
+
 <sup>5</sup>  <http://www.akamai.com/dl/whitepapers/ecommerce_website_perf_wp.pdf>
+
 <sup>6</sup> <http://www.strangeloopnetworks.com/resources/infographics/2012-annual-state-of-the-union/average-load-time-was-10-seconds/>
+
 <sup>7</sup> <http://www.akamai.com/4seconds>
+
 <sup>8</sup> <http://www.nytimes.com/interactive/2012/02/29/business/The-Blink-of-an-Eye-Oh-Please.html?ref=technology>
+
 <sup>9</sup> <http://www.internetretailer.com/static/uploads/011013_McommerceSales2011-2016_INSIDE_1.jpg>
+
 <sup>10</sup> <http://www.tealeaf.com/news/news-releases/2011/Tealeaf-Announces-New-Mobile-Research.php>
+
 <sup>11</sup> <http://www.tealeaf.com/news/news-releases/2010/Tealeaf-Survey-Reveals-Online-Retailers-Potentially-Lost.php>
+
 <sup>12</sup> <http://www.nngroup.com/articles/usability-roi-declining-but-still-strong/>
+
 <sup>13</sup> <http://www.internetretailer.com/2013/02/28/web-represents-nearly-28-nordstroms-sales-growth>

@@ -9,8 +9,9 @@ last_modified_date: '2017-02-28'
 last_modified_by: Cat Lookabaugh
 product: Cloud Overview
 product_url: cloud-overview
-description: >
-  This is a description of Economics. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur massa vel vestibulum fringilla. Fusce aliquet risus urna, sit amet efficitur eros convallis suscipit. Vivamus aliquam massa posuere commodo cursus. Duis ut pretium 40.
+description: > 
+  Is cost reduction the only reason to adopt a cloud hosting model? This paper explores 
+  the costs and savings of implementing a cloud and looks into where the benefits really are.
 ---
 
 ### 1. Introduction
@@ -29,6 +30,7 @@ needs to consider when contemplating a migration to the cloud. 
 ### 2. Cloud: Cheaper Than Dedicated, Right?
 
 #### 2.1 Not Necessarily...
+
 A common misconception in the marketplace today is that public cloud
 computing is cheaper than dedicated hosting. Although it surprises many
 to hear this, a unit of cloud computing is in fact more expensive than a
@@ -45,6 +47,7 @@ However, if you need a car for a day it is more economic to rent one
 (e.g. a $50/day rental = ~$2/hr unit cost).
 
  #### 2.2 So How Do We Reduce Costs?
+
 Given that the unit cost of public cloud is higher than dedicated
 hosting, how can consumers reduce costs? The answer is to exploit
 variation in demand. If there is significant variation in demand, there
@@ -58,12 +61,12 @@ multi-tenant environment, where metered billing can allow the supply of
 resources to scale up/down in order to meet demand. To realize this
 benefit:
 
-• The peak/average demand ratio must be greater than the cost ratio of
+- The peak/average demand ratio must be greater than the cost ratio of
 public cloud over dedicated hosting.
 
-• The application must be able to scale horizontally.
+- The application must be able to scale horizontally.
 
-• There must be sufficient density of compute nodes to allow the scaling
+- There must be sufficient density of compute nodes to allow the scaling
 of resources.
 
 There are also licensing implications when transitioning from a scale-up
@@ -129,6 +132,7 @@ traditional 12/24/36 month contract term. So, if demand is flat the
 utility billing model will not reduce costs.
 
 #### 2.4 The Diurnal (Daily) Cycle
+
 Fortunately, most workloads (when viewed locally) do not exhibit a flat
 demand graph. This is due firstly to the fact that most enterprise
 applications are consumed by users within local proximity to the
@@ -143,6 +147,7 @@ sleep patterns of the end consumer.
 3. Will We Reduce Costs?
 
 #### 3.1 Capex to Opex
+
 One of the most over-used but inadequately discussed mantras when
 extolling the benefits of cloud computing is “Convert CAPEX to OPEX”; or
 put differently: rather than make large capital expenditure on the
@@ -162,35 +167,36 @@ rather than just CAPEX.
 <img src="{% asset_path cloud-overview/cloud-economics/cloudec5.png %}" width="497" height="291" />
 
 #### 3.2 Measuring TCO
+
 When examining the TCO of an application, there are many factors to
 incorporate:
-• Real Estate
-• Utilities
-• Power
-• Water
-• Tangible Assets
-• Mechanical / Electrical Infrastructure (Power/Cooling)
-• Server Hardware
-• Network Hardware
-• Storage Hardware
-• Intangible Assets
-• Hardware Maintenance Contracts
-• Software License Contracts
-• Software Support Contracts
-• Human Labor
-• Data Center Engineers /Operatives
-• Network Engineers / Administrators
-• Storage Engineers / Administrators
-• Systems Administrators
-• Data Center Administrators
-• Software Developers / Architects
-• Help Desk Operatives
-• General & Administrative
-• Managerial
-• Auditing / Compliance
-• Power
-• Water
-• Downtime / Outages
+- Real Estate
+- Utilities
+- Power
+- Water
+- Tangible Assets
+- Mechanical / Electrical Infrastructure (Power/Cooling)
+- Server Hardware
+- Network Hardware
+- Storage Hardware
+- Intangible Assets
+- Hardware Maintenance Contracts
+- Software License Contracts
+- Software Support Contracts
+- Human Labor
+- Data Center Engineers /Operatives
+- Network Engineers / Administrators
+- Storage Engineers / Administrators
+- Systems Administrators
+- Data Center Administrators
+- Software Developers / Architects
+- Help Desk Operatives
+- General & Administrative
+- Managerial
+- Auditing / Compliance
+- Power
+- Water
+- Downtime / Outages
 
 The pertinent question: can you quantify your current TCO? For most
 enterprises, the answer is “Not really.” While accounting should have a
@@ -204,6 +210,7 @@ the answer is, “No.” For this reason, breaking down TCO accurately per
 application is very tricky if not impossible.
 
 #### 3.3 TCO Reduction Areas
+
 Outsourcing the hosting of an application to an external cloud service
 provider affords the opportunity to reduce TCO. The degree of reduction
 that is realizable is dependent on the type of cloud hosting model being
@@ -242,6 +249,7 @@ costs by leveraging the service provider’s economies of scale while
 sacrificing control and flexibility.
 
 ##### 3.3.1 TCO Perspective
+
 The table below shows the technology stack underpinning an application
 according to broad TCO areas, and describes the areas of responsibility
 for both consumer and service provider in terms of the three key cloud
@@ -264,6 +272,7 @@ provides the greatest degree of outsourcing of responsibility, but comes
 at a far heavier cost in terms of loss of control and customization.
 
 ##### 3.3.2 Human Perspective
+
 The table below shows some of the more common roles that humans perform
 when managing an application in- house, and describes the areas of
 responsibility for both consumer and service provider in terms of the
@@ -277,6 +286,7 @@ expensive resources such as System Administrators, DBAs, developers
 etc.
 
 #### 3.4 Transformation Costs
+
 When conducting a Cost/Benefit Analysis or producing a business case for
 an application to be migrated from a traditional in-house hosting
 context to an outsourced model, the transformation costs involved in
@@ -332,6 +342,7 @@ be provided in Section 4.
 <img src="{% asset_path cloud-overview/cloud-economics/cloudec10.png %}" width="406" height="397" />
 
 #### 3.5 Position in the IT Lifecycle
+
 Typically, a technology solution is accompanied by a large capital
 expenditure required to purchase the tangible and intangible assets
 required to run a business application: servers, network/storage
@@ -361,6 +372,7 @@ can save (or put another way, estimate the return on investment
 realized) by such an outsourcing decision. 
 
 #### 4.1 ROI Formula
+
 The standard method of calculating the financial return on a technology
 investment is the traditional ROI formula
 
@@ -395,6 +407,7 @@ the true return on an investment in present terms.
 <img src="{% asset_path cloud-overview/cloud-economics/cloudec13.png %}" width="328" height="357" />
 
 #### 4.4 NPV Example
+
 The following example uses the same assumptions as the ROI example
 earlier: an initial transformation investment of $400K (represented at
 t=0), an annual TCO saving of \$200K and a 3-year analytic horizon.

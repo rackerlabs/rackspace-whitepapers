@@ -297,13 +297,13 @@ colocation).
 
 > ***Experience in Action: Deploying Hosted Virtual Desktop for a Multi-billion Dollar Manufacturer***
 
-> **A large consumer packaged goods manufacturer had been outsourcing
-> with a large IT firm to implement a virtual desktop solution. However,
-> after 18 months of continuous work, their IT firm was unable to deploy a
-> production-ready solution. Citrix recommended that this company contact
-> Rackspace as an alternative to accelerate the solution. Rackspace worked
-> with a host of companies to architect and deploy a solution to full
-> production within just two months.**
+> A large consumer packaged goods manufacturer had been outsourcing
+with a large IT firm to implement a virtual desktop solution. However,
+after 18 months of continuous work, their IT firm was unable to deploy a
+production-ready solution. Citrix recommended that this company contact
+Rackspace as an alternative to accelerate the solution. Rackspace worked
+with a host of companies to architect and deploy a solution to full
+production within just two months.
 
 
 Rackspace provides infrastructure management services up to the

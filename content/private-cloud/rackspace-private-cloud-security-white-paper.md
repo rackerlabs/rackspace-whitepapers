@@ -179,38 +179,21 @@ including identifying any logistical steps needed.
 Below is an example of key functions and responsibilities based upon
 where the Rackspace Private Cloud (RPC) is deployed
 
-+-----------------------+-----------------------+-----------------------+
-| **Responsibility**    | **Hosted @            | **Hosted @ Customer   |
-|                       | Rackspace**           | DC**                  |
-+=======================+=======================+=======================+
-| Hardware & Data       | Rackspace             | Customer              |
-| Center                |                       |                       |
-+-----------------------+-----------------------+-----------------------+
-| Networking            | Rackspace             | Customer              |
-+-----------------------+-----------------------+-----------------------+
-| RPC Host OS           | Rackspace             | Either                |
-+-----------------------+-----------------------+-----------------------+
-| Backup (Host OS)      | Rackspace             | Either                |
-+-----------------------+-----------------------+-----------------------+
-| RPC Components        | Rackspace             | Rackspace             |
-+-----------------------+-----------------------+-----------------------+
-| Patching RPC          | Rackspace             | Either                |
-+-----------------------+-----------------------+-----------------------+
-| Monitoring RPC        | Either                | Either                |
-+-----------------------+-----------------------+-----------------------+
-| RPC Upgrades          | Rackspace             | Either                |
-+-----------------------+-----------------------+-----------------------+
-| Cloud Capacity        | Rackspace             | Either                |
-| Planning              |                       |                       |
-+-----------------------+-----------------------+-----------------------+
-| Guest OS Imaging      | Customer              | Customer              |
-| Creation and Patching |                       |                       |
-+-----------------------+-----------------------+-----------------------+
-| Instance Deployment   | Customer              | Customer              |
-+-----------------------+-----------------------+-----------------------+
-| Application           | Customer              | Customer              |
-| Management            |                       |                       |
-+-----------------------+-----------------------+-----------------------+
+
+Responsibility | Hosted @ Rackspace | Hosted @ Customer  DC
+-------------- | ------------------ | ---------------------
+Hardware & Data Center | Rackspace | Customer 
+Networking | Rackspace | Customer 
+RPC Host OS | Rackspace  | Either  
+Backup (Host OS) | Rackspace | Either 
+RPC Components | Rackspace | Rackspace 
+Patching RPC | Rackspace | Either  
+Monitoring RPC| Either | Either  
+RPC Upgrades | Rackspace | Either 
+Cloud Capacity Planning | Rackspace | Either 
+Guest OS Imaging Creation and Patching| Customer | Customer 
+Instance Deployment | Customer| Customer 
+Application  Management | Customer | Customer  
 
 Should a Private Cloud be deployed at a customer's datacenter and
 supported by Rackspace, the Rackspace Support team is willing to work

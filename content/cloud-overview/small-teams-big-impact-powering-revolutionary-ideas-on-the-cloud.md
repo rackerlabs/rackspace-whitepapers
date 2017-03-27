@@ -94,15 +94,14 @@ greatly reduced as technology becomes so much more accessible. In our
 [first white paper](https://support.rackspace.com/white-paper/revolution-not-evolution-how-cloud-computing-differs-from-traditional-it-and-why-it/),
 we pointed out that Cloud Computing democratizes technology saying that:
 
-    Cloud Computing is facilitating a seismic shift in terms of business
-    development. Formerly entrepreneurs who wished to start a business had
-    to invest significant capital into hardware and software licenses.
-    Even the simplest of businesses required expensive software licenses,
-    a server or two and the associated administration cost of keeping it
-    all running. The availability of Cloud Computing solutions has led to
-    a massive shift in the availability of computing power. It is now
-    almost effortless for an entrepreneur to set themselves up with some
-    infrastructure and applications upon which to run their business.
+> Cloud Computing is facilitating a seismic shift in terms of business development.
+Formerly entrepreneurs who wished to start a business had to invest significant capital 
+into hardware and software licenses. Even the simplest of businesses required expensive 
+software licenses, a server or two and the associated administration cost of keeping it 
+all running. The availability of Cloud Computing solutions has led to a massive shift in 
+the availability of computing power. It is now almost effortless for an entrepreneur to 
+set themselves up with some infrastructure and applications upon which to run their 
+business.
 
 This democratization gives businesses with little or no capital the
 opportunity to test new ideas, kill the ones that don’t fly and rapidly

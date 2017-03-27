@@ -44,8 +44,8 @@ Computing as no more than a new name for what has gone before. In a 2009
 interview <sup>1</sup> that has become somewhat of a web cult classic, he said:
 
 > “All the Cloud is, is computers in a network....Our industry is so
-> bizarre. I mean, they just change a term and they think they’ve
-> invented technology.”
+bizarre. I mean, they just change a term and they think they’ve
+invented technology.”
 
 In some ways, Ellison is correct. Many of Cloud Computing’s most common
 features-virtualization, pay-as-you-go, reduced cost and moving IT
@@ -60,11 +60,10 @@ conference, Benioff outlined his own definition of Cloud Computing:
 <sup>2</sup>
 
 > “Our definition of Cloud Computing is multi-tenant, it’s faster, half
-> the cost, pay as you go, it grows as you grow or shrinks as you
-> shrink. It is extremely efficient. We’re not going to show you
-> computers taller than you. We’re not going to show you a cloud in a
-> box because clouds don’t come in a box. They never have. That’s the
-> whole idea.”
+the cost, pay as you go, it grows as you grow or shrinks as you
+shrink. It is extremely efficient. We’re not going to show you
+computers taller than you. We’re not going to show you a cloud in a
+box because clouds don’t come in a box. They never have. That’s the whole idea.”
 
 The “computers taller than you” refers to Oracle’s Exalogic Elastic
 Cloud, an impressive mix of hardware and software designed to power
@@ -113,11 +112,11 @@ in the Spring 2005 issue of the MIT Sloan Management Review, Carr wrote
 that:
 
 > “...As a business resource, information technology today looks a lot
-> like electric power did at the start of the last century (when it was
-> routinely produced by individual businesses rather than utility
-> providers)... executives are routinely sidetracked from their real
-> business... by the need to keep their company’s private IT
-> infrastructure running smoothly.”
+like electric power did at the start of the last century (when it was
+routinely produced by individual businesses rather than utility
+providers)... executives are routinely sidetracked from their real
+business... by the need to keep their company’s private IT
+infrastructure running smoothly.”
 
 Noting the similarities between computing and a technology that most
 would agree is best handled by specialists rather than individual firms,
@@ -126,13 +125,12 @@ provisioning infrastructure and the resulting overcapacity that often
 accompanies it:
 
 > “When overcapacity is combined with redundant functionality, the
-> conditions are ripe for a shift to centralized supply. Yet companies
-> continue to invest large sums in maintaining and even expanding their
-> private, subscale data centers. Why? For the same reason that
-> manufacturers continued to install private electric generators during
-> the early decades of the 20th century: because of the lack of a
-> viable, large-scale utility model. But such a model is now
-> emerging...”
+conditions are ripe for a shift to centralized supply. Yet companies
+continue to invest large sums in maintaining and even expanding their
+private, subscale data centers. Why? For the same reason that
+manufacturers continued to install private electric generators during
+the early decades of the 20th century: because of the lack of a
+viable, large-scale utility model. But such a model is now emerging...”
 
 The model that Carr says in emerging is Cloud Computing. Cloud Computing
 provides specific economics that are beneficial under many situations –
@@ -180,10 +178,10 @@ Behind<sup>7</sup>, Charles Babcock discusses the competitive pressures that
 gradually lead to adoption of the Internet. As he points out:
 
 > “At one time corporations built out high-performance proprietary
-> networks to link... different locations... As the Internet became the
-> default connection between universities, government agencies and some
-> companies, the cost of not having an [Internet protocol] network
-> internally went up and up.”
+networks to link... different locations... As the Internet became the
+default connection between universities, government agencies and some
+companies, the cost of not having an [Internet protocol] network
+internally went up and up.”
 
 So too will the economics of Cloud Computing render previous approaches
 as increasingly cost prohibitive. This step change in the approach to
@@ -373,23 +371,40 @@ Business strategy and user-centric design. More information on Ben and
 Diversity Limited can be found at <http://diversity.net.nz>
 
 **Resources:**
+
 <sup>1</sup> <http://www.youtube.com/watch?v=KmXJSeMaoTY>
+
 <sup>2</sup> <http://www.cbronline.com/blogs/cbr-rolling-blog/salesforcecom-fires-back-at-oracles-ellison-benioff-oracle-openworld-220910>
+
 <sup>3</sup> <http://twitter.com/Werner/status/25005220624>
+
 <sup>4</sup> <http://www.economist.com/node/17797794> ,
 <http://www.jackofallclouds.com/2010/08/state-of-the-cloud-august-2010/>
+
 <sup>5</sup> <http://www.amazon.com/Big-Switch-Rewiring-Edison-Google/dp/0393062287>
+
 <sup>6</sup> <http://www.nicholasgcarr.com/articlesmt/archives/endofcorporatecomputing.shtml>
+
 <sup>7</sup> <http://www.amazon.com/Management-Strategies-Cloud-Revolution-Transforming/dp/0071740759>
+
 <sup>8</sup> Cloud Computing Emissions Comparison, Nucleus Research, 2010
+
 <sup>9</sup> <http://jpf.github.com/domain-profiler/ycombinator.html?2010>
+
 <sup>10</sup> <http://techcrunch.com/2011/01/05/quora-surge/>
+
 <sup>11</sup> <http://www.encoding.com/>
+
 <sup>12</sup> see video <http://www.youtube.com/watch?v=n6l0kMLYP6c&feature=player_embedded>
+
 <sup>13</sup> <http://www.chades.net/>
+
 <sup>14</sup> <http://www.penn-olson.com/2010/02/10/infographic-facebooks-amazing-growth/>,
 <http://blog.facebook.com/ blog.php?post=409753352130> ,
 <http://socialmediatoday.com/dirktherabbit/162555/twitter%E2%80%99s-growth-doubles-becomes-more-international>
+
 <sup>15</sup> <http://www.reuters.com/article/idUS144602338520100818>
+
 <sup>16</sup> <http://www.informationweek.com/news/software/showArticle.jhtml?articleID=211300562>
+
 <sup>17</sup> <http://www.gartner.com/it/page.jsp?id=497088>

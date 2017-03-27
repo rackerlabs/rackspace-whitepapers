@@ -131,52 +131,40 @@ for everything from architecture design to query optimization.
 
 #### Services included with Hadoop
 
-+-----------------------------------+-----------------------------------+
-| Service                           | Details                           |
-+-----------------------------------+-----------------------------------+
-| Deployment                        | -   Architecture design           |
-|                                   | -   Installation and              |
-|                                   |     configuration                 |
-|                                   | -   Ingesting data to Rackspace   |
-|                                   |     Managed Big Data Platform     |
-|                                   | -   Security configuration        |
-+-----------------------------------+-----------------------------------+
-|￼Maintenance                       | -   Advanced administration,      |
-|                                   |     monitoring and alerting       |
-|                                   | -   Managed patching and updates  |
-|                                   | -   Upgrades of Hadoop versions   |
-|                                   | -   Cluster management            |
-|                                   | -   Job execution                 |
-|                                   | -   Diagnosis of performance      |
-|                                   |     issues                        |
-|                                   | -   Diagnosis of data loading,    |
-|                                   |     processing and query issues   |
-|                                   | -   Application development       |
-|                                   |     advice                        |
-|                                   | -   Direct communication and      |
-|                                   |     escalation to Hortonworks     |
-|                                   | -   Consultation, recommendation  |
-|                                   |     and implementation to solve   |
-|                                   |     scaling challenges            |
-+-----------------------------------+-----------------------------------+
-| Optimization                      | -   Performance tuning and        |
-|                                   |     issue diagnosis               |
-|                                   | -   Query optimization            |
-|                                   | -   Compactions                   |
-+-----------------------------------+-----------------------------------+
-| Backups and DR                    | -   Rebooting of name node and    |
-|                                   |     master services               |
-|                                   | -   Disaster recovery (DR) and    |
-|                                   |     business continuity           |
-|                                   | -   Recommending and planning     |
-|                                   |     replication to DR site        |
-|                                   | -   Participation in DNS          |
-|                                   |     management for failover to DR |
-|                                   |     site                          |
-|                                   | -   Participation in DR RTO/RPO   |
-|                                   |     requirements                  |
-|                                   | -   Restores from backups         |
-+-----------------------------------+-----------------------------------+
+Deployment includes the following services:
+
+-   Architecture design 
+-   Installation and configuration 
+-   Ingesting data to Rackspace Managed Big Data Platform 
+-   Security configuration 
+
+Maintenance includes the following services: 
+        
+-   Advanced administration, monitoring and alerting 
+-   Managed patching and updates  
+-   Upgrades of Hadoop versions   
+-   Cluster management            
+-   Job execution                 
+-   Diagnosis of performance issues   
+-   Diagnosis of data loading, processing and query issues  
+-   Application development advice                        
+-   Direct communication and escalation to Hortonworks     
+-   Consultation, recommendation and implementation to solve scaling challenges     
+
+Optimization includes the following services:
+
+-   Performance tuning and issue diagnosis  
+-   Query optimization   
+-   Compactions     
+
+Backups and DR include the following services:
+
+-   Rebooting of name node and master services              
+-   Disaster recovery (DR) and business continuity  
+-   Recommending and planning replication to DR site   
+-   Participation in DNS management for failover to DR  site   
+-   Participation in DR RTO/RPO requirements 
+-   Restores from backups  
 
 #### Supported tools for Hadoop
 
@@ -282,104 +270,108 @@ firewalls, vulnerability scanning, and data access monitoring.
 
 ### Rackspace Managed Big Data versus unmanaged hosting
 
-+-----------------------+-----------------------+-----------------------+
-| Concerns              | Unmanaged hosting     | Rackspace Managed     |
-|                       |                       | Big Data Platform     |
-+-----------------------+-----------------------+-----------------------+
-| Deployment process    | Customer manages      | Rackspace manages     |
-|                       | deployment:           | deployment            |
-|                       | -   Significant       | -   Rackspace experts |
-|                       |     investment in     |     gather customer   |
-|                       |     Hadoop expertise  |     requirements and  |
-|                       | -   Manual            |     optimize based on |
-|                       |     configuration of  |     extensive         |
-|                       |     storage,          |     experience and    |
-|                       |     networking,       |     up-to-date Hadoop |
-|                       |     security,         |     best practices    |
-|                       |     monitoring and    | -   Rackspace handles |
-|                       |     more              |     configuration and |
-|                       | -   Manual testing    |     deployment        |
-|                       |     and optimization, |                       |
-|                       |     with a tradeoff   |                       |
-|                       |     between timely    |                       |
-|                       |     deployment and    |                       |
-|                       |     future            |                       |
-|                       |     scalability       |                       |
-|                       | -   Lengthy           |                       |
-|                       |     implementation    |                       |
-|                       |     and procurement   |                       |
-|                       |     cycles            |                       |
-+-----------------------+-----------------------+-----------------------+
-| Deployment options    | -   Limited           | ￼Multiple deployment  |
-|                       |     deployment        | options architected   |
-|                       |     flexibility—all   | specifically for      |
-|                       |     dedicated servers | Hadoop:               |
-|                       |     or all public     | -   Public cloud      |
-|                       |     cloud             | -   Private cloud     |
-|                       |                       | -   Bare metal        |
-|                       |                       | -   Hybrid cloud      |
-+-----------------------+-----------------------+-----------------------+
-| Data portability      | -   Expensive         | -   Infrastructure    |
-|                       |     proprietary       |     built on          |
-|                       |     technologies and  |     OpenStack         |
-|                       |     risk of vendor    | -   Hortonworks       |
-|                       |     lock-in           |     platform works    |
-|                       |                       |     100% within the   |
-|                       |                       |     Apache Software   |
-|                       |                       |     Foundation        |
-|                       |                       |     process           |
-+-----------------------+-----------------------+-----------------------+
-| Performance           | -   Lower performance | -   Consistent        |
-|                       |     on generic        |     database          |
-|                       |     servers not       |     performance on    |
-|                       |     optimized for     |     hardware          |
-|                       |     high-I/O database |     configured and    |
-|                       |     workloads         |     tuned to make     |
-|                       | -   Noisy-neighbor    |     Hadoop run faster |
-|                       |     problems on       |                       |
-|                       |     public cloud      |                       |
-|                       |     create            |                       |
-|                       |     inconsistency     |                       |
-+-----------------------+-----------------------+-----------------------+
-| Maintenance and       | -   Customer          | -   Rackspace can     |
-| monitoring            |     allocates         |     proactively       |
-|                       |     significant       |     monitor the       |
-|                       |     resources to      |     network, server   |
-|                       |     monitor           |     and Hadoop        |
-|                       |     performance,      |     clusters for      |
-|                       |     maintenance, and  |     connections, lag, |
-|                       |     patching.         |     status of         |
-|                       |                       |     replicas, size,   |
-|                       |                       |     number of         |
-|                       |                       |     queries, and      |
-|                       |                       |     more, 24x7x365    |
-+-----------------------+-----------------------+-----------------------+
-| Ecosystem support     | -   Limited or no     | -   Support available |
-|                       |     support for key   |     for core tools in |
-|                       |     Hadoop tools like |     the Hadoop        |
-|                       |     Spark, Hive and   |     ecosystem         |
-|                       |     Pig               |                       |
-+-----------------------+-----------------------+-----------------------+
-| Security options      | -   Bare bones        | -   Range of managed  |
-|                       |     out-of-the-box    |     security options  |
-|                       |     Hadoop security   |     available like    |
-|                       | -   Additional        |     intrusion         |
-|                       |     security must be  |     detection, log    |
-|                       |     provided by       |     management and    |
-|                       |     additional        |     network security  |
-|                       |     vendors and often |     solutions         |
-|                       |     managed by the    |                       |
-|                       |     customer          |                       |
-+-----------------------+-----------------------+-----------------------+
-| Vendor                | -   Separate          | -   Hortonworks       |
-| accountability        |     infrastructure    |     platform and      |
-|                       |     and platform      |     Rackspace         |
-|                       |     providers can     |     infrastructure    |
-|                       |     point fingers     |     support on one    |
-|                       |     when things go    |     support contract, |
-|                       |     wrong             |     giving customers  |
-|                       |                       |     a single POC      |
-+-----------------------+-----------------------+-----------------------+
+#### Concern: Deployment process
+
+**Unmanaged hosting**
+
+Customer manages deployment:
+
+- Significant investment in Hadoop expertise
+- Manual configuration of storage, networking, security, monitoring and more
+- Manual testing and optimization, with a tradeoff between timely deployment and future 
+scalability
+- Lengthy implementation and procurement cycles
+
+**Rackspace Managed Big Data Platform**
+
+Rackspace manages deployment
+
+- Rackspace experts gather customer requirements and optimize based on extensive 
+experience and up-to-date Hadoop best practices
+- Rackspace handles configuration and deployment
+
+#### Concern: Deployment options
+
+**Unmanaged hosting**
+
+- Limited deployment flexibility—all dedicated servers or all public cloud
+
+**Rackspace Managed Big Data Platform**
+
+- Multiple deployment options architected specifically for Hadoop:
+
+  - Public cloud
+  - Private cloud
+  - Bare metal
+  - Hybrid cloud
+
+#### Concern: Data portability
+
+**Unmanaged hosting**
+
+- Expensive proprietary technologies and risk of vendor lock-in
+
+**Rackspace Managed Big Data Platform**
+
+- Infrastructure built on OpenStack
+- Hortonworks platform works 100% within the Apache Software Foundation process
+
+#### Concern: Performance
+
+**Unmanaged hosting**
+
+- Lower performance on generic servers not optimized for high-I/O database workloads
+- Noisy-neighbor problems on public cloud create inconsistency
+
+**Rackspace Managed Big Data Platform**
+
+- Consistent database performance on hardware configured and tuned to make Hadoop run faster
+
+#### Concern: Maintenance and monitoring
+
+**Unmanaged hosting**
+
+-Customer allocates significant resources to monitor performance, maintenance, and patching.
+
+**Rackspace Managed Big Data Platform**
+
+- Rackspace can proactively monitor the network, server and Hadoop clusters for 
+connections, lag, status of replicas, size, number of queries, and more, 24x7x365
+
+#### Concern: Ecosystem support
+
+**Unmanaged hosting**
+
+- Limited or no support for key Hadoop tools like Spark, Hive and Pig
+
+**Rackspace Managed Big Data Platform**
+
+- Support available for core tools in the Hadoop ecosystem
+
+#### Concern: Security options
+
+**Unmanaged hosting**
+
+-   Bare bones out-of-the-box Hadoop security
+-   Additional security must be provided by additional vendors and often  managed by the 
+customer 
+
+**Rackspace Managed Big Data Platform**
+
+-   Range of managed security options available like intrusion detection, log management 
+and network security solutions
+
+#### Concern: Vendor accountability
+
+**Unmanaged hosting**
+
+-   Separate infrastructure and platform providers can point fingers when things go wrong
+
+**Rackspace Managed Big Data Platform**
+
+-   Hortonworks platform and Rackspace infrastructure support on one support contract, 
+giving customers giving customers
+
 
 ### Use cases
 

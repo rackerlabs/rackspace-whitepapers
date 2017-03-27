@@ -99,8 +99,9 @@ where applicable and stick with traditional hosting where required.
 After all, the Cloud is for everyone, but not for *everything.*
 
 *<sup>1</sup> “Cloud Computing Survey: IT Leaders See Big Promise, Have Big Security
-Questions” CIO Magazine, October 2008
-<sup>2</sup> “Gartner’s Top Predictions for IT Organizations and Users, 2010 and
+Questions” CIO Magazine, October 2008*
+
+*<sup>2</sup> “Gartner’s Top Predictions for IT Organizations and Users, 2010 and
 Beyond: A New Balance” Gartner, Inc., December 2009*
 
 #### Types of cloud computing

@@ -516,38 +516,65 @@ Diversity Limited can be found at http://diversity.net.nz
 
 **Sources:**
 
-<sup>1</sup> http://csrc.nist.gov/groups/SNS/cloud-computing/
-<sup>2</sup> http://csrc.nist.gov/groups/SNS/cloud-computing/cloud-def-v15.doc
+<sup>1</sup> <http://csrc.nist.gov/groups/SNS/cloud-computing/>
+
+<sup>2</sup> <http://csrc.nist.gov/groups/SNS/cloud-computing/cloud-def-v15.doc>
+
 <sup>3</sup> Virtualization – The ability to increase computing efficiency
-http://broadcast.rackspace.com/hosting_knowledge/whitepapers/Revolution_Not_Evolution-Whitepaper.pdf
+<http://broadcast.rackspace.com/hosting_knowledge/whitepapers/Revolution_Not_Evolution-Whitepaper.pdf>
+
 <sup>4</sup> Scalability and fast provisioning – for IT at web scale -
-http://broadcast.rackspace.com/hosting_knowledge/whitepapers/Revolution_Not_Evolution-Whitepaper.pdf
+<http://broadcast.rackspace.com/hosting_knowledge/whitepapers/Revolution_Not_Evolution-Whitepaper.pdf>
+
 <sup>5</sup> From Water-wheel to Utility Power – An analogy for the Cloud -
-http://broadcast.rackspace.com/hosting_knowledge/whitepapers/Revolution_Not_Evolution-Whitepaper.pdf
-<sup>6</sup> http://www.qrimp.com/blog/blog.The-Difference-between-IaaS-and-PaaS.html
-<sup>7</sup> http://m.zdnet.com/blog/forrester/is-the-iaaspaas-line-beginning-to-blur/583
-<sup>8</sup> http://en.wikipedia.org/wiki/Software_as_a_service
-<sup>9</sup> http://www.readwriteweb.com/cloud/2010/07/sass-providers-challenge-the-k.php and
-http://www.networkworld.com/news/2010/101810-saas-on-a-tear-says.html
-<sup>10</sup> http://www.salesforce.com
-<sup>11</sup> http://www.networkworld.com/news/2010/050610-gartner-saas-adoption-on-the.html
-<sup>12</sup> http://www.zendesk.com/blog/groupon-defenders-of-the-customer-experience
-<sup>13</sup> http://www.groupon.com
-<sup>14</sup> http://www.zendesk.com
-<sup>15</sup> http://www.zendesk.com/blog/hey-groupon-thanks-a-million
-<sup>16</sup> http://en.wikipedia.org/wiki/Platform_as_a_service and
-http://java.dzone.com/articles/what-platformservice-paas
-<sup>17</sup> http://code.google.com/appengine/
-<sup>18</sup> http://www.microsoft.com/windowsazure/
-<sup>19</sup> http://www.salesforce.com/platform/
-<sup>20</sup> http://www.zdnet.com/blog/saas/cogheads-demise-highlights-paas-lock-out-risk/668
-<sup>21</sup> http://www.menumate.com/
-<sup>22</sup> http://trineo.co.nz/
-<sup>23</sup> http://diversity.net.nz/wp-content/uploads/2011/01/Moving-to-the-Clouds.pdf
-<sup>24</sup> http://diversity.net.nz/wp-content/uploads/2011/01/Moving-to-the-Clouds.pdf
-<sup>25</sup> http://aws.amazon.com/
-<sup>26</sup> http://www.rackspace.com/
-<sup>27</sup> http://m.zdnet.com/blog/forrester/is-the-iaaspaas-line-beginning-to-blur/583
-<sup>28</sup> http://www.beyonddiet.com/BD/Categories/Fat-Burning-Foods
+<http://broadcast.rackspace.com/hosting_knowledge/whitepapers/Revolution_Not_Evolution-Whitepaper.pdf>
+
+<sup>6</sup> <http://www.qrimp.com/blog/blog.The-Difference-between-IaaS-and-PaaS.html>
+
+<sup>7</sup> <http://m.zdnet.com/blog/forrester/is-the-iaaspaas-line-beginning-to-blur/583>
+
+<sup>8</sup> <http://en.wikipedia.org/wiki/Software_as_a_service>
+
+<sup>9</sup> <http://www.readwriteweb.com/cloud/2010/07/sass-providers-challenge-the-k.php> and
+<http://www.networkworld.com/news/2010/101810-saas-on-a-tear-says.html>
+
+<sup>10</sup> <http://www.salesforce.com>
+
+<sup>11</sup> <http://www.networkworld.com/news/2010/050610-gartner-saas-adoption-on-the.html>
+
+<sup>12</sup> <http://www.zendesk.com/blog/groupon-defenders-of-the-customer-experience>
+
+<sup>13</sup> <http://www.groupon.com>
+
+<sup>14</sup> <http://www.zendesk.com>
+
+<sup>15</sup> <http://www.zendesk.com/blog/hey-groupon-thanks-a-million>
+
+<sup>16</sup> <http://en.wikipedia.org/wiki/Platform_as_a_service> and
+<http://java.dzone.com/articles/what-platformservice-paas>
+
+<sup>17</sup> <http://code.google.com/appengine/>
+
+<sup>18</sup> <http://www.microsoft.com/windowsazure/>
+
+<sup>19</sup> <http://www.salesforce.com/platform/>
+
+<sup>20</sup> <http://www.zdnet.com/blog/saas/cogheads-demise-highlights-paas-lock-out-risk/668>
+
+<sup>21</sup> <http://www.menumate.com/>
+
+<sup>22</sup> <http://trineo.co.nz/>
+
+<sup>23</sup> <http://diversity.net.nz/wp-content/uploads/2011/01/Moving-to-the-Clouds.pdf>
+
+<sup>24</sup> <http://diversity.net.nz/wp-content/uploads/2011/01/Moving-to-the-Clouds.pdf>
+
+<sup>25</sup> <http://aws.amazon.com/>
+
+<sup>26</sup> <http://www.rackspace.com/>
+
+<sup>27</sup> <http://m.zdnet.com/blog/forrester/is-the-iaaspaas-line-beginning-to-blur/583>
+
+<sup>28</sup> <http://www.beyonddiet.com/BD/Categories/Fat-Burning-Foods>
 
 

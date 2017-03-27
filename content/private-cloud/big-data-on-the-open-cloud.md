@@ -84,9 +84,9 @@ OLTP databases and BI databases.
 consuming in conjunction with growing data volumes
 - Current technologies offer no support for big data
 - Legacy commercial database products do not scale performance with data volume.
- Making these products scale would require complex clustered footprints of
- servers. In addition, both vendors recommend their own proprietary
- infrastructure and database technology.
+Making these products scale would require complex clustered footprints of
+servers. In addition, both vendors recommend their own proprietary
+infrastructure and database technology.
 
 #### Option 2: Purchase an MPP (Massively Parallel Processing) Appliance
 

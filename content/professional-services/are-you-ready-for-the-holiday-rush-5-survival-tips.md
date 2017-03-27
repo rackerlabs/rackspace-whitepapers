@@ -76,6 +76,7 @@ servers, with the ability to add more servers that can help handle the
 traffic. However, horizontal scaling can’t be done on a moment’s notice -
 it requires some advance planning. You have to prep for horizontal
 scaling, which includes:
+
 1. having a load balancer in front of your configuration (more on this later),
 2. splitting out the layers of your configuration, and
 3. developing your application to take advantage of horizontal scaling.
@@ -102,7 +103,6 @@ performance.
 
 Depending on what platform you’re running on, there are multiple ways
 you can implement caching.  Here are a few at a glance:
-
 
 -   Squid – <http://www.squid-cache.org/>
 -   Varnish – <http://www.varnish-cache.org/>

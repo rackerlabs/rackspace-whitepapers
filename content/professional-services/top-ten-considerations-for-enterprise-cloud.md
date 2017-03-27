@@ -309,17 +309,23 @@ most controversial topics facing the enterprise.
 
 <sup>1</sup> According to a 2012 Cloudability survey of more than 3,200 customers
 in more than 80 different countries.
+
 <sup>2</sup> Background information on this trend can be found at
 <http://searchcloudcomputing.techtarget.com/feature/Business-continuity-moves-to-the-cloud-as-applications-become-resilient>
+
 <sup>3</sup> As one example of this trend, see
 <http://techandscience.com/techblog/ShowArticle.aspx?ID=1676>
+
 <sup>4</sup> According to “Continuity Insights & KPMG LLP Present The 2011-2012
 Global Business Continuity Management (BCM) Program Benchmarking Study.”
 <http://www.kpmg.com/US/en/IssuesAndInsights/ArticlesPublications/Documents/2012-cin-kpmg-management-study.pdf>
+
 <sup>5</sup>
 [http://www.rackspace.com/blog/election-2012-powered-by-the-cloud-infographic/](http://www.rackspace.com/blog/election-2012-powered-by-the-cloud-infographic/%20)
+
 <sup>6</sup>
 [/how-to/turning-big-data-into-big-dollars](/how-to/turning-big-data-into-big-dollars)
+
 <sup>7</sup> According to Gartner’s “Forecast: Public Cloud Services, Worldwide,
 2010–2016, 2Q12 Update”
 

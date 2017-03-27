@@ -96,7 +96,7 @@ public, private or hybrid.
 A “cloud” is essentially a pool of virtualized hardware that enables
 software apps to add and release resources as needed on the fly.
 
-**3 Types of Clouds: **
+**3 Types of Clouds:**
 
 **Public cloud:**
 An off-premises multi-tenant solution that enables a utility computing
@@ -219,4 +219,5 @@ Toll Free:  (800) 961-2888 ext. 3403
 **SOURCES**
 <sup>1</sup> Charles Babcock, “Lessons from FarmVille: How Zynga Uses the Cloud,”
 InformationWeek, 14 May 2011
+
 <sup>2</sup> “Heading into the Cloud with Confidence,” CIO, June 2011, page 2

@@ -190,4 +190,5 @@ create a more seamless experience for your users.
 **Sources**
 
 <sup>1</sup> <http://getting-real.com/blog/the-secret-to-instagrams-blazing-fast-mobile-design/>
+
 <sup>2</sup> <http://www.rackspace.com/blog/embracing-mobile-first-design/>
