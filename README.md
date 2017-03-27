@@ -1,4 +1,6 @@
 # rackspace-whitepapers
+[![build badge](https://build.developer.rackspace.com/rackerlabs/rackspace-whitepapers/badge?branch=master)](https://build.developer.rackspace.com/rackerlabs/rackspace-whitepapers)
+
 Rackspace Whitepapers site (deconst-supported)
 
 ## Work in Progress
