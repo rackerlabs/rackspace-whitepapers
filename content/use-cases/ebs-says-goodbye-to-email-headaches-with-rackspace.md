@@ -1,7 +1,7 @@
 ---
-permalink: ebs-says-goodbye-to-email-headaches-with-rackspace/
+permalink: ebs-uses-rackspace-to-say-goodbye-to-email-headaches/
 audit_date:
-title: EBS Says Goodbye to Email Headaches with Rackspace
+title: EBS Uses Rackspace to Say Goodbye to Email Headaches
 type: whitepaper
 created_date: '2012-09-05'
 created_by: Liz Staplefoote
@@ -12,7 +12,7 @@ product_url: use-cases
 ---
 
 <a href="http://www.ebsincorporated.com">
-   <img src="{% asset_path use-cases/ebs-says-goodbye-to-email-headaches-with-rackspace/ebs.png %}" width="213" height="128" />
+   <img src="{% asset_path use-cases/ebs-uses-rackspace-to-say-goodbye-to-email-headaches/ebs.png %}" width="213" height="128" />
 </a>
 
 
