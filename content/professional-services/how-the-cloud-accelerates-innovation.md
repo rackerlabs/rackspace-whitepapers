@@ -357,7 +357,7 @@ March 3, 2010: [http://www.zdnetasia.com/dell-touts-
 hefty-savings-from-it-efficiencies-62061584.htm](http://www.zdnetasia.com/dell-touts-%20hefty-savings-from-it-efficiencies-62061584.htm)
 
 <sup2</sup> AgencyNet Case Study, Rackspace,
-2011: [/how-to/rackspace-keeps-nickelodeons-kids-choice-awards-virtual-slime-flowing](/how-to/rackspace-keeps-nickelodeons-kids-choice-awards-virtual-slime-flowing)
+2011: [https://support.rackspace.com/whitepapers/rackspace-keeps-nickelodeons-kids-choice-awards-virtual-slime-flowing/](https://support.rackspace.com/whitepapers/rackspace-keeps-nickelodeons-kids-choice-awards-virtual-slime-flowing/)
 
 Copyright 2012 Rackspace US, Inc. All rights reserved. This White Paper is for
 informational purposes only. The information contained in this White Paper is

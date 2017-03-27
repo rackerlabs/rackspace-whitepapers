@@ -2,7 +2,7 @@
 permalink: future-buro-runs-big-campaigns-in-the-cloud/
 audit_date:
 title: Future B&uuml;ro Runs Big Campaigns in the Cloud
-type: case_study
+type: whitepaper
 created_date: '2012-09-28'
 created_by: Laurel Wamsley
 last_modified_date: '2017-03-23'

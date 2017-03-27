@@ -2,7 +2,7 @@
 permalink: globalscape-uses-rackspace-hosting-to-deliver-award-winning-products-to-customers/
 audit_date:
 title: Globalscape Uses Rackspace&reg; Hosting To Deliver Award-Winning Products To Customers
-type: case_study
+type: whitepaper
 created_date: '2014-08-14'
 created_by: Rackspace Support
 last_modified_date: '2017-03-23'

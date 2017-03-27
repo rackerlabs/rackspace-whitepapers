@@ -116,7 +116,7 @@ waking him up at night. Rackspace could provide the hardware, the
 services and the Fanatical Support that Firefly Digital needed to keep
 its customers up and running around the clock.
 
-The proposal they've put together addresses every concern I raised;
+"The proposal they've put together addresses every concern I raised;
 they've even increased the power of certain servers to ensure my ability
 to meet my clients' needs. And, they're offering all this for just a
 little more than I'm already paying for a service that's keeping me up

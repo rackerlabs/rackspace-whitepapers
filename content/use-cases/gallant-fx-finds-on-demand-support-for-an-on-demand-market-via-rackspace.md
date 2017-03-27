@@ -2,7 +2,7 @@
 permalink: gallant-fx-finds-on-demand-support-for-an-on-demand-market-via-rackspace/
 audit_date:
 title: Gallant FX Finds On-demand Support for an On-demand Market via Rackspace
-type: case_study
+type: whitepaper
 created_date: '2012-11-30'
 created_by: Rackspace Support
 last_modified_date: '2017-03-23'

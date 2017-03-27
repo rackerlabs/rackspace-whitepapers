@@ -2,7 +2,7 @@
 permalink: inaveros-always-on-platform-built-on-rackspace-hybrid-solution/
 audit_date:
 title: "Inavero's 'Always On' Platform Built on Rackspace Hybrid Solution"
-type: case_study
+type: whitepaper
 created_date: '2012-09-28'
 created_by: Karla Holmes
 last_modified_date: '2017-03-23'

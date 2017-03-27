@@ -2,7 +2,7 @@
 permalink: hybrid-hosting-powers-big-data-processing-for-corporation-wiki/
 audit_date:
 title: Hybrid Hosting Powers Big Data Processing for Corporation Wiki
-type: case_study
+type: whitepaper
 created_date: '2013-06-20'
 created_by: Rackspace Support
 last_modified_date: '2017-03-23'

@@ -1,8 +1,8 @@
 ---
-permalink: a-high-street-alternative-in-the-rackspace-hybrid-cloud/
+permalink: intervalzero-has-zero-email-headaches-with-rackspace/
 audit_date:
 title: IntervalZero Has Zero Email Headaches with Rackspace
-type: case_study
+type: whitepaper
 created_date: '2012-09-05'
 created_by: Liz Staplefoote
 last_modified_date: '2017-03-24'
@@ -13,7 +13,7 @@ product_url: use-cases
 
 <a href="http://www.intervalzero.com/">
    <img src="{% asset_path use-cases/how-it-maintains-relevancy/intervalzero.jpg %}" width="338" height="120" />
-</a>
+</a>intervalzero-has-zero-email-headaches-with-rackspace
 
 **CUSTOMER'S BUSINESS:** Design and develop embedded software products
 

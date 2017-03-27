@@ -2,7 +2,7 @@
 permalink: gracious-studios-helps-fast-growing-retailer-body-fit-focus-on-digital-growth-and/
 audit_date:
 title: 'Gracious Studios Helps Fast-Growing Retailer Body & Fit Focus On Digital Growth and Performance'
-type: case_study
+type: whitepaper
 created_date: '2014-07-16'
 created_by: Rackspace Support
 last_modified_date: '2017-03-23'

@@ -2,7 +2,7 @@
 permalink: huge-delivers-globally-for-the-world-s-top-companies/
 audit_date:
 title: "Huge Delivers Globally for the World's Top Companies"
-type: case_study
+type: whitepaper
 created_date: '2014-09-15'
 created_by: Rackspace Support
 last_modified_date: '2017-03-23'

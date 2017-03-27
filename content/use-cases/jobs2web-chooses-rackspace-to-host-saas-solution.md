@@ -2,7 +2,7 @@
 permalink: jobs2web-chooses-rackspace-to-host-saas-solution/
 audit_date:
 title: Jobs2web chooses Rackspace to host SaaS Solution
-type: case_study
+type: whitepaper
 created_date: '2012-09-28'
 created_by: Angela Bartels
 last_modified_date: '2017-03-24'

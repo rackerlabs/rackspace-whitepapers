@@ -2,7 +2,7 @@
 permalink: helping-healthcare-players-get-their-apps-to-market-cloudmine-solves-hipaa-compliant-data/
 audit_date:
 title: 'Helping Healthcare Players Get their Apps to Market, CloudMine Solves HIPAA-Compliant Data Challenges'
-type: case_study
+type: whitepaper
 created_date: '2015-02-05'
 created_by: Rackspace Support
 last_modified_date: '2017-03-23'

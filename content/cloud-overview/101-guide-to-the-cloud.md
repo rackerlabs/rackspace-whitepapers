@@ -9,7 +9,8 @@ last_modified_date: '2017-02-22'
 last_modified_by: Cat Lookabaugh
 product: Cloud Overview
 product_url: cloud-overview
-description: > Could you describe what "the cloud" actually is if someone asked?  Do you 
+description: > 
+Could you describe what "the cloud" actually is if someone asked?  Do you 
 know how to implement one? To find out more, read on!
 ---
 

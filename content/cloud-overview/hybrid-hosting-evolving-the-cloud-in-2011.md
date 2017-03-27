@@ -325,7 +325,7 @@ launches and live events, both of which dramatically increase traffic
 for a short period of time. Just as important, MLG minimized the costs
 of unused capacity between peaks.
 
-**[Click here to see full case study.](/how-to/rackspace-gives-major-league-gaming-mlg-the-power-of-scale)**
+**[Click here to see full case study.](https://support.rackspace.com/whitepapers/rackspace-gives-major-league-gaming-mlg-the-power-of-scale/)**
 
 ### Conclusion
 

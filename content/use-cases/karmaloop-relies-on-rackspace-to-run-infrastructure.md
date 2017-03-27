@@ -2,7 +2,7 @@
 permalink: karmaloop-relies-on-rackspace-to-run-infrastructure/
 audit_date:
 title: Karmaloop Relies on Rackspace to Run Infrastructure
-type: case_study
+type: whitepaper
 created_date: '2013-07-12'
 created_by: Rackspace Support
 last_modified_date: '2017-03-24'

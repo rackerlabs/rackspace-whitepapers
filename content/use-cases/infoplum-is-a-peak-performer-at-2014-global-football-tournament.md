@@ -2,7 +2,7 @@
 permalink: infoplum-is-a-peak-performer-at-2014-global-football-tournament/
 audit_date:
 title: Infoplum is a Peak Performer at 2014 Global Football Tournament
-type: case_study
+type: whitepaper
 created_date: '2015-02-04'
 created_by: Rackspace Support
 last_modified_date: '2017-03-23'

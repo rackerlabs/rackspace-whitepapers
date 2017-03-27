@@ -1,8 +1,8 @@
 ---
 permalink: hr-softwares-next-generation-finds-footing-in-the-cloud/
 audit_date:
-title: "HR Software's Next Generation Finds Footing In The Cloud
-type: case_study
+title: "HR Software's Next Generation Finds Footing In The Cloud"
+type: whitepaper
 created_date: '2012-09-28'
 created_by: Laurel Wamsley
 last_modified_date: '2017-03-23'

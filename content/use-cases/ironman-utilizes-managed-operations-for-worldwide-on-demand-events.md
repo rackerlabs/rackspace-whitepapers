@@ -2,7 +2,7 @@
 permalink: ironman-utilizes-managed-operations-for-worldwide-on-demand-events/
 audit_date:
 title: Ironman Utilizes Managed Operations for Worldwide On-Demand Events
-type: case_study
+type: whitepaper
 created_date: '2012-08-31'
 created_by: Liz Staplefoote
 last_modified_date: '2017-03-24'

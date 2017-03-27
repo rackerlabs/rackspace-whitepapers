@@ -1,8 +1,8 @@
 ---
 permalink: fueling-the-rapid-rise-of-kendra-scott-design-requires-high-performance-ecommerce/
 audit_date:
-title: "Fueling the Rapid Rise of Kendra Scott Design\L Requires High-Performance Ecommerce"
-type: case_study
+title: "Fueling the Rapid Rise of Kendra Scott Design Requires High-Performance Ecommerce"
+type: whitepaper
 created_date: '2014-10-22'
 created_by: Rackspace Support
 last_modified_date: '2017-03-23'

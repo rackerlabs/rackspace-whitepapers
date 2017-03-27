@@ -2,7 +2,7 @@
 permalink: how-shoplocal-handles-huge-holiday-traffic-spikes/
 audit_date:
 title: How ShopLocal Handles Huge Holiday Traffic Spikes
-type: case_study
+type: whitepaper
 created_date: '2012-11-29'
 created_by: Rackspace Support
 last_modified_date: '2017-03-23'

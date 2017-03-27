@@ -1,8 +1,8 @@
 ---
-permalink: a-high-street-alternative-in-the-rackspace-hybrid-cloud/
+permalink: ilium-software-trades-email-server-for-fanatical-support/
 audit_date:
 title: Ilium Software Trades Email Server for Fanatical Support
-type: case_study
+type: whitepaper
 created_date: '2012-09-05'
 created_by: Liz Staplefoote
 last_modified_date: '2017-03-23'
@@ -12,7 +12,7 @@ product_url: use-cases
 ---
 
 <a href="http://www.iliumsoft.com/">
-   <img src="{% asset_path use-cases/how-it-maintains-relevancy/iliumlogo.png %}" />
+   <img src="{% asset_path use-cases/ilium-software-trades-email-server-for-fanatical-support/iliumlogo.png %}" />
 </a>
 
 **CUSTOMER'S BUSINESS:** Mobile information management tools for

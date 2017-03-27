@@ -2,7 +2,7 @@
 permalink: hubspot-disrupts-marketing-in-the-hybrid-cloud/
 audit_date:
 title: Hubspot Disrupts Marketing in the Hybrid Cloud
-type: case_study
+type: whitepaper
 created_date: '2013-09-05'
 created_by: Rackspace Support
 last_modified_date: '2017-03-23'

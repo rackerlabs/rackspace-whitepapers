@@ -2,7 +2,7 @@
 permalink: fundapps-delivers-compliance-software-with-rackspace-hybrid-cloud/
 audit_date:
 title: FundApps Delivers Compliance Software with Rackspace Hybrid Cloud
-type: case_study
+type: whitepaper
 created_date: '2013-07-31'
 created_by: Rackspace Support
 last_modified_date: '2017-03-23'
