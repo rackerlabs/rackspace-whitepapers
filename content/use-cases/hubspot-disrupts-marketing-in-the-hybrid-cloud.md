@@ -12,7 +12,7 @@ product_url: use-cases
 ---
 
 <a href="http://www.hubspot.com/">
-   <img src="{% asset_path use-cases/hubspot-disrupts-marketing-in-the-hybrid-cloud/hubspot.pngg %}" width="311" height="113" />
+   <img src="{% asset_path use-cases/hubspot-disrupts-marketing-in-the-hybrid-cloud/hubspot.png %}" width="311" height="113" />
 </a>
 
 **CUSTOMER’S BUSINESS:** Hubspot
