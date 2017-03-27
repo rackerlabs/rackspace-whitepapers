@@ -120,13 +120,12 @@ To carry on this thinking, here’s an area where most IT departments can
 easily do more with less: outsourcing your server management. Before you
 reject this idea, consider about these comments from CIO magazine.
 
->
-  “As one colleague who consults on financial strategy with many large
-  companies said, ‘You know what we think of IT? We think it shows up,
-  spouts unintelligible jargon, and asks for huge lumps of cash...’
-  “It’s easy to understand why any initiative that promises to reduce
-  lumpy capital investment and transform it into smoother operational
-  expenditure would be extremely attractive to bean counters.”
+> “As one colleague who consults on financial strategy with many large
+> companies said, ‘You know what we think of IT? We think it shows up,
+> spouts unintelligible jargon, and asks for huge lumps of cash...’
+> “It’s easy to understand why any initiative that promises to reduce
+> lumpy capital investment and transform it into smoother operational
+> expenditure would be extremely attractive to bean counters.”
 
 If your CFO could save money on servers, push capital expenses into
 operating expenses, and get the same level of service for your users,
