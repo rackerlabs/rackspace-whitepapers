@@ -9,7 +9,7 @@ layout: whitepaper-home
       <div class="row content home">
         <section class="featured">
           <h2 class="section-heading">Technical White Papers</h2>
-          <!--<p class="tagline">See how the world's leading companies use Rackspace to solve their IT concerns.</p>-->
+          <p class="tagline"></p>
           <h3 class="featuredHead">Featured White Papers</h3>
           <div class="featured-list">
             {% for featured in site.data.featured %}
