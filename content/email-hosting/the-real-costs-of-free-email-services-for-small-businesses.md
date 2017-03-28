@@ -319,7 +319,7 @@ organizations are transitioning to hosted solutions due to lower total
 cost of ownership, seamless deployments and overall easier management
 than network-based providers, according to Forrester Research.
 
-[KarmaCRM](https://support.rackspace.com/white-paper/rackspace-managed-operations-lets-karmacrm-stay-focused-on-its-business/),
+[KarmaCRM](https://support.rackspace.com/whitepapers/rackspace-managed-operations-lets-karmacrm-stay-focused-on-its-business/),
 a provider of SaaS customer relationship management tools, is a startup
 company that taps into [Rackspace hosting
 services](http://www.rackspace.com) to free up the company IT team.

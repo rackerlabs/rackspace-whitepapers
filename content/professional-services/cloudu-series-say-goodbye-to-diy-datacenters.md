@@ -72,7 +72,7 @@ many of which are created via the economics of Cloud Computing.
 
 Previously, we published a CloudU report that took an in-depth look
 at the economics of Cloud Computing. As described in detail in
-[Cloudonomics: the Economics of Cloud Computing](https://support.rackspace.com/white-paper/cloudonomics-the-economics-of-cloud-computing/),
+[Cloudonomics: the Economics of Cloud Computing](https://support.rackspace.com/whitepapers/cloudonomics-the-economics-of-cloud-computing/),
 under traditional
 IT models, organizations built their own IT infrastructure. This
 introduced two specific problems, the first of which relates to capacity

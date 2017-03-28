@@ -91,7 +91,7 @@ transformational. Microsoft was founded during a recession, much like
 the one we find ourselves in today. What is different however is that
 unlike the 1970’s, today the barriers to entry for a new startup are
 greatly reduced as technology becomes so much more accessible. In our
-[first white paper](https://support.rackspace.com/white-paper/revolution-not-evolution-how-cloud-computing-differs-from-traditional-it-and-why-it/),
+[first white paper](https://support.rackspace.com/whitepapers/revolution-not-evolution-how-cloud-computing-differs-from-traditional-it-and-why-it/),
 we pointed out that Cloud Computing democratizes technology saying that:
 
 > Cloud Computing is facilitating a seismic shift in terms of business development.
@@ -287,7 +287,7 @@ We contend that the reason that very few startups host their own
 infrastructure is that startups are, by definition, about unique ideas.
 Operating infrastructure is a commodity requirement, much like the
 provision of electricity, water or telephone lines. As we pointed out in
-[Revolution not Evolution](https://support.rackspace.com/white-paper/revolution-not-evolution-how-cloud-computing-differs-from-traditional-it-and-why-it/),
+[Revolution not Evolution](https://support.rackspace.com/whitepapers/revolution-not-evolution-how-cloud-computing-differs-from-traditional-it-and-why-it/),
 in the same way that historically businesses had to provide for their
 own requirements in terms of power for machinery, so too did businesses
 have to provide their own IT infrastructure.
@@ -301,7 +301,7 @@ strategic things to think about. Cloud Computing gives them the
 opportunity to let someone else do the worrying for them.
 
 As we detailed in a
-[later white paper](https://support.rackspace.com/white-paper/understanding-the-cloud-computing-stack-saas-paas-iaas/),
+[later white paper](https://support.rackspace.com/whitepapers/understanding-the-cloud-computing-stack-saas-paas-iaas/),
 the term “Cloud Computing” means different things to different people.
 
 We use a simple acronym to define Cloud Computing. This acronym was
@@ -320,7 +320,7 @@ Within this definition lie three distinct different types of services –
 Software as a Service (SaaS), Platform as a Service (PaaS) and
 Infrastructure as a Service (IaaS). We detail the difference between
 these three approaches in the
-[Understanding Cloud Computing paper](https://support.rackspace.com/white-paper/understanding-the-cloud-computing-stack-saas-paas-iaas/).
+[Understanding Cloud Computing paper](https://support.rackspace.com/whitepapers/understanding-the-cloud-computing-stack-saas-paas-iaas/).
 Startups have the ability to leverage all of these different parts of
 Cloud Computing – using for example Cloud based email, collaborative
 development platforms and Cloud-based infrastructure for their

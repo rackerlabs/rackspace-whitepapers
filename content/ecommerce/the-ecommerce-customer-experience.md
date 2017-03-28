@@ -219,7 +219,7 @@ customer experience around these four principles:
     electronic (automated) actions.
 
 *For a deeper look into how we approach experience design, read
-[Experience Design at Rackspace](https://support.rackspace.com/white-paper/experience-design-at-rackspace/)
+[Experience Design at Rackspace](https://support.rackspace.com/whitepapers/experience-design-at-rackspace/)
 from Rackspace VP of Experience Design, Harry Max.*
 
 ### Summary

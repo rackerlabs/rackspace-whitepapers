@@ -402,13 +402,13 @@ in your own corporate data center or even move them to Microsoft Azure.
 
 Having a support staff that can make your private Microsoft Cloud
 Platform work for you is vital to your success. Rackspace developed
-***Fanatical Support<sup>&reg;</sup>*** and has applied the same commitment to
+***Fanatical Support*** and has applied the same commitment to
 Microsoft Hyper-V and Systems Center support. You can rest easy, knowing your
 mission-critical apps are managed by a four-time Microsoft Partner of
 the Year with deep roots in the Microsoft ecosystem.
 
 Rackspace has also engineered flexible guest OS support into this
-offering which provides its award winning ***Fanatical Support<sup>&reg;</sup>***
+offering which provides its award winning ***Fanatical Support***
 You choose which VM’s receive the support and which ones you prefer to
 support on your own. You can turn this option on and off based on your
 needs. This versatile support offering applies to both Windows and Linux
@@ -429,7 +429,7 @@ so.
 
 For a more detailed discussion on what apps can move to the cloud in
 which order, see the Rackspace white paper [“Getting Started with the
-Cloud: A Step-by-Step Enterprise Implementation Guide”](https://support.rackspace.com/white-paper/getting-started-with-the-cloud-a-step-by-step-enterprise-implementation-guide/).
+Cloud: A Step-by-Step Enterprise Implementation Guide”](https://support.rackspace.com/whitepapers/getting-started-with-the-cloud-a-step-by-step-enterprise-implementation-guide/).
 
 Moving to the cloud may appear daunting, but you don’t have to go it alone.
 

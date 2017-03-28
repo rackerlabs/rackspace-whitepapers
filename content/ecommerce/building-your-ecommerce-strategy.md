@@ -78,7 +78,7 @@ account for the collection, storage, and manipulation of new types of
 data.
 
 *See [The Ecommerce Customer Experience
-Guide](https://support.rackspace.com/white-paper/the-ecommerce-customer-experience/)
+Guide](https://support.rackspace.com/whitepapers/the-ecommerce-customer-experience/)
 for help building out your customer experience strategy.*
 
 #### Choosing Your Ecommerce Store Platform
@@ -116,7 +116,7 @@ to the cloud while maintaining control over other critical systems best run on
 dedicated or on-premises gear.
 
 *Read [Ecommerce Replatforming
-Basics](https://support.rackspace.com/white-paper/ecommerce-re-platforming-basics/)
+Basics](https://support.rackspace.com/whitepapers/ecommerce-re-platforming-basics/)
 for more guidance on planning and executing a replatforming project.*
 
 #### Mobile Functionality
@@ -246,7 +246,7 @@ gear.
 
 *Find out how to integrate cloud into your PCI compliance efforts in
 [PCI Compliance in the Hybrid
-Cloud](https://support.rackspace.com/white-paper/pci-compliance-in-rackspace-hybrid-cloud/).*
+Cloud](https://support.rackspace.com/whitepapers/pci-compliance-in-rackspace-hybrid-cloud/).*
 
 ### Getting Started
 
