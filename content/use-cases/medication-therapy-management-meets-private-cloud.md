@@ -12,7 +12,7 @@ product_url: use-cases
 ---
 
 <a href="http://www.pharmmd.com/">
-   <img src="{% asset_path use-cases/medication-therapy-management-meets-private-cloudy/pharmmd.png %}" width="214" height="130" />
+   <img src="{% asset_path use-cases/medication-therapy-management-meets-private-cloud/pharmmd.png %}" width="214" height="130" />
 </a>
 
 **CUSTOMER’S BUSINESS:** PharmMD offers a range of medication therapy
