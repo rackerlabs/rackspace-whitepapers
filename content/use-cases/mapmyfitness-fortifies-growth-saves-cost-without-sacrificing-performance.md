@@ -12,7 +12,7 @@ product_url: use-cases
 ---
 
 <a href="ttp://www.mapmyfitness.com/">
-   <img src="{% asset_path use-cases/mapmyfitness-fortifies-growth-saves-cost-without-sacrificing-performance/MapMyFitnesslogo.jp %}" width="400" height="110" />
+   <img src="{% asset_path use-cases/mapmyfitness-fortifies-growth-saves-cost-without-sacrificing-performance/MapMyFitnesslogo.jpg %}" width="400" height="110" />
 </a>
 
 CUSTOMER’S BUSINESS: MapMyFitness is the leader in Connected Fitness –
