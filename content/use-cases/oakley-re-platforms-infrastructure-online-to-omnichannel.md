@@ -1,5 +1,5 @@
 ---
-permalink: aoakley-re-platforms-infrastructure-online-to-omnichannel/
+permalink: oakley-re-platforms-infrastructure-online-to-omnichannel/
 audit_date:
 title: Oakley Re-Platforms Infrastructure Online to Omnichannel
 type: whitepaper

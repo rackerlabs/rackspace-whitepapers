@@ -1,5 +1,5 @@
 ---
-permalink: a-omni-channel-commerce-in-the-cloud/
+permalink: omni-channel-commerce-in-the-cloud/
 audit_date:
 title: Omni-channel Commerce in the Cloud
 type: whitepaper
