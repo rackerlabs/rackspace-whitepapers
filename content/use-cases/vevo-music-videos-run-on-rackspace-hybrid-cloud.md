@@ -12,7 +12,7 @@ product_url: use-cases
 ---
 
 <a href="http://www.vevo.com/">
-   <img src="{% asset_path UseCases/vevo-music-videos-run-on-rackspace-hybrid-cloud/vevo-logo.png %}" width="179" height="45" />
+   <img src="{% asset_path use-cases/vevo-music-videos-run-on-rackspace-hybrid-cloud/vevo-logo.png %}" width="179" height="45" />
 </a>
 
 **CUSTOMER'S BUSINESS:** Websites, Rich Media
@@ -99,7 +99,7 @@ the client’s source IP address and country code. This enables VEVO to
 optimize their user experience and highlights one of the advantages of
 combining cloud resources with traditional enterprise grade hardware.
 
-<img src="{% asset_path UseCases/vevo-music-videos-run-on-rackspace-hybrid-cloud/vevo.png %}" width="429" height="234" />
+<img src="{% asset_path use-cases/vevo-music-videos-run-on-rackspace-hybrid-cloud/vevo.png %}" width="429" height="234" />
 
 Even with the use of a
 [CDN](http://www.rackspace.com/cloud/files/technology/?page=cdn) for
