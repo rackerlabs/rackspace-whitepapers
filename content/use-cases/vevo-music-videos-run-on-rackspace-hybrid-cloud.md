@@ -35,8 +35,8 @@ massive transcoding project.**
 ### Company overview
 
 Every day, millions of consumers look to the Internet as their go-to
-source for music—whether downloading tunes to a mobile device or
-streaming music videos from a website.
+source for music—whether downloading tunes to a mobile device or streaming
+music videos from a website.
 
 Created in 2009 to address the emerging trend of online music videos,
 VEVO’s successful business model relies on [Rackspace^®^ Hybrid
