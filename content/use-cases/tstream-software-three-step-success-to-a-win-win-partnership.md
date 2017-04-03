@@ -4,7 +4,8 @@ audit_date:
 title: TStream Software Three-Step Success To a Win-Win Partnership
 type: whitepaper
 created_date: '2012-11-26'
-created_by: Rackspace Supportlast_modified_date: '2017-04-03'
+created_by: Rackspace Support
+last_modified_date: '2017-04-03'
 last_modified_by: Cat Lookabaugh
 product: Use Cases
 product_url: use-cases
