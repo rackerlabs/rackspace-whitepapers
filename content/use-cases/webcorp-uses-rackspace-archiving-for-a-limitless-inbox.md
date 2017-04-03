@@ -1,5 +1,5 @@
 ---
-permalink:webcorp-uses-rackspace-archiving-for-a-limitless-inbox/
+permalink: webcorp-uses-rackspace-archiving-for-a-limitless-inbox/
 audit_date:
 title: WebCorp uses Rackspace Archiving for a Limitless Inbox
 type: whitepaper

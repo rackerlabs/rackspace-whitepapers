@@ -4,7 +4,8 @@ audit_date:
 title: Troux Technologies Accelerates Client Success in Rackspace Private Cloud
 type: whitepaper
 created_date: '2014-07-17'
-created_by: Margie Bogartlast_modified_date: '2017-04-03'
+created_by: Margie Bogart
+last_modified_date: '2017-04-03'
 last_modified_by: Cat Lookabaugh
 product: Use Cases
 product_url: use-cases
