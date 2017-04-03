@@ -84,9 +84,9 @@ service, “We don’t have to worry about messages not going through in a
 timely manner,” Rob shares.
 
 He gives the Rackspace webmail interface high marks. “Your webmail is
-equally as good as any mail client out there,” he states. They also use
-the shared, online calendars for at-a-glance calendar viewing across the
-domain to quickly schedule meetings.
+equally as good as any mail client out there,” he states. They also use the
+shared, online calendars for at-a-glance calendar viewing across the domain to
+quickly schedule meetings.
 
 [***Fanatical Support<sup>&reg;</sup>***](http://www.rackspace.com/whyrackspace/support/)
 is an integral part of all of our hosting services. Rob states,
