@@ -1,5 +1,5 @@
 ---
-permalink:usourceit-reduces-clients-it-costs-by-50-percent/
+permalink: usourceit-reduces-clients-it-costs-by-50-percent/
 audit_date:
 title: "USourceIT Reduces Client's IT Costs by 50 Percent"
 type: whitepaper
