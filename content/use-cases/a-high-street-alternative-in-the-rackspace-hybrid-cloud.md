@@ -2,10 +2,10 @@
 permalink: a-high-street-alternative-in-the-rackspace-hybrid-cloud/
 audit_date:
 title: A High Street Alternative in the Rackspace Hybrid Cloud
-type: case_study
+type: whitepaper
 created_date: '2013-10-01'
 created_by: Rackspace Support
-last_modified_date: '2017-03-17'
+last_modified_date: '2017-03-16'
 last_modified_by: Cat Lookabaugh
 product: Use Cases
 product_url: use-cases

@@ -18,8 +18,8 @@ other tools and formats to Markdown for you.
 
 The following sections provide the recommended format of a Rackspace technical
 white paper.  We strongly recommend that you follow these guidelines in order
-to create a consistent experience for our readers.  Exceptions may be made on a
-case by case basis.
+to create a consistent experience for our readers.  Exceptions may be made on
+a case by case basis.
 
 ### Executive Summary (requires)
 
