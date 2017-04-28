@@ -128,42 +128,17 @@ Here we see a typical unencrypted SMTP connection. The first thing we must do on
 
 Now that we've looked through an example SMTP connection in detail, let's review mail routing. This is a complex topic, and we won't delve into it too deeply. One important thing to bare in mind is that SMTP services function as both SMTP providers (daemons) and SMTP clients. This if fundamentally different from the way that HTTP works for instance. With HTTP, your browser connects to a server. That server returns content to you. It does not (normally) fire up an internal browser of its own and retrieve content from elsewhere. Mail servers however routinely do this as their standard method of operation.
 
-For purposes of this discussion, we're going to assume that I'm sending an email from **sender@example.com** to **tester@rackspace.com**. There's several steps involved once the email is composed and the **Send** button is pressed.
+For purposes of this discussion, we're going to assume that I'm sending an email from **sender@example.com** to **tester@rackspace.com**. There are several steps involved after the email is composed and the **Send** button is pressed.
 
-1. My MUA makes a connection to the mail server configured in my email
-account's options. In this case, we're going to call that
-mail.example.com. During this connection, my MUA sends the "mail
-from:" and "rcpt to:" headers to instruct mail.example.com where the
-message is to be delivered and who is sending it. At this point
-mail.example.com will decide if it should accept the mail for
-local deliver, accept the mail for relay, or reject the mail.
-2. mail.example.com accepts the message, determines that it is destined
-for another server, and drops it into its queue for processing. It
-checks the "rcpt to:" header and discovers the message is bound for
-"tester@rackspace.com". At this point, it does an MX record lookup and
-determines that the mail server for "rackspace.com" is
-"cust41036-1.in.mailcontrol.com." It then pulls the A or AAAA record
-for this server.
-3. At this point, mail.example.com is acting like a mail client in
-almost exactly the same way my MUA did in step 1. It makes a connection
-to cust41036-1.in.mailcontrol.com on port 25 and
-attempts delivery. At this stage, cust41036-1.in.mailcontrol.com
-decides whether to accept the message for local delivery, accept the
-message for relay, or deny the message.
-4. Now cust41036-1.in.mailcontrol.com accepts the message and determines
-if it needs to forward it further. It is not uncommon for large
-companies to have mail servers for different divisions and the message
-may need to be routed accordingly. For instance, there may be a single
-mail server for the Support Team, a different server for Accounting and
-HR, and a third for Marketing and Sales. Mail routing doesn't have to
-stop at the destination MX! Unfortunately, anything behind the
-destination MX is something of a black box to the rest of the Internet.
+1. My MUA makes a connection to the mail server configured in my email account's options. In this case, we're going to call that **mail.example.com**. During this connection, my MUA sends the `mail from:` and `rcpt to:` headers to instruct **mail.example.com** where the message is to be delivered and who is sending it. At this point **mail.example.com** decides if it should accept the mail for local deliver, accept the mail for relay, or reject the mail.
 
-If the server with the MX record for a domain needs to route the
-message further, it has to look that information up internally. Every
-mail server handles this differently with open source implementations
-often supporting several different methods. Unfortunately, configuring
-different email servers is outside the scope of this resource.
+2. **mail.example.com** accepts the message, determines that it is destined for another server, and drops it into its queue for processing. It checks the `rcpt to:` header and discovers the message is bound for **tester@rackspace.com**. At this point, the mail server does an MX record lookup and determines that the mail server for **rackspace.com** is **cust41036-1.in.mailcontrol.com**. It then pulls the A or AAAA record for this server.
+
+3. At this point, **mail.example.com** is acting like a mail client in almost exactly the same way that my MUA did in step 1. It makes a connection to **cust41036-1.in.mailcontrol.com** on port 25 and attempts delivery. At this stage, **cust41036-1.in.mailcontrol.com** decides whether to accept the message for local delivery, accept the message for relay, or deny the message.
+
+4. Now **cust41036-1.in.mailcontrol.com** accepts the message and determines if it needs to forward it further. It is not uncommon for large companies to have mail servers for different divisions and the message may need to be routed accordingly. For instance, there may be a single mail server for the Support Team, a different server for Accounting and HR, and a third for Marketing and Sales. Mail routing doesn't have to stop at the destination MX. Unfortunately, anything behind the destination MX is something of a black box to the rest of the Internet.
+
+If the server with the MX record for a domain needs to route the message further, it has to look that information up internally. Every mail server handles this differently with open source implementations often supporting several different methods.
 
 #### Mail storage
 
@@ -350,69 +325,23 @@ Because each file represents a different message, disk operations such as readin
 
 #### SMTP relay decisions
 
-In the early days of the Internet, anyone could relay mail through anyone else's server. You sent mail simply by knowing the IP address of an open relay on the Internet. Then spammers began to use these open relays to inundate the Internet with advertisements for fake Viagra and charitable donations to Nigerian princes. The world was shocked and ISPs began restricting access to port 25. The world has not yet recovered from this tragedy. Today, there are two principle methods for restricting mail relay: trusted hosts and authentication.
+In the early days of the Internet, anyone could relay mail through anyone else's server. You sent mail simply by knowing the IP address of an open relay on the Internet. Then spammers began to use these open relays to inundate the Internet with advertisements for fake Viagra and charitable donations to Nigerian princes. In response, ISPs began restricting access to port 25. Today, there are two principle methods for restricting mail relay: trusted hosts and authentication.
 
-Trusted Hosts is a term we will use in this document because there
-does not really appear to be a generic name for this method, and it fits
-well. The trusted hosts method allows certain hosts, generally listed
-by IP address or subnet mask, to relay any mail through the system
-without restriction. If you are connecting from a trusted IP address,
-the mail server appears to be an open relay.
+- The trusted hosts method allows certain hosts, generally listed by IP address or subnet mask, to relay any mail through the system without restriction. If you are connecting from a trusted IP address, the mail server appears to be an open relay.
 
-Authentication is provided by extensions to the SMTP protocol, and
-there are a wide variety of different implementations. With
-authentication, the connection MUST make an "extended hello" as this is
-unsupported without SMTP extensions. It's also generally a bad idea to
-use authentication without enabling encryption for the connection for
-obvious reasons. Once the client is authenticated, the connection is
-trusted for as long as it lasts. Authentication also provides a handy
-way of referencing a specific message to the user that generated it, as
-the username is typically logged.
+- Authentication is provided by extensions to the SMTP protocol, and there are a wide variety of different implementations. With authentication, the connection MUST make an "extended hello" as this is unsupported without SMTP extensions. It's also generally a bad idea to use authentication without enabling encryption for the connection for obvious reasons. Once the client is authenticated, the connection is trusted for as long as it lasts. Authentication also provides a handy way of referencing a specific message to the user that generated it, as the username is typically logged.
 
-There is an alternative method for allowing authentication without
-enabling the AUTH extension, but it is never recommended! If you search
-the dark crevices of the Internet where ancient horrors dwell,
-you will find websites advocating log scraping techniques. These
-techniques read the logs for your POP3 or IMAP service, determine which
-IP addresses have had a successful authentication recently, and allow
-those IP addresses to relay mail through your server. Since this
-effectively adds these addresses to the list of trusted hosts, it
-allows anyone from that IP to relay mail through your server. If you
-set this up on an email server, then just check your email using POP3
-or IMAP, anyone else with the same public IP address could freely relay
-email through that server for a limited time.
+There is an alternative method for allowing authentication without enabling the `AUTH` extension, but we do **not** recommend it. Log scraping techniques read the logs for your POP3 or IMAP service, determine which IP addresses have had a successful authentication recently, and allow those IP addresses to relay mail through your server. Since this effectively adds these addresses to the list of trusted hosts, it allows anyone from that IP to relay mail through your server. If you set this up on an email server, then just check your email using POP3 or IMAP, anyone else with the same public IP address could freely relay email through that server for a limited time.
 
-At first glance, this may not seem like a problem. After all, you are
-likely checking your email from your office and you don't mind if
-everyone in your office relays mail through your server. Indeed, you
-likely intend for them to do so. Consider though the number of laptops,
-phones, and tablets you and your coworkers use. You likely have email
-configured on those devices and pass through many open wifi networks as
-you go about your daily business. Since these devices routinely check
-email upon successfuly connecting to a new network, you are
-allowing potentially thousands of unknown people to relay mail through
-your server.
+At first glance, this may not seem like a problem. After all, you are likely checking your email from your office and you don't mind if everyone in your office relays mail through your server. Indeed, you likely intend for them to do so. Consider though the number of laptops, phones, and tablets you and your coworkers use. You likely have email configured on those devices and pass through many open wifi networks as you go about your daily business. Since these devices routinely check email upon successfully connecting to a new network, you are allowing potentially thousands of unknown people to relay mail through your server.
 
-Even if this is not a concern for you, this practice developed when
-most MUAs could not authenticate to SMTP. That is no longer the case as
-every mail client today has this capability, rendering this technique
-moot. We have better options available these days, so don't be tempted
-to use the stop-gap hacks of yesteryear.
+Even if this is not a concern for you, this practice developed when most MUAs could not authenticate to SMTP. That is no longer the case as every mail client today has this capability, rendering this technique moot. We have better options available these days, so log scraping isn't necessary.
 
-### POP3 - mail retrieval
+### POP3 mail retrieval
 
-POP3 daemons allow users to retrieve their mail from the server to
-their local machine using a post office metaphor. SMTP delivers your
-mail to a mail spool (PO Box) and then you remove the mail from it. The
-mail is essentially "delivered" to your MUA at that point. There are
-some options that allow you to leave mail on the server after
-retrieval, in which case you're essentially copying the messages and
-leaving the originals in your mail spool.
+POP3 daemons allow users to retrieve their mail from the server to their local machine using a post office metaphor. SMTP delivers your mail to a mail spool (PO Box) and then you remove the mail from it. The mail is essentially "delivered" to your MUA at that point. There are some options that allow you to leave mail on the server after retrieval, in which case you're essentially copying the messages and leaving the originals in your mail spool.
 
-Like a PO Box, POP3 only supports a single mailbox. You cannot have
-more than one mailbox. Additionally, POP3 does not support folders or
-directories of any kind. Any organization of your email must be done
-on your local machine. Let's take a look at an example POP3 connection.
+Like a PO Box, POP3 only supports a single mailbox. You cannot have more than one mailbox. Additionally, POP3 does not support folders or directories of any kind. Any organization of your email must be done on your local machine. Let's take a look at an example POP3 connection.
 
     # telnet localhost 110
     Trying 127.0.0.1...
@@ -444,22 +373,11 @@ on your local machine. Let's take a look at an example POP3 connection.
     QUIT
     +OK
 
-As you can see, POP3 is an incredibly simple protocol. We just used
-"USER" and "PASS" to login to the service. The "LIST" command gives us
-a list of all available messages and the message size. "RETR" shows us
-the email's contents, and "DELE" immediately deletes the message from
-the server. POP3's primary advantages over IMAP are its simplicity and
-low overhead.
+As you can see, POP3 is an incredibly simple protocol. We just used `USER` and `PASS` to log in to the service. The `LIST` command gives us a list of all available messages and the message size. `RETR` shows us the email's contents, and `DELE` immediately deletes the message from the server. POP3's primary advantages over IMAP are its simplicity and low overhead.
 
-### IMAP - message access
+### IMAP message access
 
-IMAP is a far superior protocol to POP3 in most ways. Rather than
-mimicking the behavior of a snail-mail post office, IMAP operates more
-like a personal secretary, storing and retrieving information for the
-user as required. IMAP is capable of storing more than just mail as
-well, with various MUAs being capable of storing contacts or
-calendaring information also. Typically though, IMAP is used
-predominately for email only. Here's an example session.
+IMAP is a far superior protocol to POP3 in most ways. Rather than mimicking the behavior of a snail-mail post office, IMAP operates more like a personal secretary, storing and retrieving information for the user as required. IMAP is capable of storing more than just mail as well, with various MUAs being capable of storing contacts or calendar information. Typically, IMAP is used predominately for email only. Here's an example session.
 
     # telnet localhost 143
     Trying 127.0.0.1...
@@ -534,21 +452,9 @@ predominately for email only. Here's an example session.
     a6 OK Logout completed.
     Connection closed by foreign host
 
-The first thing to notice here is that IMAP commands begin with a
-two-byte field. This field is mandatory, but can really be anything you
-desire. Canonically it is a two-byte field that is incremented with
-each command, but that is not a strict requirement of the protocol. If
-you search online you'll find documentation informing you to use a
-question mark or some other character for this field but the reality is
-that the contents of the field are arbitrary. In this example, each
-command line begins with "a" followed by a number.
+The first thing to notice here is that IMAP commands begin with a two-byte field. This field is mandatory, but can really be anything you desire. Canonically it is a two-byte field that is incremented with each command, but that is not a strict requirement of the protocol. If you search online you'll find documentation informing you to use a question mark or some other character for this field but the reality is that the contents of the field are arbitrary. In this example, each command line begins with "a" followed by a number.
 
-Second, notice that as soon as we connected to the IMAP server it
-offered us a list of its capabilities similar to the way SMTP behaves
-when it receives an extended-hello. This is a solid improvement over
-POP3 as there is no ambiguity. The server will tell us immediately if
-it supports things like encryption. Additionally, once we've
-authenticated it informs us of new capabilities that are now available.
+Second, notice that as soon as we connected to the IMAP server it offered us a list of its capabilities similar to the way SMTP behaves when it receives an extended-hello. This is a solid improvement over POP3 as there is no ambiguity. The server will tell us immediately if it supports things like encryption. Additionally, once we've authenticated it informs us of new capabilities that are now available.
 
     a2 LIST "" "*"
     * LIST (\HasNoChildren) "." 2016
@@ -569,62 +475,22 @@ authenticated it informs us of new capabilities that are now available.
     * LIST (\HasNoChildren) "." INBOX
     a2 OK List completed.
 
-The format for the LIST command is complex, so if you ever have need to
-know more check the RFCs for IMAP. For now, know that the LIST command
-displays mail folders on the server. This is what your MUA does when
-you select which folders to subscribe to for example.
+The format for the `LIST` command is complex, so if you ever have need to know more check the RFCs for IMAP. For now, know that the `LIST` command displays mail folders on the server. When you select which folders to subsribe to, your MUA performs a `FETCH` command, similar to the following:
 
     a4 FETCH 1 BODY[HEADER]
     a5 FETCH 1 BODY[TEXT]
 
-The FETCH command is much more powerful than POP3's RETR command. It is
-capable of retrieving specific parts of the message. Here we made two
-fetches - one for headers and one for the body - but others are
-possible as well. In particular, you can specify a list of headers to
-pull and your MUA will only retrieve those specific ones. Typical IMAP
-clients retrieve a subset of all the headers (Sender, Subject, Date,
-etc), sort mail based on those headers, and then only download the
-message bodies and remaining headers when the user specifically
-requests those messages.
+The `FETCH` command is much more powerful than POP3's `RETR` command. It is capable of retrieving specific parts of the message. Here we made two fetches - one for headers and one for the body - but others are possible as well. In particular, you can specify a list of headers to pull and your MUA will only retrieve those specific ones. Typical IMAP clients retrieve a subset of all the headers, such as sender, subject, and date, and sort mail based on those headers. They then download only the message bodies and remaining headers when the user specifically requests those messages.
 
 ### SMTP best practices
 
-The unusual history and nature of email means that a lot of evolution
-has happened along the years in a decentralized, organic sort of way.
-The primary evolutionary force has always been spam. Today there are
-many different practices to prevent spam, but only a handful of
-them are in frequent usage. No one can guarantee that following these
-practices will ensure your email is delivered successfully to its
-destination, but these practices will absolutely reduce the chances
-that another mail server will refuse delivery of your messages or
-unjustly mark them as spam. We have chosen these as best practices
-because they are nearly universal, accept or reject mail early in the
-transaction with minimal delay or overhead, and are very unlikely to
-result in false positives (legitimate mail being refused as SPAM). You
-may also wish to explore further options than these.
+The unusual history and nature of email means that a lot of evolution has happened along the years in a decentralized, organic way. Spam has always been the primary evolutionary force behind improvements to email systems. Today there are many different practices to prevent spam, but only a handful of them are in frequent usage. No one can guarantee that following these practices will ensure your email is delivered successfully to its destination, but these practices reduce the chances that another mail server will refuse delivery of your messages or unjustly mark them as spam. We have chosen these as best practices because they are nearly universal, accept or reject mail early in the transaction with minimal delay or overhead, and are unlikely to result in false positives (legitimate mail being refused as SPAM). You may also wish to explore further options than these.
 
 #### Proper DNS records
 
-Compromised servers and workstations are a constant source of spam.
-Spammers love to relay their junk through some one else's compromised
-system as they do not have to pay bandwidth costs or suffer the
-consequences of having their IP addresses blocked. If a compromised
-server or workstation becomes blocked, there's always another one
-available. Email operators have begun checking DNS
-records, particularly PTR records, to ensure that emails are
-originating from an actual mail server. This process is not 100%
-fool-proof and it does result in some false positives, but it's a great
-way to weed out a ton of spam without significantly impeding legitimate
-email.
+Compromised servers and workstations are a constant source of spam. Spammers love to relay their junk through someone else's compromised system as they do not have to pay bandwidth costs or suffer the consequences of having their IP addresses blocked. If a compromised server or workstation becomes blocked, there's always another one available. Email operators have begun checking DNS records, particularly PTR records, to ensure that emails are originating from an actual mail server. This process is not 100% fool-proof and it does result in some false positives, but it's a great way to weed out a ton of spam without significantly impeding legitimate email.
 
-When these checks are enabled, the receiving mail server looks up the
-PTR record for whichever server is connecting. Note: this is the IP
-address of the device that is connecting and has no direct relationship
-with any of the email headers. In fact, this check is made before any
-message content (including headers) is sent. Once it has the PTR
-record, it then checks the A record for that domain to determine if it
-matches. Here's an example of a successful match.
-
+When these checks are enabled, the receiving mail server looks up the PTR record for whichever server is connecting. Note that this is the IP address of the device that is connecting and has no direct relationship with any of the email headers. In fact, this check is made before any message content (including headers) is sent. Once it has the PTR record, it then checks the A record for that domain to determine if it matches. Here's an example of a successful match:
 
     - connection from 208.87.233.190
     # dig 190.233.87.208.in-addr.arpa. ptr +short
@@ -632,80 +498,32 @@ matches. Here's an example of a successful match.
     # dig cluster-g.mailcontrol.com. a +short
     208.87.233.190
 
-In order to better ensure mails your server sends are actually
-delivered, it's imperative that you setup proper PTR records for your
-servers and proper A (and/or AAAA) records for your domain. Failure to
-do so will result in your emails being rejected by a sizable number of
-recipients.
+To better ensure that mail your server sends is actually delivered, you must set up proper PTR records for your servers and proper A (and/or AAAA) records for your domain. Failure to do so will result in your emails being rejected by a sizable number of recipients.
 
 #### Protocol checks
 
-Much of the SPAM we see every day is sent from compromised computers as
-part of a large botnet.  These compromised devices typically implement
-only a primitive SMTP service. As a result, they rarely follow best
-practices and often even violate parts of the SMTP protocol. By
-checking for such violations and refusing mail when they are present,
-we can eliminate much SPAM without negatively impacting emails sent
-from legitimate servers.
+Much of the SPAM we see every day is sent from compromised computers as part of a large botnet. These compromised devices typically implement only a primitive SMTP service. As a result, they rarely follow best practices and often even violate parts of the SMTP protocol. By checking for such violations and refusing mail when they are present, we can eliminate much SPAM without negatively impacting emails sent from legitimate servers.
 
-Configuring these sorts of checks is different for every mail server,
-and not every SMTP implementation is guaranteed to offer the same
-checks, but we'll address the most common ones here.
+Configuring these sorts of checks is different for every mail server, and not every SMTP implementation is guaranteed to offer the same checks, but we'll address the most common ones here.
 
-- Reject Invalid HELO/EHLO Hostnames
-  - refuse delivery if the client specifies a malformed hostname during
-    the HELO/EHLO command
-- Reject Non-FQDN HELO/EHLO Hostnames
-  - refuse delivery if the client does not specify a fully-qualified
-    domain name (FQDN) during the HELO/EHLO command
-- Reject Non-FQDN Senders
-  - refuse delivery if the MAIL FROM address does not include a FQDN
-- Reject Non-FQDN Recipient
-  - refuse delivery if the RCPT TO address does not include a FQDN
-- Reject Unknown Sender Domain
-  - refuse delivery if the MAIL FROM domain does not have a proper MX
-    record
-- Reject Unknown Recipient Domain
-  - refuse delivery if the RCPT TO domain does not have a proper MX
-    record
-- Reject Clients With Improper DNS Records
-  - refuse delivery if the connecting client does not have a PTR record
-    and if the PTR record does not have an A record mapping back to the
-    client's IP address
+- **Reject Invalid HELO/EHLO Hostnames**: Refuse delivery if the client specifies a malformed hostname during the `HELO` or `EHLO` command.
+- **Reject Non-FQDN HELO/EHLO Hostnames**: Refuse delivery if the client does not specify a fully-qualified domain name (FQDN) during the `HELO` or `EHLO` command.
+- **Reject Non-FQDN Senders**: Refuse delivery if the `MAIL FROM` address does not include a FQDN.
+- **Reject Non-FQDN Recipient**: Refuse delivery if the `RCPT TO` address does not include a FQDN.
+- **Reject Unknown Sender Domain**: Refuse delivery if the `MAIL FROM` domain does not have a proper MX record.
+- **Reject Unknown Recipient Domain** Refuse delivery if the `RCPT TO` domain does not have a proper MX record.
+- **Reject Clients With Improper DNS Records**: Refuse delivery if the connecting client does not have a PTR record and if the PTR record does not have an A record mapping back to the client's IP address.
 
 #### SPF records
 
-A relative new-comer to the world of anti-spam measures, Sender
-Permitted From gives domain name owners some ability to restrict which
-devices can send email using their domain name in the "mail from:"
-header. The idea is that a domain owner can publish a DNS record
-stating that only a handful of email servers are legitimate origins
-for email from that domain in an effort to restrict sender address
-spoofing. Unfortunately, like many anti-spam efforts, it requires
-cooperation from everyone all at once. The domain owner must have
-published an SPF record, and the mail servers that receive messages
-with spoofed addresses must also support SPF record look-ups and honor
-those values.
+A relative newcomer to the world of anti-spam measures, Sender Permitted From (SPF) gives domain name owners some ability to restrict which devices can send email using their domain name in the `mail from` header. The idea is that a domain owner can publish a DNS record stating that only a handful of email servers are legitimate origins for email from that domain in an effort to restrict sender address spoofing. Unfortunately, like many anti-spam efforts, it requires cooperation from everyone all at once. The domain owner must have published an SPF record, and the mail servers that receive messages with spoofed addresses must also support SPF record look-ups and honor those values.
 
-To make matters even more complicated, there is no "SPF" record type in
-DNS. Rather, this record sort of piggybacks within the TXT record for
-the domain. Also, the records are not the easiest thing in the world to
-read. Let's take a look at one.
+To make matters even more complicated, there is no SPF record type in DNS. Rather, this record piggybacks within the TXT record for the domain. Also, the records are not the easiest thing in the world to read. Here's an example of a SPF record:
 
     # dig wikimedia.org txt +short
     "v=spf1 ip4:91.198.174.0/24 ip4:208.80.152.0/22 ip6:2620:0:860::/46 include:_spf.google.com ip4:74.121.51.111 ?all"
 
-The "v=spf1" prefix informs us that this TXT record should be
-interpreted as an SPF version 1 record. This particular record is
-relatively simple. The domain owner has whitelisted three different
-subnets, 91.198.174.0/24, 208.80.152.0/22, and 2620:0:860::/46. They
-are also including an additional record for "_spf.google.com".
-Apparently wikipedia utilizes Google's G Suite. They've also explicitly
-allowed the IP address 74.121.51.111 to send email on their behalf.
-Finally, they have ended the record with "?all" which states that no
-other servers are explicitly allowed to send email on their behalf,
-but doesn't recommend blocking such emails either. Let's drill down
-further and have a look at that included record, "_spf.google.com".
+The "v=spf1" prefix indicates that this TXT record should be interpreted as an SPF version 1 record. This particular record is relatively simple. The domain owner has whitelisted three different subnets, 91.198.174.0/24, 208.80.152.0/22, and 2620:0:860::/46. They are also including an additional record for **_spf.google.com**. Apparently Wikipedia utilizes Google's G Suite. They've also explicitly allowed the IP address 74.121.51.111 to send email on their behalf. Finally, they have ended the record with `?all` which states that no other servers are explicitly allowed to send email on their behalf, but doesn't recommend blocking such emails either. Let's drill down further and have a look at that included record, **_spf.google.com**.
 
     # dig _spf.google.com txt +short
     "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all"
@@ -716,139 +534,45 @@ further and have a look at that included record, "_spf.google.com".
     # dig _netblocks3.google.com txt +short
     "v=spf1 ip4:172.217.0.0/19 ip4:108.177.96.0/19 ~all"
 
-Here we can see that the SPF records for _spf.google.com are quite
-extensive. Google has whitelisted 14 different (rather large) IPv4
-subnets as valid email senders. They've also whitelisted 6 different
-IPv6 subnets which are enormous. Each of these records ends with the
-"~all" keyword which is a "Soft Fail" scenario. This means that any
-records not stated are not authorized to send email, but
-allowing mail from those addresses is not explicitly prohibited.
+Here we can see that the SPF records for **_spf.google.com** are quite extensive. Google has whitelisted 14 different large IPv4 subnets as valid email senders. They've also whitelisted 6 different IPv6 subnets which are enormous. Each of these records ends with the `~all` keyword, which is a "Soft Fail" scenario. This means that any records not stated are not authorized to send email, but allowing mail from those addresses is not explicitly prohibited.
 
-It's important to note that SPF only protects against SPAM that
-includes a spoofed from address, and even then it only protects against
-spam if both the receiving mail server and the domain's owner have
-implemented SPF. Spammers can continue to spoof your domain to mail
-servers that don't implement SPF checks. If your mail server implements
-SPF, you'll still get spoofed messages from domains that don't
-implement this, and if the spammer controls his own domain and doesn't
-attempt to spoof the sending address, SPF will do nothing to protect
-you.
+**Note:** SPF protects only against SPAM that includes a spoofed from address, and even then it only protects against spam if both the receiving mail server and the domain's owner have implemented SPF. Spammers can continue to spoof your domain to mail servers that don't implement SPF checks. If your mail server implements SPF, you'll still get spoofed messages from domains that don't implement this, and if the spammer controls his own domain and doesn't attempt to spoof the sending address, SPF will do nothing to protect you.
 
 #### Relational block lists
 
-Relational block lists are a common and effective way of reducing the
-amount of spam your mail server receives. Relational block lists are
-either public or private services which track a variety of factors such
-as known spam IPs, consumer IP subnets, and open proxies that might be
-used for spam. Modern email systems can then make a simple DNS query
-whenever it receives a connection to determine if that address is a
-known or likely source of spam.
+Relational block lists are a common and effective way of reducing the amount of spam your mail server receives. Relational block lists are either public or private services which track a variety of factors such as known spam IPs, consumer IP subnets, and open proxies that might be used for spam. Modern email systems can then make a simple DNS query whenever it receives a connection to determine if that address is a known or likely source of spam.
 
-The most common public relational blacklist is zen.spamhaus.org. Let's
-take a look a couple different DNS queries using this blacklist.
+The most common public relational blacklist is **zen.spamhaus.org**. Let's take a look a couple different DNS queries using this blacklist.
 
     # dig @0.ns.spamhaus.org. 52.1.234.206.zen.spamhaus.org +short
     # dig @0.ns.spamhaus.org. 52.1.234.207.zen.spamhaus.org +short
     127.0.0.2
     127.0.0.9
 
-In the first query we received no response. This indicates that
-52.1.234.206 is a legitimate email service (according to
-zen.spamhaus.org). In the second query we received responses of
-127.0.0.2 and 127.0.0.9. Since the RBL has at least one value for this
-IP address, this address is likely source of spam and the mail server
-can chose to reject the message based on this information alone.
+In the first query we received no response. This indicates that 52.1.234.206 is a legitimate email service, according to **zen.spamhaus.org**. In the second query we received responses of 127.0.0.2 and 127.0.0.9. Since the RBL has at least one value for this IP address, this address is likely source of spam and the mail server can chose to reject the message based on this information alone.
 
-Relational block lists aren't fool proof. Often legitimate mail servers
-can be caught by them, so reputable block lists typically include some
-way to dispute your IP address's standing on the list.
+Relational block lists aren't foolproof. Often legitimate mail servers can be caught by them, so reputable block lists typically include some way to dispute your IP address's standing on the list.
 
 ### Other common SPAM fighting techniques
 
-These techniques aren't always a "best fit" for every email server, so
-they don't fall under our previous Best Practices category. They tend
-to be more complex to setup, have a higher overhead, are more likely to
-introduce false positives, or some combination of the above. If you
-stick around long enough, you'll come across these somewhere along the
-line.
+These techniques aren't always the best fit for every email server, so they don't fall under the previous best practices section. They tend to be more complex to set up, have a higher overhead, are more likely to introduce false positives, or some combination of the above.
 
 #### Bayesian filtering
 
-Bayesian Filtering is a technique that applies a bit of Artificial
-Intelligence to the content of email to determine if the message is
-SPAM. Since the entire email must be inspected, this step
-requires that the mail be delivered fully to the server before a
-decision can be made. This means that Bayesian filtering requires a
-much higher network overhead than other techniques in addition to a
-high CPU overhead. Still, it can be a highly effective method for
-filtering out SPAM. Bayesian filtering can often have a high
-false-positive rate, so care needs to be taken in applying it to a
-server. Generally, each email account should have its own Bayesian
-database (as each user's email is different) and mail should be marked
-as SPAM or moved to a SPAM folder rather than be deleted outright. The
-big improvement here is that Bayesian filtering "learns" what should be
-marked as SPAM and what should be passed as ham. This requires some
-method by which the user can train the Bayesian filter. As such, proper
-setup is difficult and complex, often with a lot of permissions
-juggling. This is particularly true when email accounts are stored in
-a relational database.
+Bayesian Filtering is a technique that applies a bit of Artificial Intelligence (AI) to the content of email to determine if the message is SPAM. Since the entire email must be inspected, this step requires that the mail be delivered fully to the server before a decision can be made. This means that Bayesian filtering requires a much higher network overhead than other techniques in addition to a high CPU overhead. Still, it can be a highly effective method for filtering out SPAM. Bayesian filtering can often have a high false-positive rate, so care needs to be taken in applying it to a server. Generally, each email account should have its own Bayesian database (as each user's email is different) and mail should be marked as SPAM or moved to a SPAM folder rather than be deleted outright. The big improvement here is that Bayesian filtering "learns" what should be marked as SPAM and what should be passed as ham. This requires some method by which the user can train the Bayesian filter. As such, proper setup is difficult and complex, often with a lot of permissions juggling. This is particularly true when email accounts are stored in a relational database.
 
 #### Greylisting
 
-Greylisting is a technique in which connections from unknown IP
-addresses are temporarily refused, then later white-listed or
-black-listed depending on latter behavior. The technique has a very low
-false-positive rate, but introduces a sometimes cumbersome delay in
-mail delivery. Typically, the mail server responds with a temporary
-error message. After a configurable length of time, if the client
-reconnects the email server accepts delivery. The working theory here
-is that spammers are often using primitive SMTP clients that don't
-support the full range of SMTP error codes. As such, they rarely retry
-a failed connection. This doesn't always work, so a portion of spam
-will leak through, but many admins are content with the trade-offs
-involved with greylisting, particularly since it so rarely blocks
-legitimate email.
+Greylisting is a technique in which connections from unknown IP addresses are temporarily refused, then later white-listed or black-listed depending on later behavior. The technique has a very low false-positive rate, but introduces a sometimes cumbersome delay in mail delivery. Typically, the mail server responds with a temporary error message. After a configurable length of time, if the client reconnects the email server accepts delivery. The working theory here is that spammers are often using primitive SMTP clients that don't support the full range of SMTP error codes. As such, they rarely retry a failed connection. This doesn't always work, so a portion of spam will leak through, but many admins are content with the trade-offs involved with greylisting, particularly since it so rarely blocks legitimate email.
 
 #### Challenge-response
 
-Spend long enough on the Internet and you'll stumble across some one
-advocating challenge-response schemes for fighting SPAM. Usually these
-people will claim that they have implemented such a system and have
-never gotten a single SPAM message since. The claims these people will
-make are incredible. *In* (from the Latin) meaning "not", and
-*credible* from the vernacular meaning "convincing".
+Spend long enough on the Internet and you'll stumble across someone advocating challenge-response schemes for fighting SPAM. Usually they claim that they have implemented such a system and have never gotten a single SPAM message since.
 
-The primary problem with challenge response methods is that it places
-the burden of spam prevention upon the sender. Whenever an email
-server implementing challenge-response schemes receives a message from
-a new sender, it holds that message in a queue. It then sends an email
-to the original sender challenging them to reply. When the server
-receives a response to this challenge, it white-lists that sender. It
-should become immediately apparent that automated systems (Rackspace's
-ticket notification system for example) will never send a response and
-thus cannot be automatically white-listed. Furthermore, many senders
-simply won't bother responding to the challenge, so a lot of legitimate
-email will never be delivered and neither the sender nor the recipient
-will even know why.
+The primary problem with challenge-response methods is that they place the burden of spam prevention upon the sender. Whenever an email server implementing challenge-response schemes receives a message from a new sender, it holds that message in a queue. It then sends an email to the original sender challenging them to reply. When the server receives a response to this challenge, it white-lists that sender. It should become immediately apparent that automated systems, for example, Rackspace's ticket notification system, will never send a response and thus cannot be automatically white-listed. Furthermore, many senders simply won't bother responding to the challenge, so a lot of legitimate email will never be delivered and neither the sender nor the recipient will even know why.
 
-This is even more deadly when the sender is also behind a
-challenge-response system. In that scenario, the original sender will
-receive a challenge. That challenge will get queued and a second
-challenge will be sent to the original recipient. Until the original
-sender replies to a challenge, his own challenges will be rejected. In
-this scenario, these two users can never communicate with one another.
-Additionally, they may never even know that their emails were not
-received.
+This method is particularly flawed when the sender is also behind a challenge-response system. In that scenario, the original sender will receive a challenge. That challenge will get queued and a second challenge will be sent to the original recipient. Until the original sender replies to a challenge, his own challenges will be rejected. In this scenario, these two users can never communicate with one another. Additionally, they may never even know that their emails were not received.
 
 ### Conclusion
 
-Hopefully this document has given you a better understanding of the
-complexities of modern email systems. Unfortunately, email is always
-something of a moving target. The conflict between mail providers and
-spammers can be likened to an arms race. Both sides are eternally
-struggling to outdo the other, so mail providers need to keep up to
-date on the latest spam prevention techniques. While this document
-can't hope to be a definitive resource on hosting your own mail server,
-hopefully it has provided you with a solid base from which to evaluate
-your requirements and implement a service which works best for your
-business.
+Hopefully this document has given you a better understanding of the complexities of modern email systems. Unfortunately, email is always something of a moving target. The conflict between mail providers and spammers can be likened to an arms race. Both sides are eternally struggling to outdo the other, so mail providers need to keep up-to-date on the latest spam prevention techniques. While this document can't hope to be a definitive resource on hosting your own mail server, hopefully it has provided you with a solid base from which to evaluate your requirements and implement a service which works best for your business.
