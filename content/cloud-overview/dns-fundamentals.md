@@ -2,7 +2,7 @@
 permalink: dns-fundamentals/
 audit_date:
 title: DNS Fundamentals
-type: article
+type: whitepaper
 created_date: '2017-01-26'
 created_by: Alan Hicks
 last_modified_date: '2017-01-26'
