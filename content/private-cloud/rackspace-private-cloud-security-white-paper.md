@@ -145,7 +145,7 @@ to follow. These corporate standards cover key functions like:
 -   automatic workstation locking
 -   documented change management and escalation procedures
 -   onboarding training
--   VPN-base access
+-   VPN-based access
 -   access that are monitored and independently audited
 
 Rackspace maintains documented operational procedures for both
@@ -182,18 +182,18 @@ where the Rackspace Private Cloud (RPC) is deployed
 
 Responsibility | Hosted @ Rackspace | Hosted @ Customer  DC
 -------------- | ------------------ | ---------------------
-Hardware & Data Center | Rackspace | Customer 
-Networking | Rackspace | Customer 
-RPC Host OS | Rackspace  | Either  
-Backup (Host OS) | Rackspace | Either 
-RPC Components | Rackspace | Rackspace 
-Patching RPC | Rackspace | Either  
-Monitoring RPC| Either | Either  
-RPC Upgrades | Rackspace | Either 
-Cloud Capacity Planning | Rackspace | Either 
-Guest OS Imaging Creation and Patching| Customer | Customer 
-Instance Deployment | Customer| Customer 
-Application  Management | Customer | Customer  
+Hardware & Data Center | Rackspace | Customer
+Networking | Rackspace | Customer
+RPC Host OS | Rackspace  | Either
+Backup (Host OS) | Rackspace | Either
+RPC Components | Rackspace | Rackspace
+Patching RPC | Rackspace | Either
+Monitoring RPC| Either | Either
+RPC Upgrades | Rackspace | Either
+Cloud Capacity Planning | Rackspace | Either
+Guest OS Imaging Creation and Patching| Customer | Customer
+Instance Deployment | Customer| Customer
+Application  Management | Customer | Customer
 
 Should a Private Cloud be deployed at a customer's datacenter and
 supported by Rackspace, the Rackspace Support team is willing to work
