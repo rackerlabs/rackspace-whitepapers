@@ -2,64 +2,38 @@
 permalink: networking-fundamentals/
 audit_date:
 title: Networking Fundamentals
-type: article
+type: whitepaper
 created_date: '2017-01-13'
 created_by: Alan Hicks
-last_modified_date: '2017-03-13'
-last_modified_by: Alan Hicks
-product: undefined
-product_url: undefined
+last_modified_date: '2017-05-12'
+last_modified_by: Stephanie Fillmon
+product: Cloud Overview
+product_url: cloud-overview
 ---
 
 ### Overview
 
-Many technical people have only a rudimentary grasp of networking
-fundamentals. How does subnetting work? How are routing decisions made?
-What does the MAC address actually do? While most are familiar with
-these things, they lack a real grasp of what they do and how they
-interact. Hopefully this article should shore up your understanding of
-the entire TCP/IP suite.
+Many technical people have only a rudimentary grasp of networking fundamentals. How does subnetting work? How are routing decisions made? What does the MAC address actually do? While most are familiar with these things, they lack a real grasp of what they do and how they interact. Hopefully this article should shore up your understanding of the entire TCP/IP suite.
 
-#### Terms / jargon
+#### Key terms
 
-Before we dig into the details, it's important that we review and
-define a few terms that you may not have previously learned.
+Before we dig into the details, it's important that we review and define a few terms that you may not have previously learned.
 
-**node (n.) -** Any single device on a network. A node can be a
-computer, a network-enabled printer, a router, a managed switch, or
-something else.
+- **node (n.)** - Any single device on a network. A node can be a computer, a network-enabled printer, a router, a managed switch, or something else.
 
-**bit bucket (n.) -** That place where discarded bits are thrown.
+- **bit bucket (n.)** - That place where discarded bits are thrown.
 
-**copper (n.) -** For purposes of this document, we are only talking
-about Cat-5 and similar networking cables that send a signal down pairs
-of copper wires. Many other methods of transmitting data are possible,
-including fiber-opics, radio waves, even pidgeons (for very low
-bandwidth purposes only of course)!  Cat-5 and it's derivatives are the
-most common physical media for transmitting data however, so
-canonically, copper means Cat-5 and similar cables.
+- **copper (n.)** - For purposes of this document, we are only talking about Cat-5 and similar networking cables that send a signal down pairs of copper wires. Many other methods of transmitting data are possible, including fiber-optics, radio waves, even pigeons (for very low bandwidth purposes only of course). Cat-5 and it's derivatives are the most common physical media for transmitting data however, so canonically, copper means Cat-5 and similar cables.
 
-**TTL (n.) -** Time to Live.  In networking, this often isn't in
-seconds, but rather in nodes to traverse before dying.
+- **TTL (n.)** Time to Live. In networking, this often isn't in seconds, but rather in nodes to traverse before dying.
 
-**canonnical (adj.) -** The usual way.
+- **canonical (adj.)** - The usual way.
 
 #### Binary arithmetic
 
-In later portions of this document, we're going to discuss binary
-numbers a good deal, so it's important to have a strong grasp on them
-before proceeding. As you probably already know, computers deal
-exclusively with 1s and 0s.  There is no number "2" in a computer, nor
-a number "3".  Every number, every letter, every pixel, every process
-is expressed as a string of seemingly random 1s and 0s.  How we
-determine what a particular string of 1s and 0s means is what this
-section is all about.
+In later portions of this document, we're going to discuss binary numbers a good deal, so it's important to have a strong grasp on them before proceeding. As you probably already know, computers deal exclusively with 1s and 0s.  There is no number 2 in a computer, nor a number 3.  Every number, every letter, every pixel, every process is expressed as a string of seemingly random 1s and 0s.  How we determine what a particular string of 1s and 0s means is what this section is all about.
 
-To demonstrate, look at your hand - five fingers. You may think it's
-possible to count up to five on your hand, but if you think of your
-fingers as individual bits that can be turned on and off (as a
-computer would), you'll realize you can count all the way to 31. If a
-finger is "down", that finger is a "0". If it is up it becomes a "1".
+To demonstrate, look at your hand - five fingers. You might think it's possible to count up to only five on your hand, but if you think of your fingers as individual bits that can be turned on and off (as a computer would), you'll realize you can count all the way to 31. If a finger is down, that finger is a 0. If it is up it becomes a 1.
 
     Decimal      Binary
     0            00000
@@ -82,8 +56,7 @@ finger is "down", that finger is a "0". If it is up it becomes a "1".
     ..           .....
     31           11111
 
-Those of you who are particularly smart are thinking "Hmmm.... binary
-means two, right?  What are the powers of 2?"
+Binary is a base 2 system, and with each power of 2, the **1** shifts to the left a single bit. I call this the *Staircase of Two*.
 
     Power        Decimal        Binary
     0            1              00000001
@@ -95,11 +68,7 @@ means two, right?  What are the powers of 2?"
     6            64             01000000
     7            128            10000000
 
-We could go further out to the nth power, but this is as far as we need
-to go for most practical purposes.  Here you can easily see what I call
-the "Staircase of Two".  Each power of 2 shifts the "1" to the left
-just a single bit.  Compare the above "base 2" table to the more
-familiar "base 10" table.
+We could go further out to the nth power, but this is as far as we need to go for most practical purposes. Compare the above base 2 table to the more familiar base 10 table.
 
     Power        Decimal        Base Ten
     0            1              00000001
@@ -108,82 +77,59 @@ familiar "base 10" table.
     ..           ...            ........
     7            10000000       10000000
 
-Here you can easily see the "ones place", the "tens place", the
-"hundreds place" and so on.  In binary, we have the same thing, except
-that we have a "ones place", a "twos place", a "fours place", an
-"eights place" and so on.
+Here you can easily see the "ones place", the "tens place", the "hundreds place" and so on. In binary, we have the same thing, except that we have a "ones place", a "twos place", a "fours place", an "eights place" and so on.
 
-Looking back at the binary table, you can see that by adding these
-together, we can quickly create any number we choose.  Let's assume we
-want to find the binary value of 47.  To do this easily, we simply find
-the largest power of two that's smaller than 47, and put a "1" in that
-power's place.  Then we subtract that value, and continue on down the
-line.  So what's the largest power of 2 that's not larger than 47?  32
-is smaller, and 64 and above are too big, so we know that the first "1"
-in our binary number will be in the sixth spot from the right (never
-forget that the first place is the power of zero.  Computers start
-counting at zero, and you should too).
+Looking back at the binary table, you can see that by adding these together, we can quickly create any number we choose. Let's assume we want to find the binary value of 47. To do this easily, we simply find the largest power of two that's smaller than 47, and put a 1 in that power's place. Then we subtract that value, and continue on down the line. So what's the largest power of 2 that's not larger than 47? 32 is smaller, and 64 and above are too big, so we know that the first 1 in our binary number will be in the sixth spot from the right.
 
-  `47 - 32 = 15`
+**Note:** Remember that the first place is the power of **zero**. Computers start counting at zero, and you should too.
+
+    47 - 32 = 15
 
 Our binary number looks something like this now.
 
-  `001?????`
+    001?????
 
-What's the largest power of 2 that's not larger than 15?  Well, the
-next "place" in binary is 16, but that's too large, so we'll put a "0"
-there.
+What's the largest power of 2 that's not larger than 15? Well, the next place in binary is 16, but that's too large, so we'll put a 0 there.
 
-  `0010????`
+    0010????
 
-8 works!  So there will be a "1" in the fourth place from the right.
+8 works! So there will be a 1 in the fourth place from the right.
 
-  `15 - 8 = 7`
+    15 - 8 = 7
 
-  `00101???`
+    00101???
 
-  `7 - 4 = 3`
+    7 - 4 = 3
 
-  `001011??`
+    001011??
 
-  `3 - 2 = 1`
+    3 - 2 = 1
 
-  `0010111?`
+    0010111?
 
-  `1 - 1 = 0`
+    1 - 1 = 0
 
-  `00101111`
+    00101111
 
-Decimal 47 is Binary 00101111.  That wasn't so bad was it?  Working in
-reverse is even easier.  What's the value of  11011001?  To figure this
-out, we simply find the decimal value for each "1" and ignore the
-values for each "0".
+As you can see, the decimal (base 10) 47 is 00101111 in binary (base 2).
 
-  `11011001 = 128 + 64 + 16 + 8 + 1 = 201`
+Converting from binary to decimal is even easier. To find the value of **11011001**, we simply find the decimal value for each 1 and ignore the values for each 0.
 
-An alternative way to look at this is to say that "11011001" has 1 128,
-1 64, 1 16, and so on.
+    11011001 = 128 + 64 + 16 + 8 + 1 = 201
 
-  `11011001 = (1 * 128) + (1 * 64) + (1 * 16) + (1 * 8) + (1 * 1)`
+An alternative way to look at this is to say that 11011001 has one 128, one 64, one 16, and so on.
 
-You can also look at the decimal (base 10) number the very same way.
+    11011001 = (1 * 128) + (1 * 64) + (1 * 16) + (1 * 8) + (1 * 1)
 
-  `201 = (2 * 100) + (0 * 10) + (1 * 1)`
+You can also look at the decimal number the very same way.
 
-Now that you know binary, not only can you count to 31 on one hand, but
-you can also understand concepts like IP addressing and subnetting.
+    201 = (2 * 100) + (0 * 10) + (1 * 1)
+
+Now that you know binary, not only can you count to 31 on one hand, but you can also understand concepts like IP addressing and subnetting.
 
 ### Five layers at a glance
 
-The TCP/IP suite makes use of five different layers to get its job
-done. (This isn't strictly true. There are a couple of other layers
-that come into play, but you will rarely run into them unless you are
-doing exotic things like multi-casting.) You can think of the layers in
-much the same way that you think of a stack of blocks.  At the bottom
-is the physical layer, and at the top is the application layer.  Things
-start at the top and slowly work their way down the layers to create a
-network frame.  Each of these layers will be briefly explained now; we
-will go into more depth in later sections.
+The TCP/IP suite makes use of five different layers to get its job done. (This isn't strictly true. There are a couple of other layers that come into play, but you will rarely run into them unless you are doing exotic things like multi-casting.) You can think of the layers in much the same way that you think of a stack of blocks.  At the bottom is the physical layer, and at the top is the application layer.  Things start at the top and slowly work their way down the layers to create a network frame.  Each of these layers will be briefly explained now; we will go into more depth in later sections.
 
 #### Physical layer
 
@@ -222,7 +168,7 @@ only layer that can guarantee data transmission.
 
 The Application Layer is responsible for formatting the data that will
 be transmitted to a remote host.  It includes most of the higher order
-protocols you may be familiar with such as DHCP, DNS, and HTTP. 
+protocols you may be familiar with such as DHCP, DNS, and HTTP.
 
 
 ### Physical layer
@@ -429,7 +375,7 @@ and honks at her.  She doesn't know who he wants to speak with and
 really doesn't care, so she tosses him in a pen with all the other
 geese.  Every animal there (whether a goose or a gander) has to hear
 our gander's honk. Each ignores that honk, except the one lucky goose
-our gander is addressing. 
+our gander is addressing.
 
 ### Data-link layer
 
@@ -641,7 +587,7 @@ itself, "looks like all numbers that begin 192.168.1 are on the same
 subnet".
 
 Another way of looking writing this is 192.168.1.100/24.  The /n tells
-us how many bits are in the bitmask.  In this case, 24. 
+us how many bits are in the bitmask.  In this case, 24.
 
 `/24           = 11111111.11111111.11111111.00000000`
 
@@ -1255,16 +1201,16 @@ headers.
     | Checksum | Urgent Pointer |
     | Options |
     | Payload |
-     
-     
+
+
     00000000010100000011001101011001
     00000000000000000000000000000001
     00000000000000000000000000000000
     01010000000000000000000000000000
     00100100101011010000000000000000
     |---------Payload--------------|
-     
-     
+
+
     Type                  Binary (0 - 15)       Explaination
     ----                  ----------------      ------------
     Source Port           0000000001010000      80
@@ -1303,8 +1249,8 @@ the Network Layer.
     | Options |
     | TCP Header |
     | Payload |
-     
-     
+
+
     01000101000000000010110010010100
     00000000000000000000000000000000
     01000000000001100010100000101000
@@ -1312,8 +1258,8 @@ the Network Layer.
     01000100111110010100010000000001
     |----------TCP Header----------|
     |------------Payload-----------|
-     
-         
+
+
     Type                  Binary (0 - 15)       Explaination
     ----                  ----------------      ------------
     Version               0100                  4
@@ -1340,8 +1286,8 @@ Last but not least, we'll wrap the packet in the Data-Link Layer.
     | TCP Header |
     | Payload |
     | Checksum |
-     
-     
+
+
     10111100011101100100111000100000
     01111000110010110000000000000000
     00001100100111111111000000000001
@@ -1381,9 +1327,9 @@ So what does the entire packet look like?
     00100100101011010000000000000000
     |-----------Payload------------|
     10100100011101010010110000110101
- 
+
 Or...
- 
+
     | Dst MAC |
     | Src MAC |
     | Version | Header Length | Type of Service | Total Length |
@@ -1526,14 +1472,14 @@ needs to do is initiate a three-way handshake.
     Flags         SYN
     Seq Num       0
     Ack Num       0
-    
+
     rackspace     ->   whippoorwill
     Src Port      80
     Dst Port      3560
     Flags         SYN/ACK
     Seq Num       0
     Ack Num       0
-    
+
     whippoorwill  ->   rackspace
     Src Port      3560
     Dst Port      80
@@ -1552,13 +1498,13 @@ transmitted.
     Seq Num       1
     Ack Num       0
     Payload       "Give me index.html"
-    
+
     rackspace     ->  whippoorwill
     Src Port      80
     Dst Port      3560
     Flags         ACK
     Seq Num       0
-    Ack Num       1 
+    Ack Num       1
 
 whippoorwill has asked for the document "index.html" and Rackspace has
 responded with an acknowledgement.  Next, Rackspace will begin to send
@@ -1571,14 +1517,14 @@ the page.
     Seq Num       1000
     Ack Num       0
     Payload       "Part 0 of index.html."
-    
+
     whippoorwill  ->   rackspace
     Src Port      3560
     Dst Port      80
     Flags         ACK
     Seq Num       0
     Ack Num       1000
-    
+
     rackspace     ->   whippoorwill
     Src Port      80
     Dst Port      3560
@@ -1586,7 +1532,7 @@ the page.
     Seq Num       1001
     Ack Num       0
     Payload       "Part 1 of index.html."
-    
+
     whippoorwill  ->   rackspace
     Src Port      3560
     Dst Port      80
@@ -1605,7 +1551,7 @@ further data.
     Flags         FIN
     Seq Num       0
     Ack Num       0
-    
+
     rackspace     ->   whippoorwill
     Src Port      80
     Dst Port      3560
@@ -1627,14 +1573,14 @@ RST packet instead.)
     Seq Num       1002
     Ack Num       0
     Payload       "Part 2 of index.html."
-    
+
     whippoorwill  ->   rackspace
     Src Port      3560
     Dst Port      80
     Flags         ACK
     Seq Num       0
     Ack Num       1002
-    
+
     rackspace     ->   whippoorwill
     Src Port      80
     Dst Port      3560
@@ -1642,7 +1588,7 @@ RST packet instead.)
     Seq Num       1003
     Ack Num       0
     Payload       "Part 3 of index.html."
-    
+
     whippoorwill  ->   rackspace
     Src Port      3560
     Dst Port      80
@@ -1659,7 +1605,7 @@ whippoorwill know that it too is closing the connection.
     Flags         FIN
     Seq Num       0
     Ack Num       0
-    
+
     whippoorwill  ->   rackspace
     Src Port      3560
     Dst Port      80
@@ -1716,7 +1662,7 @@ HTTP Payload, the TCP header, and the IPv4 header.
     00000000000000000000000000000000
     01010000000000000000000000000000
     00100100101011010000000000000000
-    |-----------Payload------------| 
+    |-----------Payload------------|
 
 At this point, the magic happens! The kernel passes the packet to the
 tun0 interface to begin building the Data-Link layer, but instead of
@@ -1757,5 +1703,3 @@ example: 72.32.144.38).
     |------Encrypted Payload-------|
     |------Encrypted Payload-------|
     |------Encrypted Payload-------|
-
-
