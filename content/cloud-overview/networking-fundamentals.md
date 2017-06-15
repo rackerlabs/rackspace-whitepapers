@@ -23,7 +23,7 @@ Before we dig into the details, it's important that we review and define a few t
 
 - **bit bucket (n.)** - That place where discarded bits are thrown.
 
-- **copper (n.)** - For purposes of this document, we are only talking about Cat-5 and similar networking cables that send a signal down pairs of copper wires. Many other methods of transmitting data are possible, including fiber-optics, radio waves, even pigeons (for very low bandwidth purposes only of course). Cat-5 and it's derivatives are the most common physical media for transmitting data however, so canonically, copper means Cat-5 and similar cables.
+- **copper (n.)** - For purposes of this document, we are only talking about Cat-5 and similar networking cables that send a signal down pairs of copper wires. Many other methods of transmitting data are possible, including fiber-optics, radio waves, even pigeons (for very low bandwidth purposes only of course). Cat-5 and its derivatives are the most common physical media for transmitting data however, so canonically, copper means Cat-5 and similar cables.
 
 - **TTL (n.)** Time to Live. In networking, this often isn't in seconds, but rather in nodes to traverse before dying.
 
@@ -131,25 +131,15 @@ Now that you know binary, not only can you count to 31 on one hand, but you can 
 
 The TCP/IP suite makes use of five different layers to get its job done. There *are* a couple of other layers that come into play, but you will rarely run into them unless you are doing exotic things like multi-casting. You can think of the layers in much the same way that you think of a stack of blocks. At the bottom is the physical layer, and at the top is the application layer. Things start at the top and slowly work their way down the layers to create a network frame. Each of these layers will be briefly explained now; we will go into more depth in later sections.
 
-**Physical layer**
+- **Physical layer** - The lowermost layer in our stack of blocks. This layer consists of basically any physical part of your network. "Physical" is a bit of a misnomer though, as it includes non-physical transmission media such as light or radio signals. Basically anything that is capable of actually transmitting data is part of the physical layer. This includes network cards, copper wires, fiber-optic cable, radio waves, and even infrared light. The physical layer turns the digital packet into some form of analog signal that can be transmitted to another node on the network.
 
-The lowermost layer in our stack of blocks is the physical layer. This layer consists of basically any physical part of your network. "Physical" is a bit of a misnomer though, as it includes non-physical transmission media such as light or radio signals. Basically anything that is capable of actually transmitting data is part of the physical layer. This includes network cards, copper wires, fiber-optic cable, radio waves, and even infra-red light. The physical layer turns the digital packet into some form of analog signal that can be transmitted to another node on the network.
+- **Data-link layer** - The first layer of the TCP/IP stack that actually crafts part of the packet. This layer is also responsible for determining what machine will receive a packet on any given network-layer subnet.
 
-**Data-link layer**
+- **Network layer** - Responsible for addressing hosts that may or may not be on your particular LAN. It is the only protocol that understands routing and can address packets to machines not on your LAN.
 
-The data-link layer is the first layer of the TCP/IP stack that actually crafts part of the packet. This layer is also responsible for determining what machine will receive a packet on any given network-layer subnet.
+- **Transport layer** - Responsible for communicating between the network layer and the application layer. It is responsible for determining what application a given packet will reach. It is also the only layer that can guarantee data transmission.
 
-**Network layer**
-
-The network layer is responsible for addressing hosts that may or may not be on your particular LAN. It is the only protocol that understands routing and can address packets to machines not on your LAN.
-
-**Transport layer**
-
-The transport layer is responsible for communicating between the network layer and the application layer. It is responsible for determining what application a given packet will reach. It is also the only layer that can guarantee data transmission.
-
-**Application layer**
-
-The application layer is responsible for formatting the data that will be transmitted to a remote host. It includes most of the higher order protocols you may be familiar with such as DHCP, DNS, and HTTP.
+- **Application layer** - Responsible for formatting the data that will be transmitted to a remote host. It includes most of the higher order protocols you may be familiar with such as DHCP, DNS, and HTTP.
 
 ### Physical layer
 
@@ -448,7 +438,7 @@ Subnetting tells us what IP addresses we should be able to communicate with with
 
 Every computer has a routing table, though it looks different depending on your operating system. Here's what my routing table currently looks like on Slackware Linux 14.2. Other operating systems format their routing tables differently, but the functionality is the same.
 
-    alan9228@whippoorwill:~# ip route show
+    whippoorwill:~# ip route show
     default via 172.30.16.1 dev eth0  metric 202
     127.0.0.0/8 dev lo  scope link
     172.30.16.0/26 dev eth0  proto kernel  scope link  src 172.30.16.28 metric 202
