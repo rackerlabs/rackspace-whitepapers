@@ -5,7 +5,7 @@ title: Networking Fundamentals
 type: whitepaper
 created_date: '2017-01-13'
 created_by: Alan Hicks
-last_modified_date: '2017-05-12'
+last_modified_date: '2017-06-15'
 last_modified_by: Stephanie Fillmon
 product: Cloud Overview
 product_url: cloud-overview
@@ -129,85 +129,44 @@ Now that you know binary, not only can you count to 31 on one hand, but you can 
 
 ### Five layers at a glance
 
-The TCP/IP suite makes use of five different layers to get its job done. (This isn't strictly true. There are a couple of other layers that come into play, but you will rarely run into them unless you are doing exotic things like multi-casting.) You can think of the layers in much the same way that you think of a stack of blocks.  At the bottom is the physical layer, and at the top is the application layer.  Things start at the top and slowly work their way down the layers to create a network frame.  Each of these layers will be briefly explained now; we will go into more depth in later sections.
+The TCP/IP suite makes use of five different layers to get its job done. There *are* a couple of other layers that come into play, but you will rarely run into them unless you are doing exotic things like multi-casting. You can think of the layers in much the same way that you think of a stack of blocks. At the bottom is the physical layer, and at the top is the application layer. Things start at the top and slowly work their way down the layers to create a network frame. Each of these layers will be briefly explained now; we will go into more depth in later sections.
 
-#### Physical layer
+**Physical layer**
 
-The lowermost layer in our stack of blocks is the physical layer. This
-layer consists of basically any physical part of your network.
-"Physical" is a bit of a misnomer though, as it includes non-physical
-transmission media such as light or radio signals.  Basically anything
-that is capable of actually transmitting data is part of the physical
-layer.  This includes network cards, copper wires, fiber-optic cable,
-radio waves, and even infra-red light.  The physical layer turns the
-digital packet into some form of anaolgue signal that can be
-transmitted to another node on the network.
+The lowermost layer in our stack of blocks is the physical layer. This layer consists of basically any physical part of your network. "Physical" is a bit of a misnomer though, as it includes non-physical transmission media such as light or radio signals. Basically anything that is capable of actually transmitting data is part of the physical layer. This includes network cards, copper wires, fiber-optic cable, radio waves, and even infra-red light. The physical layer turns the digital packet into some form of analog signal that can be transmitted to another node on the network.
 
-#### Data-link layer
+**Data-link layer**
 
-The Data-Link Layer is the first layer of the TCP/IP stack that
-actually crafts part of the packet.  This layer is also responsible for
-determining what machine will receive a packet on any given
-network-layer subnet.
+The data-link layer is the first layer of the TCP/IP stack that actually crafts part of the packet. This layer is also responsible for determining what machine will receive a packet on any given network-layer subnet.
 
-#### Network layer
+**Network layer**
 
-The Network Layer is responsible for addressing hosts that may or may
-not be on your particular LAN.  It is the only protocol that
-understands routing and can address packets to machines not on your
-LAN.
+The network layer is responsible for addressing hosts that may or may not be on your particular LAN. It is the only protocol that understands routing and can address packets to machines not on your LAN.
 
-#### Transport layer
+**Transport layer**
 
-The Transport Layer is responsible for communicating between the
-Network layer and the Application layer.  It is responsible for
-determining what application a given packet will reach.  It is also the
-only layer that can guarantee data transmission.
+The transport layer is responsible for communicating between the network layer and the application layer. It is responsible for determining what application a given packet will reach. It is also the only layer that can guarantee data transmission.
 
-#### Application layer
+**Application layer**
 
-The Application Layer is responsible for formatting the data that will
-be transmitted to a remote host.  It includes most of the higher order
-protocols you may be familiar with such as DHCP, DNS, and HTTP.
-
+The application layer is responsible for formatting the data that will be transmitted to a remote host. It includes most of the higher order protocols you may be familiar with such as DHCP, DNS, and HTTP.
 
 ### Physical layer
 
-As we discussed, the physical layer is responsible for transforming
-digital signals.  How this happens depends on the transmission media of
-course.  Fiber-optic cables send light signals of course.  Copper wires
-transmit data in voltage fluctuations.  Radio communications send the
-signal along a certain radio frequency.  We'll only discuss the most
-common (copper) below.
+As we discussed, the physical layer is responsible for transforming digital signals. How this happens depends on the transmission media of course. Fiber-optic cables send light signals of course. Copper wires transmit data in voltage fluctuations. Radio communications send the signal along a certain radio frequency. We'll only discuss the most common, copper, below.
 
 #### 802.3 cabling
 
-802.3 is the IEEE spec that defines ethernet. The most common
-transmission media for Internet traffic is copper cable.  Ethernet has
-reached speeds of 10, 100, 1000, and even 10000 megabits per second
-(Mbps).  Cabling has changed over time from incredibly thick coax cable
-to thin twisted pair copper which is prevalent today.  A typical cable
-consists for four pairs of copper with each pair twisted about itself.
-This twists generates a small electromagnetic shield around the cable
-that helps prevent interference and increases the amount of data that
-can be sent through the wire in a given period of time.
+802.3 is the Institute of Electrical and Electronics Engineers (IEEE) spec that defines ethernet. The most common transmission media for Internet traffic is copper cable. Ethernet has reached speeds of 10, 100, 1000, and even 10000 megabits per second (Mbps). Cabling has changed over time from incredibly thick coax cable to thin twisted pair copper which is prevalent today. A typical cable consists for four pairs of copper with each pair twisted about itself. This twists generates a small electromagnetic shield around the cable that helps prevent interference and increases the amount of data that can be sent through the wire in a given period of time.
 
-A typical Cat5e cable is terminated in an RJ-45 connecter that looks
-like an oversized phone jack.  Inside the cable you will find 4
-different colored pairs of wire.  In 10/100 Mbps ethernet, only pairs 1
-and 2 transmit data.  Pairs 3 and 4 are left vacant, but can be used to
-power a remote node using Power of Etherner (PoE).
+A typical Cat5e cable is terminated in an RJ-45 connecter that looks like an oversized phone jack. Inside the cable you will find 4 different colored pairs of wire. In 10/100 Mbps ethernet, only pairs 1 and 2 transmit data. Pairs 3 and 4 are left vacant, but can be used to power a remote node using Power over Ethernet (PoE).
 
     Pair 1: Orange / Orange-white
     Pair 2: Green / Green-white
     Pair 3: Blue / Blue-white
     Pair 4: Brown / Brown-white
 
-Unfortunately, how these pairs are wired is a little counter-intuitive,
-and depends on whether you are using an intermediate hub or switch, or
-if you are connecting two Network Interface Cards (NICs) directly.  The
-typical way of terminating these cables is known as 568B.  A 568B
-termination looks a bit like this.
+Unfortunately, how these pairs are wired is a little counter-intuitive, and depends on whether you are using an intermediate hub or switch, or if you are connecting two Network Interface Cards (NICs) directly. The typical way of terminating these cables is known as 568B. A 568B termination looks a bit like this.
 
                        RJ-45 Terminator
                  ===========================
@@ -221,10 +180,7 @@ termination looks a bit like this.
                  ||  Brown        --------||
                  ===========================
 
-If both ends of the cable are terminated in this fasion, then the cable
-is called a patch cable.  However, if only one end is terminated in the
-following fashion, then the cable is known as a crossover cable and can
-connect two computers without an intervening switch or hub.
+If both ends of the cable are terminated in this fashion, then the cable is called a *patch cable*. However, if only one end is terminated in the following fashion, then the cable is known as a *crossover cable* and can connect two computers without an intervening switch or hub.
 
                        RJ-45 Terminator
                  ===========================
@@ -238,14 +194,7 @@ connect two computers without an intervening switch or hub.
                  ||  Blue         --------||
                  ===========================
 
-Those of you who are ahead of the class are wondering why this isn't
-necessary if the cable is to be plugged into a hub or switch.  The
-reason is that certain pairs of wire are for sending data and others
-are for receiving data.  A hub or switch has these reversed.  Here's a
-standard cable for a 10/100Mb ethernet connection with the pairs marked
-according to whether they are to transmit or receive data. (100Mb
-Ethernet only uses two wire pairs. Gigabit Ethernet uses all 4.) Each
-pair has a positive cable and a ground cable.
+You might be wondering why this isn't necessary if the cable is plugged into a hub or switch. The reason is that certain pairs of wire are for sending data and others are for receiving data. A hub or switch has these reversed.  Here's a standard cable for a 10/100Mb ethernet connection with the pairs marked according to whether they are to transmit or receive data. (100Mb Ethernet only uses two wire pairs. Gigabit Ethernet uses all 4.) Each pair has a positive cable and a ground cable.
 
             NIC                  Hub or Switch
     ===================       =================
@@ -259,16 +208,13 @@ pair has a positive cable and a ground cable.
     ||  Unused  -----|| 8   8 ||---- Unused  ||
     ===================       =================
 
-Here, you would want to use a patch cable, as the NIC's Output lines up
-with the hub's input and vice-versa.  A crossover cable simply handles
-this for you if the two interface ports have the same pin setup.
-Consider this example:
+Here, you would want to use a patch cable, as the NIC's Output lines up with the hub's input and vice-versa. A crossover cable simply handles this for you if the two interface ports have the same pin setup. Consider this example:
 
            NIC 1                     NIC 2
     ===================       =================
     ||  Output  -----|| 1   1 ||---- Output  ||
     ||  Output  -----|| 2   2 ||---- Output  ||
-    ||  Input   -----|| 3   3 ||---- Ipnut   ||
+    ||  Input   -----|| 3   3 ||---- Input   ||
     ||  Unused  -----|| 4   4 ||---- Unused  ||
     ||  Unused  -----|| 5   5 ||---- Unused  ||
     ||  Input   -----|| 6   6 ||---- Input   ||
@@ -276,9 +222,7 @@ Consider this example:
     ||  Unused  -----|| 8   8 ||---- Unused  ||
     ===================       =================
 
-f we were to connect a patch cable between these two NICs, no data
-could flow through as each NIC would attempt to transmit and receive on
-the same pairs.  But by connecting a cross-over cable...
+If we were to connect a patch cable between these two NICs, no data could flow through because each NIC would attempt to transmit and receive on the same pairs. But by connecting a cross-over cable, you can see that everything flows smoothly.
 
            NIC 1                     NIC 2
     ===================       =================
@@ -292,129 +236,43 @@ the same pairs.  But by connecting a cross-over cable...
     ||  Unused  -----|| 8   8 ||---- Unused  ||
     ===================       =================
 
-... everything flows smoothly.
-
 #### Voltage transmission
 
-So now that we know what each cable is for, and how to wire up a cable,
-how does a NIC actually transmit data?  To understand this, we have to
-answer the age old question: "What is digital anyway?"  A google search
-will return all kinds of definitions for "digital", but none of them
-are very clear unless you already understand "digital".  Here is my
-simpler definition.  "Digital" is just a way of interpreting an
-analogue signal.
+So now that we know what each cable is for, and how to wire up a cable, how does a NIC actually transmit data? To understand this, we have to answer the age old question: "What is digital anyway?" A Google search will return all kinds of definitions for "digital", but none of them are very clear unless you already understand "digital". Here is my simpler definition: "Digital" is just a way of interpreting an analog signal.
 
-Your copper cable always carries a voltage, and as this voltage
-changes, the remote NIC interprets this change as either a 1 or a 0.
-Let's assume your NIC is capable of producing voltages between 1 and
-5 volts and that above 3 Volts is considered a "1" and below 3 Volts is
-considered a "0".  Voltage always changes on a curve that resembles a
-sine wave.
+Your copper cable always carries a voltage, and as this voltage changes, the remote NIC interprets this change as either a 1 or a 0. Let's assume your NIC is capable of producing voltages between 1 and 5 volts and that above 3 Volts is considered a "1" and below 3 Volts is considered a "0". Voltage always changes on a curve that resembles a sine wave.
 
-<!-- Location for digital-interpretation.png -->
-<img src="content/white-paper/digital-interpretation.png %}" width="570" height="620" />
+<img src="{% asset_path cloud-overview/networking-fundamentals/digital-interpretation.png %}" width="570" height="620" />
 
-This should clearly show how changing voltage, even though the change
-is analogue, can be interpreted as ones and zeros digitally.
+This should clearly show how changing voltage, even though the change is analog, can be interpreted as ones and zeros digitally.
 
 #### Repeaters
 
-A repeater is really a simple device that takes a signal in and
-retransmits it.  Repeaters are necessary to send data along particularly
-long cables because the signal tends to degrade. At distances longer
-than 100 meters yard, copper cables begin to experience large amounts
-of distortion and impedence. So if you wanted to ensure the integrity of a
-transmission between two nodes that were 200 meters apart, you would
-use two 100 meter long cables and connect them to a repeater in the
-middle.  Simple, yes?
+A repeater is a simple device that takes a signal in and retransmits it. Repeaters are necessary to send data along particularly long cables because the signal tends to degrade. At distances longer than 100 meters yard, copper cables begin to experience large amounts of distortion and impedance. So if you wanted to ensure the integrity of a transmission between two nodes that were 200 meters apart, you would use two 100 meter long cables and connect them to a repeater in the middle.
 
-Repeaters aren't a common networking tool. Typically when data needs to
-be transmitted along long distances, we prefer to use technologies such
-as fiber-optic cables which have more reliable long-distance
-transmission capabilities.
+Repeaters aren't a common networking tool. Typically when data needs to be transmitted along long distances, we prefer to use technologies such as fiber-optic cables which have more reliable long-distance transmission capabilities.
 
 #### Hubs
 
-Hubs are devices with lots and lots of ethernet ports and basically
-"split" a cable so that a single packet reaches multiple nodes.  A
-hub's singular function is to accept signals on any of its interfaces,
-and propogate those signals down all of its other ports.  Basically, a
-hub is nothing more than a multi-port repeater.  Use of a hub allows
-one node to contact multiple other nodes.  Today, however, hubs have
-fallen out of favor due to the prevalence of switches (we will discuss
-switches below) for a variety of reasons. The main problem with a hub,
-is that only one node may send data at a time, and each node is
-reponsible for collision detection.  Collisions occur when more than 1
-node attempts to send data at a time.  Most hubs are capable of
-disconnecting a node that is producing more than its fair share of
-collisions, preventing a single mis-behaving machine from bringing down
-the entire network, but this is still far from an ideal solution.
+Hubs are devices with multiple ethernet ports that basically split a cable so that a single packet reaches multiple nodes. A hub's singular function is to accept signals on any of its interfaces, and propagate those signals down all of its other ports. Basically, a hub is nothing more than a multi-port repeater. A hub enables one node to contact multiple other nodes.
 
-Hubs are considered "dumb" devices, because they replicate data
-unneccessarily.  Only the single machine that a packet is destined for
-needs to receive the packet, but a hub has no way of knowing what that
-machine is or where it is located.  Thus, a hub just "spams" each
-signal it receives to every machine it can reach.
+Today, however, hubs have fallen out of favor due to the prevalence of switches for a variety of reasons. The main problem with a hub is that only one node may send data at a time, and each node is responsible for collision detection. Collisions occur when more than one node attempts to send data at a time. Most hubs are capable of disconnecting a node that is producing more than its fair share of collisions, preventing a single misbehaving machine from bringing down the entire network, but this is still far from an ideal solution.
 
-I am reminded of a joke told by the famous country comedian and Grand
-Ole Opry star Minnie Pearl that is perhaps the best analogy to the way
-a hub works that I can think of.
-
-"I was going down to the store here in Nashville the other day and this
-city slicker laughed as I walked by.  He turned around to his friend
-and says 'She don't look very country to me.'  His friend he laughed
-and said 'Yeah, I bet she couldn't tell a goose from a gander.'  I
-tried to ignore them, but I just couldn't help myself so I walked over
-and promptly told them 'Well now in Grinder's Switch we don't worry
-about that, we just put 'em all in a pen together and let 'em figure it
-out for themselves."
-
-This is precisely how a hub works.  A gander (male goose) wants to talk
-to the female of the species, so he goes over to Minnie Pearl (the hub)
-and honks at her.  She doesn't know who he wants to speak with and
-really doesn't care, so she tosses him in a pen with all the other
-geese.  Every animal there (whether a goose or a gander) has to hear
-our gander's honk. Each ignores that honk, except the one lucky goose
-our gander is addressing.
+Hubs are considered "dumb" devices, because they replicate data unnecessarily. Only the single machine that a packet is destined for needs to receive the packet, but a hub has no way of knowing what that machine is or where it is located.  Thus, a hub just "spams" each signal it receives to every machine it can reach.
 
 ### Data-link layer
 
-This is the layer where things actually get interesting. The Data-Link
-Layer is responsible for sending packets "somewhere", even if
-"somewhere" isn't their final destination. We will only discuss
-Ethernet (802.3) here as it is predominant. Wireless Ethernet (802.11)
-is similar enough that most everything we will discuss here applies to
-it as well.
+The Data-link layer is responsible for sending packets "somewhere", even if "somewhere" isn't their final destination. We will discuss only Ethernet (802.3) here as it is predominant, however, wireless Ethernet (802.11) is similar enough that most everything we will discuss here applies to it as well.
 
 #### MAC addressing
 
-Every NIC, every switch, every modem, every device that connects to a
-network has a Media Access Control (MAC) Address that is set by the
-device's manufacturer and is generally considered unchangeable.  This
-address uniquely identifies a single device on a network segment,
-allowing us to address data for that particular device.  In an ethernet
-frame, we include two of these, a destination MAC address, and the
-source MAC address.
+Every NIC, every switch, every modem, and every device that connects to a network has a Media Access Control (MAC) address that is set by the device's manufacturer and is generally considered unchangeable. This address uniquely identifies a single device on a network segment, enabling us to address data for that particular device. In an ethernet frame, we include two of these: a destination MAC address, and the source MAC address.
 
-When you send a packet, the packet is tagged with your MAC address as
-the "source MAC", and you will set the "destination MAC" to the address
-of the node you wish to reach, or to your router's MAC address if the
-final node isn't on your subnet.  This will all make more sense when we
-look at the Network Layer.
+When you send a packet, the packet is tagged with your MAC address as the *source MAC*, and you will set the *destination MAC* to the address of the node you wish to reach, or to your router's MAC address if the final node isn't on your subnet. This will all make more sense when we look at the network layer.
 
 #### Bridges
 
-Bridges were designed as a way of limiting collisions on a network
-using hubs to connect many different machines by "partitioning" the
-network.  A bridge is basically a dedicated computer with more than one
-NIC that sits between two or more hubs.  A bridge works like a hub, but
-with one exception.  A bridge has "brains" and can "remember" what
-machines are on either "side" of it.  When it receives a packet, it
-consults its memory to see if the destination MAC is on the same
-interface that the source MAC was on.  If so, it discards the packet.
-However, if they are on different interfaces, it propogates the packet
-only along the proper interface.  A couple of diagrams may help
-explain.
+Bridges were designed as a way of limiting collisions on a network using hubs to connect many different machines by *partitioning* the network. A bridge is basically a dedicated computer with more than one NIC that sits between two or more hubs. A bridge works like a hub, but with one exception. A bridge has "brains" that can remember what machines are on either side of it. When it receives a packet, it consults its memory to see if the destination MAC is on the same interface as the source MAC. If so, it discards the packet. However, if they are on different interfaces, it propagates the packet only along the proper interface.
 
     =======================                    =======================
     |      Hub A          |--------------------|        Hub B        |
@@ -425,11 +283,7 @@ explain.
     | Node 1 |  | Node 2 |                     | Node 3 |  | Node 4 |
     ==========  ==========                     ==========  ==========
 
-In this example, if Node 1 sends a packet to Node 2, the packet
-traverses both hubs, so nodes 2, 3, and 4 will all see the packet. Only
-node 2 will act on it, and the others will ignore it.  Obviously, this
-is less efficient since every single node has to do collision detection
-for three other nodes.
+In this example, if Node 1 sends a packet to Node 2, the packet traverses both hubs, so nodes 2, 3, and 4 will all see the packet. Only node 2 will act on it, and the others will ignore it. Obviously, this is less efficient since every single node has to do collision detection for three other nodes.
 
     =======================     ==========     =======================
     |      Hub A          |-----| Bridge |-----|        Hub B        |
@@ -440,44 +294,13 @@ for three other nodes.
     | Node 1 |  | Node 2 |                     | Node 3 |  | Node 4 |
     ==========  ==========                     ==========  ==========
 
-In this example network, if Node 1 sends a packet to Node 2, both Node
-2 and the bridge see the packet.  Node 2 accepts the packet, and the
-bridge silently drops the packet to the bit bucket.  Now suppose Node 1
-sends a packet to Node 3.  Node 2 and the bridge will see the packet.
-Node 2 will drop the packet in its bit bucket, but the bridge will send
-the packet over to Hub B where both Node 3 and Node 4 will see it. Node
-3 will act on the packet and Node 4 will ignore it.  This is much more
-efficient as each node only has to do collision detection for two other
-devices (the other node on its hub, and the bridge).  You can see how
-this improves things if you have dozens or hundreds of nodes on a hub
-network.  Today however, bridges have lost their role as performance
-enhancers due to the prevalence of switches, and you'll soon find out
-exactly why.  Bridges are primarily used today as specialized devices
-such as transparent firewalls or data filters, but that is a discussion
-for a future class.
+In this example network, if Node 1 sends a packet to Node 2, both Node 2 and the bridge see the packet. Node 2 accepts the packet, and the bridge silently drops the packet to the bit bucket. Now suppose Node 1 sends a packet to Node 3. Node 2 and the bridge see the packet. Node 2 drops the packet in its bit bucket, but the bridge sends the packet to Hub B where both Node 3 and Node 4 see it. Node 3 acts on the packet and Node 4 ignores it. This is much more efficient because each node has to do collision detection for only two other devices (the other node on its hub, and the bridge). You can see how this improves things if you have dozens or hundreds of nodes on a hub network. Today however, bridges have lost their role as performance enhancers due to the prevalence of switches, and you'll soon find out exactly why. Bridges are primarily used today as specialized devices such as transparent firewalls or data filters, but we won't be discussing that in this paper.
 
 #### Switches
 
-At first glance, switches are indistinguishable from hubs.  They look
-identical, but the magic is all on the inside.  Whereas hubs operate
-entirely on the physical layer, a switch steps up to the data-link
-layer and functions more like a bridge than a hub.  If you recall from
-the earlier example, every node on a hub has to do collision detection
-and prevention with every other node on the hub and any other hubs that
-are directly attached to it.  If a node is attached to a switch on the
-other hand, it only has to avoid collisions with the switch itself. How
-is this possible?  Well, that's where the magic comes in.
+At first glance, switches are indistinguishable from hubs. They look identical, but the magic is all on the inside.  Whereas hubs operate entirely on the physical layer, a switch steps up to the data-link layer and functions more like a bridge than a hub. If you recall from the earlier example, every node on a hub has to do collision detection and prevention with every other node on the hub and any other hubs that are directly attached to it. If a node is attached to a switch, however, the node has to avoid collisions with only the switch. How is this possible? Well, that's where the magic comes in.
 
-Imagine if you will, that every single port on a hub was a bridge. This
-bridge would only send any given packet directly to the single machine
-the packet is destined to.  This is exactly how a switch operates.  By
-"memorizing" the MAC addresses of all devices attached to it, a switch
-is capable of looking at a packet's destination, and sending the packet
-out only the single port where the destination node is attached.
-This means that on a switch, a machine will only see packets that are
-intended for it.  Not only does this prevent collisions, but it also
-increases overall throughput as multiple machines may send packets at
-the same time.
+Imagine that every single port on a hub was a bridge. This bridge would only send any given packet directly to the single machine the packet is destined to. This is exactly how a switch operates. By memorizing the MAC addresses of all devices attached to it, a switch is capable of looking at a packet's destination, and sending the packet to only the single port where the destination node is attached. This means that on a switch, a machine sees only packets that are intended for it. Not only does this prevent collisions, but it also increases overall throughput as multiple machines may send packets at the same time.
 
     =================================================================
     |                            Switch A                           |
@@ -490,110 +313,55 @@ the same time.
     | Node A | | Node B | | Node C | | Node D | | Node E | | Node F |
     ========== ========== ========== ========== ========== ==========
 
-This is a typical 6-port switch with 6 nodes attached to it.  Say that
-Node A wants to send a packet to Node B.  The switch receives the
-packet on port 1, checks at its interface table, and determines that the
-packet is destined for Node B, which it knows is on port 2.  The packet
-is sent out port 2, and only out port 2.  Nodes C, D, E, and F never
-see the packet and in fact, will never even know it existed.  Moreover,
-Node C can send Node D a packet at the same time without fear of
-collision, since the packets don't travel on the same physical link.
+This is a typical 6-port switch with 6 nodes attached to it. Say that Node A wants to send a packet to Node B. The switch receives the packet on port 1, checks at its interface table, and determines that the packet is destined for Node B, which it knows is on port 2. The packet is sent out to port 2, and only port 2. Nodes C, D, E, and F never see the packet and in fact, will never even know it existed. Moreover, Node C can send Node D a packet at the same time without fear of collision, since the packets don't travel on the same physical link.
 
-It's important to remember that switches are *not* security devices,
-but rather performance devices.  It is possible to flood a switch's ARP
-table and make it either crash, or convert to working as a hub
-depending on the make and model.  You should never rely on a switch as
-a way of preventing disclosure of information.
+It's important to remember that switches are *not* security devices, but rather performance devices. It is possible to flood a switch's ARP table and make it either crash or convert to working as a hub depending on the make and model.  You should never rely on a switch as a way of preventing disclosure of information.
 
-#### ARP
+#### Address Resolution Protocol
 
-ARP is a protocol used to resolve hardware addresses from network
-addresses.  Canonically, this means that if you know a node's IP
-Address, you'll use ARP to discover its MAC Address.  Simple, right?
-ARP packets are non-routable, so they will only tell you the MAC
-Addresses of nodes on your LAN.  A typical ARP dialogue looks like
-this.
+Address Resolution Protocol (ARP) is a protocol used to resolve hardware addresses from network addresses. Canonically, this means that if you know a node's IP Address, you use ARP to discover its MAC address. ARP packets are non-routable, so they tell you only the MAC addresses of nodes on your LAN. A typical ARP dialogue looks like this.
 
-  `whippoorwill:  "Hey!  Who out there is 172.30.16.19?"`
+    whippoorwill:  "Hey! Who out there is 172.30.16.19?"
 
-  `nightingale: "Huh?  Oh that's me!  I'm 00:B0:D0:23:62:F2."`
+    nightingale: "Huh? Oh that's me! I'm 00:B0:D0:23:62:F2."
 
-And now whippoorwill knows that 192.168.1.197 maps to
-00:B0:D0:23:62:F2. That's really all there is to it. ARP is strictly an
-Ethernet protocol and once upon a time was used to resolve addresses in
-non-IP networks like Chaosnet. These days, everyone uses Internet
-Protocol. In IPv6, this functionality is handled by the similar
-Neighbor Discovery Protocol (RFC 4861).
+And now **whippoorwill** knows that 192.168.1.197 maps to 00:B0:D0:23:62:F2. That's really all there is to it. ARP is strictly an Ethernet protocol and once was used to resolve addresses in non-IP networks like Chaosnet. These days, everyone uses Internet Protocol. In IPv6, this functionality is handled by the similar Neighbor Discovery Protocol (RFC 4861).
 
 ### Network layer
 
-This is without a doubt the most fun and most difficult layer to learn.
-Without this layer, no machine could address any other machine without
-knowing its MAC address, and those machines would have to be on
-connected hubs, bridges, and switches.  The Network Layer is
-responsible for determining the final destination of a packet and
-determining just how to get there from here.
+The network layer is responsible for determining the final destination of a packet and determining how to get there. Without this layer, no machine could address any other machine without knowing its MAC address, and those machines would have to be on connected hubs, bridges, and switches.
 
 #### IP addressing
 
-Alright, so you all know what an IP address is don't you?  Everyone has
-one these days.  In fact, some of us have lots of them.  They're those
-funny little numbers like 207.69.188.185.  What do they mean?  Why
-can't I just use whatever numbers I want there?  And why do they only
-go up to 255?
+Simply put, an IP address is a 32-bit binary number. It's a string of 1s and 0s 32 digits long. For various reasons, we split that 32-bit number up into four 8-bit numbers. Let me use a common example.
 
-Simply put, an IP address is a 32-bit binary number.  It's a string of
-1s and 0s 32 digits long.  For various reasons, we split that 32-bit
-number up into 4 8-bit numbers.  Let me use a common example.
+192.168.1.100 is a common IP address on many private networks as it is one of the most easily remembered default IP addresses for a private LAN. What does the computer see when we send a packet to this address? To answer that question we need to know something about binary arithmetic. If you skipped the section on binary arithmetic, now may be a good time to go back and review it.
 
-192.168.1.100 is a common IP address on many private networks as it's
-one of the most easily remembered default IP addresses for a private
-LAN.  What does the computer see when we send a packet to this address?
-To answer that question we need to know something about binary
-arithmetic.  If you skipped our section on binary arithmetic, now may be
-a good time to go back and review it.
+    192.168.001.100 = 11000000.10101000.00000001.01100110
 
-  `192.168.001.100 = 11000000.10101000.00000001.01100110`
+In reality, the dots don't exist. They are only there to help us work with four 8-bit numbers instead of 1 big 32-bit number. In reality, the computer just sees **11000000101010000000000101100110**.
 
-In reality, the dots don't exist.  They are only there to help us work
-with four 8-bit numbers instead of 1 big 32-bit number.  In reality,
-the computer just sees "11000000101010000000000101100110".
-
-So now you know what an IP address is.  Just like with the MAC address,
-every packet has a Destination IP Address and a Source IP Address.
+So now you know what an IP address is. Just like with the MAC address, every packet has a destination IP address and a source IP address.
 
 #### Subnetting
 
-Subnetting today is properly called "Classless Inter-Domain Routing"and
-is formally described in the RFCs 1518 and 1519.
+Subnetting is properly called *Classless Inter-Domain Routing* and is formally described in the RFCs 1518 and 1519. Subnetting is a way of determining what IP addresses are on our network. Basically, it tells us what nodes we can talk to directly without communicating through a router of some sort. You've probably seen subnets like 255.255.255.0 or heard of them talked about as 192.168.1.0/24, but what do those numbers mean?
 
-Subnetting is a way of determining what IP addresses are on our network.
-Basically, it tells us what nodes we can talk to directly without
-communicating through a router of some sort.  You've probably seen
-subnets like 255.255.255.0 or heard of them talked about as
-192.168.1.0/24, but what do those numbers mean?
+A *subnet mask* (or just a netmask for short) is a bitmask that tells the computer not to look at certain numbers. To understand this, we have to look at those numbers in binary.
 
-A subnet mask (or just a net mask for short) is a bit mask that
-basically tells the computer not to look at certain numbers.  To
-understand this, we have to look at those numbers in binary.
+    255.255.255.0 = 11111111.11111111.11111111.00000000
 
-  `255.255.255.0 = 11111111.11111111.11111111.00000000`
+    192.168.1.100 = 11000000.10101000.00000001.01100110
 
-  `192.168.1.100 = 11000000.10101000.00000001.01100110`
+In this example, a node (be that a computer, a managed switch, a router, or something else) can look at these two numbers see that all numbers that begin 192.168.1 are on the same subnet.
 
-In this example, a node (be that a computer, a managed switch, a
-router, or something else) can look at these two numbers and say to
-itself, "looks like all numbers that begin 192.168.1 are on the same
-subnet".
+Another way of looking writing this is 192.168.1.100/24. The **/n** tells us how many bits are in the bitmask. In this case, 24.
 
-Another way of looking writing this is 192.168.1.100/24.  The /n tells
-us how many bits are in the bitmask.  In this case, 24.
+    /24           = 11111111.11111111.11111111.00000000
 
-`/24           = 11111111.11111111.11111111.00000000`
+    192.168.1.100 = 11000000.10101000.00000001.01100110
 
-`192.168.1.100 = 11000000.10101000.00000001.01100110`
-
-A helpful little table here should help you understand the basics.
+The following table should help you understand the basics.
 
     Subnet             Bitmask      Value
     ===============    =======      ===================================
@@ -614,30 +382,23 @@ A helpful little table here should help you understand the basics.
     255.0.0.0          /8           11111111.00000000.00000000.00000000
     0.0.0.0            /0           00000000.00000000.00000000.00000000
 
-This is a table of the most common subnets you will run across from the
-smallest (/32, a single node) to the widest (/0, everything).
+This is a table of the most common subnets you will run across from the smallest (/32, a single node) to the widest (/0, everything).
 
-The number of address on a given subnet is easily found using the
-following formula.
+The number of address on a given subnet is easily found using the following formula:
 
-  `max_addr = 2^(32 - bit_mask)`
+    max_addr = 2^(32 - bit_mask)
 
-So, if your bitmask is /32...
+So, if your bitmask is /32:
 
-  `max_addr = 2^(32 - 32) = 2^0 = 1`
+    max_addr = 2^(32 - 32) = 2^0 = 1
 
-If it's /24...
+If it's /24:
 
-  `max_addr = 2$(32 - 24) = 2^8 = 256`
+    max_addr = 2$(32 - 24) = 2^8 = 256
 
-But what IP addresses are included in one of those subnets?  It's easy
-to figure out that 192.168.1.0/24 means all addresses from 192.168.1.0
-to 192.168.1.255, but what about some obscure ones like
-172.16.25.208/29?  To determine this, we'll have to simply count up
-from 0.
+But what IP addresses are included in one of those subnets? It's easy to figure out that 192.168.1.0/24 means all addresses from 192.168.1.0 to 192.168.1.255, but what about some obscure ones like 172.16.25.208/29? To determine this, we'll have to simply count up from 0.
 
-A /29 subnet has 8 IP Addresses, meaning that there are exactly 32 /29
-subnets inside a /24 subnet.  Let me make another table.
+A /29 subnet has eight IP Addresses, meaning that there are exactly 32 /29 subnets inside a /24 subnet. Let me make another table.
 
     Subnet             Min IP           Max IP
     ======             ======           ======
@@ -647,10 +408,7 @@ subnets inside a /24 subnet.  Let me make another table.
     .....
     172.16.25.208/29   172.16.25.208    172.16.25.215
 
-An alternative way of looking at this is to split the subnets one at a
-time.  Here we start with a known /24 and break it down into two /25s.
-Whichever /25 contains our IP address will be broken down into two
-/26s and so on until we reach the final /29.
+An alternative way of looking at this is to split the subnets one at a time. Here we start with a known /24 and break it down into two /25s. Whichever /25 contains our IP address will be broken down into two /26s and so on until we reach the final /29.
 
     Subnet             Min IP           Max IP
     ======             ======           ======
@@ -670,15 +428,9 @@ Whichever /25 contains our IP address will be broken down into two
     ...
     172.16.25.208/29   172.16.25.208    172.16.25.215
 
-Simple, right?  Well, it used to be even simpler when we only had three
-netmasks.
+Simple, right? Well, it used to be even simpler when we only had three netmasks.
 
-Years ago, when the Internet was young, there were only three subnets.
-These were believed to be sufficient at the time, because the Internet
-was mostly private, very small, and no one dreamed that so  many people
-would be on it today.  (Technically, there were other subnets, but
-they were restricted to specialty uses such as multi-cast.  We will not
-discuss them further.)
+Years ago, there were only three subnets. These were sufficient at the time, because the Internet was mostly private, very small, and no one dreamed that so many people would eventually be on it. (Technically, there were other subnets, but they were restricted to specialty uses such as multi-cast. We will not discuss them further.)
 
     Class   Network          Addresses
     =====   =======          =========
@@ -686,165 +438,75 @@ discuss them further.)
     B       255.255.0.0      65,536
     C       255.255.255.0    256
 
-If an organization needed 300 IP addresses, they were given 65,536.  If
-they needed 100,000, they were given 16,777,216.  Clearly this was very
-wasteful and created shortages.  To address this, classless subnetting
-was invented, allowing organizations such as ISPs to get only as many
-IPs as they needed (or pretty close to it).  If I need 300 IP addresses,
-I don't need a /16.  A /23 includes 512 IP Addresses, and that's more
-than enough without wasting the other 65,024. An even better solution
-would be to provide me with a /24 network (256 addresses) and a second
-/26 network (64 addresses) for a total of 320. This of course, would
-require a router to pass packets between the two different subnets.
+If an organization needed 300 IP addresses, they were given 65,536. If they needed 100,000, they were given 16,777,216. Clearly this was very wasteful and created shortages. To address this, classless subnetting was invented, allowing organizations such as ISPs to get only as many IPs as they needed (or pretty close to it). If I need 300 IP addresses, I don't need a /16. A /23 includes 512 IP Addresses, and that's more than enough without wasting the other 65,024. An even better solution would be to provide me with a /24 network (256 addresses) and a second /26 network (64 addresses) for a total of 320. This of course, would require a router to pass packets between the two different subnets.
 
-Today, you'll still hear this terminology from time to time.  People
-often refer to any /24 subnet as a "Class C" network for example.
+Today, you'll still hear this terminology from time to time. People often refer to any /24 subnet as a *Class C* network for example.
 
 #### Route determination
 
-Finally!  Things have gotten interesting.  At last we have come to that
-part of networking that allows us to send information in the form of
-packets to places that we've never seen.  Subnetting tells us what IP
-Addresses we should be able to communicate with without going through a
-router, but what about other IP Addresses?
+Subnetting tells us what IP addresses we should be able to communicate with without going through a router, but what about other IP addresses? Route determination enables us to send information in the form of packets to places that we've never seen.
 
-Every computer has a routing table, though it looks different depending
-on your operating system.  Here's what my routing table currently looks
-like on Slackware Linux 14.2. Other operating systems format their
-routing tables differently, but the functionality is the same.
+Every computer has a routing table, though it looks different depending on your operating system. Here's what my routing table currently looks like on Slackware Linux 14.2. Other operating systems format their routing tables differently, but the functionality is the same.
 
     alan9228@whippoorwill:~# ip route show
     default via 172.30.16.1 dev eth0  metric 202
     127.0.0.0/8 dev lo  scope link
     172.30.16.0/26 dev eth0  proto kernel  scope link  src 172.30.16.28 metric 202
 
-This requires a little bit of explanation. When a packet is being
-transmitted outward, the kernel checks the packet's Destination IP
-Address against the first column of the routing table. This column
-lists networks and their subnets. The kernel always prefers the **most
-specific** match. Let's look at a few examples.
+This requires a little bit of explanation. When a packet is being transmitted outward, the kernel checks the packet's destination IP address against the first column of the routing table. This column lists networks and their subnets. The kernel always prefers the **most specific** match. Let's look at a few examples.
 
-My computer (whippoorwill, 172.30.16.28) wishes to send a packet to
-another (nightingale, 172.30.16.19). It forms a packet and sets the
-Destination IP address to 172.30.16.19. Then the kernel checks its
-routing table and finds two matches for this address.
+My computer (**whippoorwill**, 172.30.16.28) wishes to send a packet to another (**nightingale**, 172.30.16.19). It forms a packet and sets the destination IP address to 172.30.16.19. Then the kernel checks its routing table and finds two matches for this address.
 
     default via 172.30.16.1 dev eth0  metric 202
     172.30.16.0/26 dev eth0  proto kernel  scope link  src 172.30.16.28
     metric 202
-The default route is a "catch-all" that should always match.
-Essentially, it is the network 0.0.0.0/0 - the entire Internet.
-However, 172.30.16.0/26 also matches, and is a much smaller subnet, so
-the kernel chooses to use it instead as it is more specific. This
-specific example has a lot of information here, but for now there's
-really only two things we are interested in.
 
-- Does the route include a "via IP_ADDRESS" statement?
-- What "dev INTERFACE" statement is included?
+The default route is a catch-all that should always match. Essentially, it is the network 0.0.0.0/0 - the entire Internet. However, 172.30.16.0/26 also matches, and is a much smaller subnet, so the kernel chooses to use it instead as it is more specific. This specific example has a lot of information here, but for now there's really only two things we are interested in.
 
-The first statement tells us if we need to use a router (gateway) and
-what that router's IP address is. In this case, no router is specified,
-so we know we are not using one. The second statement tells us that
-this packet should leave our eth0 interface in order to reach its
-destination.
+- Does the route include a `via IP_ADDRESS` statement?
+- What `dev INTERFACE` statement is included?
 
-Now another example. Suppose whippoorwill wants to talk to Google,
-which it has learned has an IP address of 74.125.21.105.The kernel
-checks the routing table and determines that the only match is the
-catch-all.
+The first statement tells us if we need to use a router (or a *gateway*) and what that router's IP address is. In this case, no router is specified, so we know we are not using one. The second statement tells us that this packet should leave our `eth0` interface in order to reach its destination.
 
-`default via 172.30.16.1 dev eth0  metric 202`
+Suppose **whippoorwill** wants to talk to Google, which it has learned has an IP address of 74.125.21.105.The kernel checks the routing table and determines that the only match is the catch-all.
 
-This time, the packet will be sent out the eth0 interface with a local
-destination of the gateway 172.30.16.1.
+    default via 172.30.16.1 dev eth0  metric 202
 
-It's important to note that no packet is transmitted to an IP Address.
-IP Addresses are merely used to determine the route that a packet must
-take to reach its eventual destination.  Packets are instead
-transmitted to MAC Addresses.  This will all make sense later when we
-put everything together.
+This time, the packet will be sent out the `eth0` interface with a local destination of the gateway 172.30.16.1.
 
-#### ICMP
+It's important to note that no packet is transmitted to an IP address. IP addresses are merely used to determine the route that a packet must take to reach its eventual destination. Packets are instead transmitted to MAC addresses.  This will all make sense later when we put everything together.
 
-ICMP is formally described in RFC 792.
+#### Internet Control Message Protocol
 
-Internet Control Message Protocol, or ICMP for short, is mostly used to
-transmit error messages between machines.  For example, if a router
-can't seem to find a node you're attempting to communicate with,  you
-may see an "ICMP Destination Unreachable" error message.  ICMP is used
-to transmit the most basic of information between nodes, and is highly
-specialized to this task to the point that it cannot carry arbitrary
-data in the way that TCP or UDP can (more on these later).  Each ICMP
-packet is given a certain "type" that specifies its use.  Certain types
-may have a (sometimes optional) data section that can carry some small
-amount of arbitrary data.
+Internet Control Message Protocol (ICMP) is formally described in RFC 792.
 
-The most common intentional use of ICMP by a user is the ping program.
-ping generates an ICMP type 8 packet.  Type 8 is known as the "Echo
-Request".  When a machine receives such a packet, it replies to it with
-an ICMP type 0 "Echo Reply" packet.
+ICMP is mostly used to transmit error messages between machines. For example, if a router can't find a node with which you're attempting to communicate, you may see an `ICMP Destination Unreachable` error message. ICMP is used to transmit the most basic of information between nodes, and is highly specialized to this task to the point that it cannot carry arbitrary data in the way that TCP or UDP can (these will be discussed in a later section). Each ICMP packet is given a certain *type* that specifies its use. Certain types may have a (sometimes optional) data section that can carry some small amount of arbitrary data.
 
-Another common way of using ICMP is the traceroute command.  This
-works by generating UDP packets with very short Time To Live (TTL)
-values.  If a router sees a packet with a TTL value of 0, it will  send
-out an ICMP type 11 "Time Exceeded" packet.  Since every router that
-handles a packet must decriment the TTL value by 1, this creates an
-easy method of seeing what routers (and how many) two  nodes are
-communicating through.
+The most common intentional use of ICMP by a user is the `ping` program. `ping` generates an ICMP type 8 packet. Type 8 is known as the *Echo Request*. When a machine receives such a packet, it replies to it with an ICMP type 0 *Echo Reply* packet.
 
-By far the most common uses of ICMP packets however, are those you
-never see.  ICMP will send error messages telling a sending node that
-no more bandwidth is available.  It will tell the sending node to
-redirect a message to a different route.  In short, ICMP is the often
-unseen little janitor of the TCP/IP Suite that keeps everything clean
-and tidy and informs everyone when the floor is wet and slippery.
+Another common way of using ICMP is the `traceroute` command. This works by generating UDP packets with very short Time To Live (TTL) values. If a router sees a packet with a TTL value of 0, it will send out an ICMP type 11 *Time Exceeded* packet. Since every router that handles a packet must decrement the TTL value by 1, this creates an easy method of seeing what routers (and how many) two nodes are communicating through.
+
+By far the most common uses of ICMP packets however, are those you never see. ICMP sends error messages telling a sending node that no more bandwidth is available. It also tells the sending node to redirect a message to a different route. In short, ICMP is the often unseen little janitor of the TCP/IP Suite that keeps everything clean and tidy and informs everyone when the floor is wet and slippery.
 
 ### Transport layer
 
-The Transport Layer is every bit as simple and complex as the network
-layer.  It is responsible for communicating the wishes of the
-Application Layer with the Network Layer, and in some cases, is
-responsible for ensuring that data arrives at its destination.  You
-might think of the Transport Layer as a postman.  He accepts letters
-(data) from you, and passes them off to be routed to their final
-destination.  If you have to be certain the letter arrives at its
-destination, you can send it certified mail and get reasonable
-confirmation that it was indeed delivered.
+The transport layer is responsible for communicating the wishes of the application layer with the network layer, and in some cases, is responsible for ensuring that data arrives at its destination. You might think of the transport layer as a postman. He accepts letters (data) from you, and passes them off to be routed to their final destination. If you have to be certain the letter arrives at its destination, you can send it certified mail and get reasonable confirmation that it was indeed delivered.
 
-#### TCP (Transport Control Protocol)
+#### Transmission Control Protocol
 
-TCP is formally described in RFC 793.
+Transmission Control Protocol (TCP) is formally described in RFC 793.
 
-Transmission Control Protocol is the most widely used protocol in the
-transport layer, and the only thing in the entire TCP/IP suite that
-garauntees delivery of packets by using some fairly ingenious
-techniques.  To start, TCP marks every packet with a sequence
-identification number.  In the event that some packets are received out
-of order, the receiving node can re-arrange them correctly.  Also, TCP
-requires an acknowledgement of receipt for every packet, so the sending
-node knows without doubt if a packet was received.  Finally, TCP
-includes a rudimentary checksum to verify that the data sent has  not
-been changed en route.
+TCP is the most widely used protocol in the transport layer, and the only thing in the entire TCP/IP suite that guarantees delivery of packets by using some fairly ingenious techniques. To start, TCP marks every packet with a sequence identification number. In the event that some packets are received out of order, the receiving node can re-arrange them correctly. Also, TCP requires an acknowledgement of receipt for every packet, so the sending node knows without doubt if a packet was received. Finally, TCP includes a rudimentary checksum to verify that the data sent has not been changed en route.
 
-TCP is known as a "connection oriented" protocol, because it sends all
-data in the framework of an open connection, rather than simply firing
-the data off like every other protocol and hoping the destination node
-receives it.
+TCP is known as a *connection oriented* protocol, because it sends all data in the framework of an open connection, rather than simply firing the data off like every other protocol and hoping the destination node receives it.
 
 ##### Ports
 
-Ports are a way of communicating with the Application Layer.  TCP has
-65,536 total ports.  Every TCP packet has a Source Port and a
-Destination Port.  When a TCP packet is received, the kernel looks at
-the port number (1 - 65,536) and determines what application to send
-the data to based on this information.
+Ports are a way of communicating with the application layer. TCP has 65,536 total ports. Every TCP packet has a *source port* and a *destination port*. When a TCP packet is received, the kernel looks at the port number (1 - 65,536) and determines what application to send the data to based on this information.
 
 ##### Flags
 
-TCP makes use of a number of "Flags" to specify the type of TCP packet
-in much the same way that ICMP does.  Unlike ICMP, a TCP packet can
-have multiple flags set at the same time.  In this document, we're only
-going to discuss the four most common.
+TCP makes use of a number of *flag* to specify the type of TCP packet in much the same way that ICMP does. Unlike ICMP, a TCP packet can have multiple flags set at the same time. In this document, we're only going to discuss the four most common.
 
 - SYN - Synchronize and prepare for a connection
 - ACK - Acknowledge that a packet has been received (and which one)
@@ -853,56 +515,25 @@ going to discuss the four most common.
 
 ##### Connection initialization
 
-The three-way handshake is used to initiate a TCP connection.  It's
-responsible for ensuring that both end nodes are available and are
-ready for data to be transmitted.
+The three-way handshake is used to initiate a TCP connection. It's responsible for ensuring that both end nodes are available and are ready for data to be transmitted.
 
-Let's assume that whippoorwill decides to get some files from
-nightingale on a TCP connection.  First, whippoorwill sends a packet to
-nightingale telling him that robin is trying to initiate a TCP
-connection with a SYN packet. As soon as nightingale receives this
-packet, he knows that whipoorwill wants to talk to him and acknowledges
-it with a SYN-ACK packet.
+Suppose that **whippoorwill** wants to get some files from **nightingale** on a TCP connection. First, **whippoorwill** sends a packet to **nightingale** telling him that **robin** is trying to initiate a TCP connection with a SYN packet. As soon as **nightingale** receives this packet, he knows that **whippoorwill** wants to talk to him and acknowledges it with a SYN-ACK packet.
 
-Finally, when whippoorwill receives this packet, he replies with an ACK
-to nightingale.  This packet is sometimes called the SYN-ACK-ACK
-packet, but it's really just an ACK packet.  Anyhow, this lets both
-nodes know that everything is ready to roll.  It all goes something
-like this.
+Finally, when **whippoorwill** receives this packet, he replies with an ACK to nightingale. This packet is sometimes called the SYN-ACK-ACK packet, but it's really just an ACK packet. This informs both nodes that everything is ready to proceed. It looks similar to this:
 
     whippoorwill to nightingale - SYN
     nightingale to whippoorwill - SYN-ACK
     whippoorwill to nightingale - ACK
 
-At this point, they are ready to transmit information.  whippoorwill
-can send TCP packets without any flags and nightingale will reply to
-each packet with an ACK so whippoorwill knows the data was received.
-If for whatever reason, whippoorwill doesn't see an ACK packet for some
-data it sent, it will resend that packet.
+At this point, they are ready to transmit information. **whippoorwill** can send TCP packets without any flags and **nightingale** will reply to each packet with an ACK so **whippoorwill** knows that the data was received. If, for whatever reason, **whippoorwill** doesn't see an ACK packet for some data it sent, it will resend that packet.
 
 ##### Connection termination
 
-So now that we know how to initiate a TCP connection, how do we stop
-one?  The answer is the four-way handshake.
+So now that we know how to initiate a TCP connection, how do we stop one? The answer is the four-way handshake.
 
-To stop a TCP connection gracefully, both sides must agree that all
-data transmission has finished.  When each node has completed all the
-transmission it intends to do, it will send a FIN packet.  This is
-responded to by an ACK.  Once both nodes have sent FIN and ACK packets,
-the connection is over.  The reason that both nodes must agree that a
-transmission is over is simple.  One node may no longer wish to send
-data, but the other still has lots to transmit.  When one node has
-finished a connection but the other hasn't, the connection is called
-"half-open".
+To stop a TCP connection gracefully, both sides must agree that all data transmission has finished. When each node has completed all the transmission it intends to do, it will send a FIN packet. This is responded to by an ACK packet. After both nodes have sent FIN and ACK packets, the connection is over. The reason that both nodes must agree that a transmission is over is simple. One node may no longer wish to send data, but the other still has lots to transmit.  When one node has finished a connection but the other hasn't, the connection is called *half-open*.
 
-Here's an example.  Going back to whippoorwill and nightingale,
-whippoorwill has requested a rather large file be sent to him.  Once
-this file has begun transmission, whippoorwill decides that he no
-longer wishes to send anymore requests and gives nightingale a FIN
-packet.  nightingale ACKs the FIN, but continues to send that large
-file until that is complete before sending its own FIN.  Here we will
-begin with the three-way handshake, begin transmitting data, and end
-with a four-way handshake.
+For example, suppose that **whippoorwill** has requested a rather large file. Once this file has begun transmission, **whippoorwill** decides that he no longer wishes to send anymore requests and gives **nightingale a FIN packet. **nightingale** returns an ACK packet, but continues to send that large file until that is complete before sending its own FIN packet. Here we will begin with the three-way handshake, begin transmitting data, and end with a four-way handshake.
 
     Sender             Receiver       Flags       Content
     ======             ========       =====       =======
@@ -938,101 +569,43 @@ with a four-way handshake.
     whippoorwill      nightingale     ACK
     (connection torn down)
 
-There is one other way to tear down a TCP connection, and that is the
-deadly RST packet!  When one node sends the other node an RST packet,
-everything is over.  Both nodes immediately cease  transmiting data and
-close the connection.
+There is one other way to tear down a TCP connection, and that is the RST packet. When one node sends the other node an RST packet, everything is over. Both nodes immediately cease transmitting data and close the connection.
 
-#### UDP (User Datagram Protocol)
+#### User Datagram Protocol
 
-UDP is formally described in RFC 768.
+User Datagram Protocol (UDP) is formally described in RFC 768.
 
-UDP is, quite simply, the simpler cousin of TCP.  UDP's one and only
-focus is to communicate between the Network Layer and the Application
-Layer.  At first glance, it looks a lot like TCP, but unlike it's
-genius cousin, UDP can't work on connections.  Rather, UDP simply
-"fires and forgets".  This is actually preferred for many forms of
-transmission.  Since UDP doesn't clutter up things with sequence
-numbers, flags, handshakes, and acknowledgements, it can transmit data
-a lot faster than TCP.  For anything that needs to function in
-real-time, like a video game or streaming audio, it's preferable to
-loose some data or have it arrive out of order rather than waiting for
-out of sequence information to be resent.
+UDP communicates between the network layer and the application layer. At first glance, it looks a lot like TCP, but UDP can't work on connections. Rather, UDP simply "fires and forgets". This is actually preferred for many forms of transmission. Since UDP doesn't clutter up things with sequence numbers, flags, handshakes, and acknowledgements, it can transmit data a lot faster than TCP. For anything that needs to function in real-time, like a video game or streaming audio, it's preferable to lose some data or have it arrive out of order rather than waiting for out of sequence information to be resent.
 
 ##### Ports
 
-UDP ports work exactly the same way that TCP ports do.  They are simply
-placeholders that tell the kernel what application to hand off the data
-to.  It's important to note though, that UDP and TCP ports are
-exclusive.  UDP port 80 and TCP port 80 are entirely different and
-likely correspond to different applications.
+UDP ports work exactly the same way that TCP ports do. They are simply placeholders that tell the kernel what application to hand off the data to. It's important to note though, that UDP and TCP ports are exclusive. UDP port 80 and TCP port 80 are entirely different and likely correspond to different applications.
 
 ### Application layer
 
-The Application Layer is responsible for talking to the Transport
-Layer, and finally talking to the kernel or any user-land applications
-that make network requests.  We won't go into much detail here, as
-there are literally hundreds of common protocols, thousands of uncommon
-ones, and untold millions of network applications.  There are however,
-two notable protocols that bare mentioning here as they allow are
-responsible for setting things up for the Network Layer.
+The application layer is responsible for talking to the transport layer, and finally talking to the kernel or any user-land applications that make network requests. We won't go into much detail here, as there are literally hundreds of common protocols, thousands of uncommon ones, and untold millions of network applications. There are, however, two notable protocols that are worth mentioning here because they are responsible for setting things up for the network nayer.
 
 #### DNS
 
-As we all know, computers work with numbers, and in networking, those
-numbers usually take the form of IP Addresses.  But human beings aren't
-good at remembering long strings of numbers, otherwise we'd not call
-computers by names.  The Domain Name System (or Service) is what allows
-us to turn domain names like nightingale.ctsmacon.com into IP Addresses
-like 192.168.1.197.  DNS will play a key roll in some of the examples
-we will use in later sections.
+As we all know, computers work with numbers, and in networking, those numbers usually take the form of IP Addresses.  But human beings aren't good at remembering long strings of numbers, otherwise we'd not call computers by names. The Domain Name System (DNS) is what enables us to turn domain names, such as **nightingale.ctsmacon.com**, into IP addresses, such as 192.168.1.197. DNS plays a key role in some of the examples we will use in later sections.
 
-#### DHCP / bootp
+#### Dynamic Host Control Protocol
 
-The Dynamic Host Control Protocol is an ingenious method of assigning
-IP Addresses to nodes.  Instead of requiring a person to input an IP
-Address for a machine, DHCP will instead assign that, along with a lot
-of other helpful network information for him.  DHCP operates by sending
-a UDP packet to the broadcast address 255.255.255.255.  Unless a
-machine is acting as a DHCP server, the packet will be silently
-dropped.  But, a DHCP server will reply with another packet that
-includes all the information that machine needs to setup basic network
-services: IP Address, Subnet Mask, Routers, DNS Servers, and
-optionally much much more.
+The Dynamic Host Control Protocol (DHCP) is an ingenious method of assigning IP Addresses to nodes. Instead of requiring a person to input an IP Address for a machine, DHCP will instead assign that, along with a lot of other helpful network information for him. DHCP operates by sending a UDP packet to the broadcast address 255.255.255.255. Unless a machine is acting as a DHCP server, the packet will be silently dropped. A DHCP server replies with another packet that includes all the information that machine needs to setup basic network services: IP address, subnet mask, routers, DNS servers, and optionally much more.
 
 ### Packet crafting
 
-So now that we know about all the different layers and all the
-different things that play a part in networking, let's build an actual
-packet, hand-crafted with love.  For our purposes, we're going to skip
-DNS and assume we know the IP Addresses.  This is a data packet being
-crafted by whippoorwill (172.30.16.28) destined for the webserver at
-www.google.com (74.125.21.105).
+So now that we know about all the different layers and all the different things that play a part in networking, let's build an actual packet. For our purposes, we're going to skip DNS and assume we know the IP addresses. This is a data packet being crafted by **whippoorwill** (172.30.16.28) destined for the web server at **www.google.com** (74.125.21.105).
 
 #### Application data
 
-All packets begin at the Application Layer.  In this case, our
-application is Firefox.  I've just opened it on my workstation, and am
-in the process of making a request for http://www.google.com/.  Since
-I'm
-making an HTTP connection (that's what that whole http:// thing is all
-about after all), Firefox knows that I'm making a TCP connection to
-port 80 at 72.14.207.99.  But first, it has to form the data portion of
-the packet.  This data portion is referred to as the packet's
-"payload".  Every other portion of a packet is designed to get the
-payload to its destination and has no meaning outside of that.
-At this point, our packet is nothing but a payload and looks like this:
+All packets begin at the application layer. In this case, our application is Firefox. I've just opened it on my workstation, and am in the process of making a request for http://www.google.com/. Since I'm making an HTTP connection, Firefox knows that I'm making a TCP connection to port 80 at 72.14.207.99. But first, it has to form the data portion of the packet. This data portion is referred to as the packet's *payload*. Every other portion of a packet is designed to get the payload to its destination and has no meaning outside of that. At this point, our packet is nothing but a payload and looks like this:
 
     | Payload |
 
 #### Transport wrapping
 
-Here things become interesting.  This is the first layer that will add
-information to the payload and begin forming something more than just
-raw data.  Here, we add a number of fields.  This adding of fields is
-known as "wrapping" because of the way it encapsulates higher layers in
-lower layers.  I won't go into details on all of the possible fields,
-but pretty much everything is shown below.
+Here things become interesting. This is the first layer that will add information to the payload and begin forming something more than just raw data. Here, we add a number of fields. This adding of fields is known as *wrapping* because of the way it encapsulates higher layers in lower layers. I won't go into details on all of the possible fields, but pretty much everything is shown below.
 
     | Src Port | Dst Port |
     | Sequence Num |
@@ -1041,6 +614,7 @@ but pretty much everything is shown below.
     | Checksum | Urgent Pointer |
     | Options |
     | Payload |
+
 - Source Port - 16 bits
 - Destination Port - 16 bits
 - Sequence Number - 32 bits
@@ -1053,26 +627,15 @@ but pretty much everything is shown below.
 - Urgent Pointer - 16 bits
 - Options - 32 bits (if present)
 
-Here we've added the "Source Port", "Destination Port", "Sequence
-Number", "Acknowledgement Number", "Data Offset", "Reserved", "Flags",
-"Window", "Checksum", "Urgent Pointer and "Options" fields.  We haven't
-previously discussed several of these fields, so now's the time to do
-just that.
+Here we've added these fields: Source Port, Destination Port, Sequence Number, Acknowledgement Number, Data Offset, Reserved, Flags, Window, Checksum, Urgent Pointer, and Options. We haven't previously discussed several of these fields, so now's the time to do just that.
 
-- Data Offset - This is the size of the TCP Header in 32-bit chunks
-(or words). This lets us know exactly where the header ends and the
-Payload begins.
-- Reserved - These bits aren't currently used and should always be 0.
-- Flags - Each bit represents a different flag: SYN, ACK, FIN, RST, and
-others.
-- Window - This is basically the most data that the destination node can
-receive at a time.
-- Checksum - This is just a basic error-checking routine similar to the
-parity bit in ASCII.
-- Urgent Pointer - This is largely unused and we won't muddy the waters
-discussing it now.
-- Options - Another mostly unused field that we will ignore in this
-discussion.
+- **Data Offset** - The size of the TCP Header in 32-bit chunks (or words). This lets us know exactly where the header ends and the Payload begins.
+- **Reserved** - These bits aren't currently used and should always be 0.
+- **Flags** - Each bit represents a different flag: SYN, ACK, FIN, RST, and others.
+- **Window** - The most data that the destination node can receive at a time.
+- **Checksum** - A basic error-checking routine similar to the parity bit in ASCII.
+- **Urgent Pointer** - This is largely unused and we won't muddy the waters discussing it now.
+- **Options** - Another mostly unused field that we will ignore in this discussion.
 
 #### Network wrapping
 
@@ -1092,8 +655,7 @@ Now we get to add actual routing information to the packet.
     | Options |
     | Payload |
 
-- Version - 4 bits, typically version 4 but IP version 6 is becoming
-more common.
+- Version - 4 bits, typically v4 but IPv6 is becoming more common
 - Header Length - 4 bits
 - Type of Service - 8 bits
 - Total Length - 16 bits
@@ -1107,38 +669,21 @@ more common.
 - Destination Address - 32 bits
 - Options - 32 bits
 
-Notice that we've left the TCP header intact and we've added the IP
-Header information. Here's a breakdown of each of these pieces.
+Notice that we've left the TCP header intact and we've added the IP Header information. Here's a breakdown of each of these pieces.
 
-- Version - Either 4 or 6 for IPv4 or IPv6. In this document we only
-discuss IPv4. Just know the version can also be 6.
-- Header Length - This is basically identical to the Data Offset we was
-in Transport Wrapping. It is the entire length of the IP Header.
-- Type of Service - This was originally intended to specify a
-preference for fast transport or higher reliability. It is now almost
-entirely unused.
-- Total Length - The total length of the packet at this point. Header
-Length tells us where the IP Header ends. Total Length tells us where
-the entire packet ends.
-- Identification Number - This is used for identifying IP fragments.
-Fragments are created when a node can't transmit the entire packet at
-once, so the packet is split (fragmented) into smaller packets and each
-is given an Identification Number. Otherwise this is set to 0.
-- Flags - Used to enforce or deny fragmentation
-- Fragment Offset - If the packet is a fragment, this is the number of
-bytes that have been handled by previous fragments.
-- TTL - the number of intermediary routers allowed to handle the packet
-before failing. This field gets decremented each time a router handles
-it.
-- Protocol - What Transport Later protocol we are using. In this
-particular example it's TCP, but it could be UDP as well. This is
-necessary so the receiving node (or any firewalls in between) don't
-confuse the Transport Layer's header.
-- Header Checksum - Similar to the TCP Checksum, except that this has
-to be recalculated at each point because the TTL value has changed.
-- Source Address - The IP Address of the original sending node.
-- Destination Address - The IP Address of the final receiving node.
-- Options - Again, a variable length field that can contain a lot of
+- **Version** - Either 4 or 6 for IPv4 or IPv6. In this document we only discuss IPv4.
+- **Header Length** - The entire length of the IP Header.
+- **Type of Service** - Originally intended to specify a preference for fast transport or higher reliability. It is now almost entirely unused.
+- **Total Length** - The total length of the packet at this point. Header Length tells us where the IP Header ends. Total Length tells us where the entire packet ends.
+- **Identification Number** - Identifies IP fragments. Fragments are created when a node can't transmit the entire packet at once, so the packet is split (fragmented) into smaller packets and each is given an Identification Number. Otherwise this is set to 0.
+- **Flags** - Used to enforce or deny fragmentation
+- **Fragment Offset** - If the packet is a fragment, this is the number of bytes that have been handled by previous fragments.
+- **TTL** - The number of intermediary routers allowed to handle the packet before failing. This field gets decremented each time a router handles it.
+- **Protocol** - Which transport later protocol we are using. In this particular example it's TCP, but it could be UDP as well. This is necessary so the receiving node (or any firewalls in between) don't confuse the transport layer's header.
+- **Header Checksum** - Similar to the TCP Checksum, except that this has to be recalculated at each point because the TTL value has changed.
+- **Source Address** - The IP Address of the original sending node.
+- **Destination Address** - The IP Address of the final receiving node.
+- **Options** - Again, a variable length field that can contain a lot of
 optional data.
 
 #### Data-link wrapping
@@ -1166,33 +711,19 @@ Now we get to the final step of adding information to the packet.
 - Source MAC - 48 bits
 - Checksum - 32 bits
 
-The values of all these fields change every time a router forwards the
-packet along.
+The values of all these fields change every time a router forwards the packet along.
 
-- Destination MAC - the MAC address of the next hop (either the next
-router along the way or the final destination)
-- Source MAC - the MAC address of the sending node (either the original
-sender or the last router that handled the packet)
-- Checksum - a standard cyclic redundancy check. This is very similar
-to an md5sum in many ways.
+- **Destination MAC** - The MAC address of the next hop (either the next router along the way or the final destination).
+- **Source MAC** - The MAC address of the sending node (either the original sender or the last router that handled the packet).
+- **Checksum** - A standard cyclic redundancy check. This is very similar to a `md5sum` in many ways.
 
-At this point, the packet is ready for transmission on the physical
-layer.
+At this point, the packet is ready for transmission on the physical layer.
 
-### All together now
+### Packet transmission
 
-Now that we've lovingly crafted a packet by hand, let's fill in the
-values for this packet, and see how it fairs out in the real world.
-Here, we're going to assume that thrasher.lizella.net (104.130.169.14)
-is serving an HTTP document to one of googlebot's crawlers
-(66.249.66.1). We'll just call the payload "Payload" rather than create
-a fictional web page to include here. Some of the other data will be
-fictionalized as well.  In no cases is any fictional data important to
-understanding the concepts discussed here. As much as possible, I'll use
-binary values to show information.
+Now that we've crafted the packet, let's fill in the values and see how it fairs out in the real world. Here, we're going to assume that **thrasher.lizella.net** (104.130.169.14) is serving an HTTP document to one of googlebot's crawlers (66.249.66.1). We'll just call the payload **Payload** rather than create a fictional web page to include here. Some of the other data will be fictionalized as well. In no cases is any fictional data important to understanding the concepts discussed here. As much as possible, I'll use binary values to show information.
 
-To start, we'll just look at the transport headers and add on other
-headers.
+To start, we'll just look at the transport headers and add on other headers.
 
     | Src Port | Dst Port |
     | Sequence Number |
@@ -1211,8 +742,8 @@ headers.
     |---------Payload--------------|
 
 
-    Type                  Binary (0 - 15)       Explaination
-    ----                  ----------------      ------------
+    Type                  Binary (0 - 15)       Explanation
+    ----                  ----------------      -----------
     Source Port           0000000001010000      80
     Destination Port      0011001101011001      13145
     Sequence Number       0000000000000000      1
@@ -1227,19 +758,11 @@ headers.
     Urgent Pointer        0000000000000000      (Not Used Here)
     Options               (Not Included)        (Not Used Here)
 
-As you can see, this packet is leaving port 80, going to port 13,145,
-and is the first packet in the sequence.  Since there are no flags set,
-we know this isn't a SYN, ACK, FIN, RST, or any other special TCP
-packet.  This is just a plain old packet that sends data in a
-connection that has already been established.  Since this isn't an ACK
-packet, the Acknowledgement Number is set to "0".  As you can clearly
-see, there are 5 32-bit "words" before we reach the payload, so our
-Data Offset is set to "5".  Easy isnt't it?  (The Checksum values in
-this example are completely random and do not actually reflect a valid
-checksum for the packet.)
+As you can see, this packet is leaving port 80, going to port 13,145, and is the first packet in the sequence. Since there are no flags set, we know this isn't a SYN, ACK, FIN, RST, or any other special TCP packet. This is just a plain packet that sends data in a connection that has already been established. Since this isn't an ACK packet, the **Acknowledgement Number** is set to "0". As you can clearly see, there are 5 32-bit "words" before we reach the payload, so our **Data Offset** is set to "5".
 
-Now that we've got the Transport layer finished, it's time to add on
-the Network Layer.
+**Note:** The Checksum values in this example are completely random and do not actually reflect a valid checksum for the packet.
+
+Now that we've got the transport layer finished, it's time to add on the network layer.
 
     | Version | Header Length | Type of Service | Total Length |
     | Identification Number | Flags | Fragment Offset |
@@ -1260,8 +783,8 @@ the Network Layer.
     |------------Payload-----------|
 
 
-    Type                  Binary (0 - 15)       Explaination
-    ----                  ----------------      ------------
+    Type                  Binary (0 - 15)       Explanation
+    ----                  ----------------      -----------
     Version               0100                  4
     Header Length         0101                  5
     Type of Service       0000000               (Not Used)
@@ -1278,7 +801,7 @@ the Network Layer.
                           0100010000000001
     Options               (Not Included)        (Not Used Here)
 
-Last but not least, we'll wrap the packet in the Data-Link Layer.
+Last but not least, we'll wrap the packet in the data-link layer:
 
     | Dst MAC |
     | Src MAC |
@@ -1295,8 +818,8 @@ Last but not least, we'll wrap the packet in the Data-Link Layer.
     |----------TCP Header----------|
     |-----------Payload------------|
     10100100011101010010110000110101
-    Type                  Binary (0 - 15)       Explaination
-    ----                  ----------------      ------------
+    Type                  Binary (0 - 15)       Explanation
+    ----                  ----------------      -----------
     Destination Mac       1011110001110110      bc:76:4e:20:78:cb
                           0100111000100000
                           0111100011001011
@@ -1305,10 +828,7 @@ Last but not least, we'll wrap the packet in the Data-Link Layer.
                           1111000000000001
     Checksum              1010010001110101      (Made up checksum)
 
-In this case, the Destination MAC Address is the MAC Address of
-thrasher's router and the Source MAC Address is the MAC Address of
-thrasher himself.  Always remember that these two values change
-everytime you traverse a subnet.
+In this case, the destination MAC address is the MAC address of thrasher's router and the source MAC address is the MAC address of thrasher himself. Always remember that these two values change every time you traverse a subnet.
 
 So what does the entire packet look like?
 
@@ -1347,20 +867,13 @@ Or...
     | Payload |
     | Checksum |
 
-### A day in the TTL of a packet
+### Packet TTL
 
-Well, we've constructed packets and we've learned what everything does.
-Now it's time to look at sets of packets.
+Well, we've constructed packets and we've learned what everything does. Now it's time to look at sets of packets.
 
-#### Traversing the subnet for fun and profit
+#### Traversing the subnet
 
-We've told you that a packet changes; well, now it's time to learn just
-how it changes.  To start with, everytime a packet crosses a router, it
-gets an entirely new Data-Link Layer header.  This is necessary because
-every piece of information changes to facilitate transmisison to the
-next hop in its route.  Here's an example traceroute to show all the
-routers a packet must traverse to reach its final destination.  (Note
-that this is different for any two end-points.)
+We've told you that a packet changes; well, now it's time to learn just how it changes. To start with, every time a packet crosses a router, it gets an entirely new data-link layer header. This is necessary because every piece of information changes to facilitate transmission to the next hop in its route. Here's an example `traceroute` to show all the routers a packet must traverse to reach its final destination. Note that this is different for any two end-points.
 
     root@whippoorwill:~# traceroute -n 8.8.8.8
     traceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets
@@ -1378,14 +891,11 @@ that this is different for any two end-points.)
     13.751 ms
     11  8.8.8.8  12.080 ms  15.694 ms  14.635 ms
 
-Here we can see that we'll have to make 11 hops to reach our
-destination. I'm only going to detail one of these hops in addition to
-those fields in the packet header that are prone to change. In this
-example, our workstation whipporwill (172.30.16.28) is going to make a
-DNS lookup from google's DNS server at 8.8.8.8. Here's our packet.
-(Note: This is a UDP packet, so the Transport Layer is significantly
+Here we can see that we'll have to make 11 hops to reach our destination. I'm only going to detail one of these hops in addition to those fields in the packet header that are prone to change. In this example, our workstation **whippoorwill** (172.30.16.28) is going to make a DNS lookup from google's DNS server at 8.8.8.8. Here's our packet.
+
+**Note:** This is a UDP packet, so the transport layer is significantly
 shorter, consisting only of a Source Port, Destination Port, Header
-Length, and optional Checksum.)
+Length, and optional Checksum.
 
     00000000001000100110101110111100  -- 802.3 Header
     10001110010100111110000011001011
@@ -1400,12 +910,7 @@ Length, and optional Checksum.)
     |---------Payload--------------|
     10100100011101010010110000110101  -- 802.3 Checksum
 
-When whippoorwill's router receives this packet, the first thing it
-will do is check to see if the Destination MAC address (e0cb4e4f22ad -
-111000001100101101001110010011110010001010101101) matches it's
-interface. Assuming it does, it then strips away the entire Data-Link
-Layer. In this example, the Data-Link Layer is in 802.3 (Ethernet)
-format. Everything in this layer will get replaced.
+When **whippoorwill's** router receives this packet, the first thing it will do is check to see if the destination MAC address (e0cb4e4f22ad - 111000001100101101001110010011110010001010101101) matches its interface. Assuming it does, it then strips away the entire data-link layer. In this example, the data-link layer is in 802.3 (Ethernet) format. Everything in this layer will get replaced.
 
     01000101000000000010110010010100  -- IPv4 Header
     00000000000000000000000000000000
@@ -1416,12 +921,7 @@ format. Everything in this layer will get replaced.
     00000000010011110100110001011101  -- UDP Header
     |---------Payload--------------|
 
-At this point, the router checks the Destination IP Address (8.8.8.8
-00001000000010000000100000001000) and determines that it does not match
-itself, so it must forward the packet onward. It decrements the TTL
-value from 32 (00100000) to 31 (00011111) and recalculates the Header
-Checksum (because the TTL value has changed). As usual, I'm inserting
-random value for the Header Checksum.
+At this point, the router checks the destination IP address (8.8.8.8 00001000000010000000100000001000) and determines that it does not match itself, so it must forward the packet onward. It decrements the TTL value from 32 (00100000) to 31 (00011111) and recalculates the Header Checksum (because the TTL value has changed). As usual, I'm inserting random values for the Header Checksum.
 
     01000101000000000010110010010100  -- IPv4 Header
     00000000000000000000000000000000
@@ -1432,10 +932,7 @@ random value for the Header Checksum.
     00000000010011110100110001011101  -- UDP Header
     |---------Payload--------------|
 
-Now the router checks its own routing table to determine the next hop.
-As we saw in our traceroute above, that is the node with the IP address
-10.9.36.1. Our router now builds a brand-new Data-Link header with its
-Source MAC Address and the Destination MAC Address of 10.9.36.1.
+Now the router checks its own routing table to determine the next hop. As we saw in our `traceroute` above, that is the node with the IP address 10.9.36.1. Our router now builds a brand-new data-link header with its source MAC address and the destination MAC address of 10.9.36.1.
 
     00000000001000100110101110111100  -- 802.3 Header
     10001110010100110101000000111101
@@ -1450,21 +947,13 @@ Source MAC Address and the Destination MAC Address of 10.9.36.1.
     |---------Payload--------------|
     01111000011011100010010110010011  -- 802.3 Checksum
 
-This process continues until the packet either reaches its final
-destination or until the TTL drops to 0 (at which point the packet is
-discarded).
+This process continues until the packet either reaches its final destination or until the TTL drops to 0 (at which point the packet is discarded).
 
 #### TCP from SYN to FIN
 
-It might be of benefit to show an actual TCP connection from start to
-finish.  Here, I have striped the Data-Link and Network Headers for
-clarity. In addition, we won't be looking at any of the packets in this
-connection in binary form, and rather than entering IP Addresses for the
-nodes involved, we'll simply use the short form of their host-name.
+It might be beneficial to show an actual TCP connection from start to finish. Here, I have striped the Data-Link and Network Headers for clarity. In addition, we won't be looking at any of the packets in this connection in binary form, and rather than entering IP Addresses for the nodes involved, we'll simply use the short form of their host-name.
 
-Let's assume whippoorwill (172.30.16.28) wants to retrieve a webpage
-from rackspace.com (173.203.44.122). Naturally, the first thing it
-needs to do is initiate a three-way handshake.
+Let's assume **whippoorwill** (172.30.16.28) wants to retrieve a webpage from **rackspace.com** (173.203.44.122). Naturally, the first thing it needs to do is initiate a three-way handshake.
 
     whippoorwill  ->   rackspace
     Src Port      3560
@@ -1487,9 +976,7 @@ needs to do is initiate a three-way handshake.
     Seq Num       0
     Ack Num       0
 
-At this point, the three-way handshake has been initialized and we're
-ready for the first packets with any real data in them to be
-transmitted.
+At this point, the three-way handshake has been initialized and we're ready for the first packets with any real data in them to be transmitted.
 
     whippoorwill  ->   rackspace
     Src Port      3560
@@ -1506,9 +993,7 @@ transmitted.
     Seq Num       0
     Ack Num       1
 
-whippoorwill has asked for the document "index.html" and Rackspace has
-responded with an acknowledgement.  Next, Rackspace will begin to send
-the page.
+**whippoorwill** has asked for the document **index.html** and **rackspace** has responded with an acknowledgement. Next, **rackspace** begins to send the page.
 
     rackspace     ->   whippoorwill
     Src Port      80
@@ -1540,10 +1025,7 @@ the page.
     Seq Num       0
     Ack Num       1001
 
-Rackspace has sent the first 2 parts of the page and whippoorwill has
-acknowledged both of those parts.  Now, whippoorwill decides that it's
-ready to terminate the connection as it will no longer be requesting
-further data.
+**rackspace** has sent the first 2 parts of the page and **whippoorwill** has acknowledged both of those parts. Now, **whippoorwill** decides that it's ready to terminate the connection as it will no longer be requesting further data.
 
     whippoorwill  ->   rackspace
     Src Port      3560
@@ -1559,12 +1041,9 @@ further data.
     Seq Num       0
     Ack Num       0
 
-whippoorwill has sent a FIN packet to Rackspace, asking Rackspace to
-tear-down the connection gracefully.  Racksapce has in turn
-acknowledged this termination request, but isn't yet finished sending
-the web page.  (If whippoorwill wanted Rackspace to immediately drop
-what it was doing and tear down the connection, he would have sent an
-RST packet instead.)
+**whippoorwill** has sent a FIN packet to **rackspace**, asking **rackspace** to end the connection gracefully.  **rackspace** has in turn acknowledged this termination request, but isn't yet finished sending the web page.
+
+**Note:** If **whippoorwill** wanted **rackspace** to immediately drop what it was doing and tear down the connection, it would have sent an RST packet instead.
 
     racksapce     ->   whippoorwill
     Src Port      80
@@ -1596,8 +1075,7 @@ RST packet instead.)
     Seq Num       0
     Ack Num       1003
 
-Now that Rackspace has completed sending all its data, it will let
-whippoorwill know that it too is closing the connection.
+Now that **rackspace** has completed sending all its data, it will let **whippoorwill** know that it too is closing the connection.
 
     rackspace     ->   whippoorwill
     Src Port      80
@@ -1613,28 +1091,17 @@ whippoorwill know that it too is closing the connection.
     Seq Num       0
     Ack Num       0
 
-And now the connection is completely torn down.
+And now the connection is completely ended.
 
 ### Appendix
 
-Most of these topics cannot be thought of as "fundamental", but could
-be advantageous to know.
+Most of these topics cannot be thought of as fundamental, but could be advantageous to know.
 
 #### Packet encapsulation
 
-Like it's name suggests, packet encapsulation is the process of
-wrapping one packet up inside of another. This is commonly used in VPNs
-for example. It lets create and send normal plain-text packets, then
-encrypts them and wraps that encrypted data up as the payload for a new
-packet. In the reverse, it strips away the encapsulation, unencrypts
-the payload, and injects it back into the kernel as a regular packet.
-The great benefit of this is that our applications don't need to speak
-the encrypted protocol; we can simply use them normally and all the
-encryption is done transparently for us. Let's take a look at how this
-works.
+Like its name suggests, packet encapsulation is the process of wrapping one packet up inside of another. This is commonly used in VPNs. It enables you to create and send normal plain-text packets, and then encrypts them and wraps that encrypted data up as the payload for a new packet. In the reverse, it strips away the encapsulation, unencrypts the payload, and injects it back into the kernel as a regular packet. The great benefit of this is that our applications don't need to speak the encrypted protocol; we can simply use them normally and all the encryption is done transparently for us. Let's take a look at how this works.
 
-Currently, my workstation whippoorwill is connected to a VPN. Here's
-what its routing table looks like.
+Currently, my workstation **whippoorwill** is connected to a VPN. Here's what its routing table looks like.
 
     # ip route show
     default dev tun0  scope link
@@ -1645,12 +1112,7 @@ what its routing table looks like.
     172.30.16.0/26 dev eth0  proto kernel  scope link  src 172.30.16.28
     metric 202
 
-When I send a packet out to any IP address matching my default tun0
-route, the packet gets encrypted and encapsulated into a new packet
-destined for 72.32.144.38. Let's see this in action. Suppose I am
-sending a simple HTTP GET request to www.google.com (74.125.21.105).
-The kernel begins building out the packet normally, starting with the
-HTTP Payload, the TCP header, and the IPv4 header.
+When I send a packet out to any IP address matching my default tun0 route, the packet gets encrypted and encapsulated into a new packet destined for 72.32.144.38. Let's see this in action. Suppose I am sending a simple `HTTP GET` request to **www.google.com** (74.125.21.105). The kernel begins building out the packet normally, starting with the HTTP Payload, the TCP header, and the IPv4 header.
 
     01000101000000000010110010010100
     00000000000000000000000000000000
@@ -1664,10 +1126,7 @@ HTTP Payload, the TCP header, and the IPv4 header.
     00100100101011010000000000000000
     |-----------Payload------------|
 
-At this point, the magic happens! The kernel passes the packet to the
-tun0 interface to begin building the Data-Link layer, but instead of
-doing that, it takes the entire packet as-is and encrypts it as a new
-payload.
+At this point, the kernel passes the packet to the tun0 interface to begin building the data-link layer, but instead of doing that, it takes the entire packet as-is and encrypts it as a new payload.
 
     |------Encrypted Payload-------|
     |------Encrypted Payload-------|
@@ -1681,9 +1140,7 @@ payload.
     |------Encrypted Payload-------|
     |------Encrypted Payload-------|
 
-Now the kernel takes this encrypted packet as the payload for an
-entirely new UDP packet destined for the other VPN endpoint (in our
-example: 72.32.144.38).
+Now the kernel takes this encrypted packet as the payload for an entirely new UDP packet destined for the other VPN endpoint (in our example: 72.32.144.38).
 
     01000101000000000010110010010100  -- IPv4 Header
     00000000000000000000000000000000
